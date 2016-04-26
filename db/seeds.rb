@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
 require 'csv'
 MARKET_PATH = 'seed_csvs/markets.csv' #relative to project path
 

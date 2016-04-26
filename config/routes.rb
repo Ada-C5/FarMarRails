@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
 #*** MARKET
   resources :markets, except:[:destroy]
 
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
 
 #*** SALES
   resources :sales, only:[:index, :show, :create]
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
