@@ -1,0 +1,2 @@
+module FarmarHelper
+end
