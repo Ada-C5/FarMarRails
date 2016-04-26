@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426233314) do
+ActiveRecord::Schema.define(version: 20160426234945) do
 
   create_table "markets", force: :cascade do |t|
     t.string   "name"
@@ -22,14 +22,14 @@ ActiveRecord::Schema.define(version: 20160426233314) do
     t.string   "zip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "delete"
+    t.integer  "fake_id"
   end
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "delete"
+    t.integer  "fake_id"
     t.integer  "vendor_id"
   end
 
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20160426233314) do
     t.datetime "purchase_time"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.integer  "delete"
+    t.integer  "fake_id"
     t.integer  "vendor_id"
     t.integer  "product_id"
   end
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20160426233314) do
     t.string   "no_of_employees"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.integer  "delete"
+    t.integer  "fake_id"
     t.integer  "market_id"
   end
 
