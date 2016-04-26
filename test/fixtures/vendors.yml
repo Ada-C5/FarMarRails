@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor_number: 1
+  names_of_employees: MyString
+  num_of_employees: 1
+  market_number: 1
+
+two:
+  vendor_number: 1
+  names_of_employees: MyString
+  num_of_employees: 1
+  market_number: 1
