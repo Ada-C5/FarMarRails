@@ -7,3 +7,9 @@ lalalalalalala
 lalalalalalala
 lalalalalalala
 lalalalalalala
+
+I have deleted some stuff, and now I am adding some stuff.
+<!-- >>>>>>> bad5254cc69325b4ba9a403ef7388ab4ad2f689f -->
+
+TRYING git checkout foo
+git checkout master
