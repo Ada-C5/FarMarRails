@@ -13,3 +13,5 @@ I have deleted some stuff, and now I am adding some stuff.
 
 TRYING git checkout foo
 git checkout master
+
+This is Jillian, in her new branch. Trying to branch and merge again! 
