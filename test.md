@@ -1,7 +1,3 @@
 This is a test. Can we branch and not mess things up?
 
-Whoo.
-
-Yeah.
-
-Tests. 
+I have deleted some stuff, and now I am adding some stuff. 
