@@ -8,9 +8,10 @@
 
 
 require 'csv'
-MARKET_PATH = 'seed_csvs/markets.csv' #relative to project path
-VENDOR_PATH = 'seed_csvs/vendors.csv'
-PRODUCT_PATH = 'seed_csvs/products.csv'
+MARKET_PATH   = 'seed_csvs/markets.csv' #relative to project path
+VENDOR_PATH   = 'seed_csvs/vendors.csv'
+PRODUCT_PATH  = 'seed_csvs/products.csv'
+SALE_PATH     = 'seed_csvs/sales.csv'
 
 CSV.foreach(MARKET_PATH) do |row|
 
@@ -32,22 +33,26 @@ CSV.foreach(VENDOR_PATH) do |row|
 
   row_hash = {
     name: row[1],
-    employee_count: row[2]
+    employee_count: row[2].to_i,
+    market_id: row[3].to_i
   }
 
-	markets = Market.find(row[3])
-  markets.vendors << Vendor.create(row_hash)
+	# markets = Market.find(row[3])
+  # markets.vendors << Vendor.create(row_hash)
+   Vendor.create(row_hash)
 
 end
 
 CSV.foreach(PRODUCT_PATH) do |row|
 
   row_hash = {
-    name: row[1]
+    name: row[1],
+    vendor_id: row[2].to_i
   }
 
-	vendor = Vendor.find(row[2])
-  vendor.products << Product.create(row_hash)
+	# vendor = Vendor.find(row[2])
+  # vendor.products << Product.create(row_hash)
+  Product.create(row_hash)
 
 end
 
@@ -55,15 +60,18 @@ end
 CSV.foreach(SALE_PATH) do |row|
 
   row_hash = {
-    amount: row[1]
-    purchase_time: row[2]
+    amount: row[1],
+    purchase_time: row[2],
+    vendor_id: row[3].to_i,
+    product_id: row[4].to_i
 
   }
-
-	vendor = Vendor.find(row[3])
-  vendor.sales << Sale.create(row_hash)
-
-  product = Vendor.find(row[4])
-  product.sales << Product.create(row_hash)
+  puts "row: #{row}"
+	# vendor = Vendor.find(row[3])
+  # vendor.sales << Sale.create(row_hash)
+  #
+  # product = Product.find(row[4])
+  # product.sales << Sale.create(row_hash)
+  Sale.create(row_hash)
 
 end
