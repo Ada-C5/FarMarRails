@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426223955) do
+ActiveRecord::Schema.define(version: 20160426234504) do
 
   create_table "markets", force: :cascade do |t|
     t.integer  "market_number"
@@ -20,16 +20,16 @@ ActiveRecord::Schema.define(version: 20160426223955) do
     t.string   "city"
     t.string   "state"
     t.integer  "zip"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "products", force: :cascade do |t|
     t.integer  "product_number"
     t.string   "name"
     t.integer  "vendor_number"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sales", force: :cascade do |t|
@@ -38,17 +38,17 @@ ActiveRecord::Schema.define(version: 20160426223955) do
     t.datetime "purchase_time"
     t.integer  "vendor_number"
     t.integer  "product_number"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "vendors", force: :cascade do |t|
     t.integer  "vendor_number"
-    t.string   "names_of_employees"
     t.integer  "num_of_employees"
     t.integer  "market_number"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
   end
 
 end
