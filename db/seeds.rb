@@ -9,6 +9,8 @@
 
 require 'csv'
 MARKET_PATH = 'seed_csvs/markets.csv' #relative to project path
+VENDOR_PATH = 'seed_csvs/vendors.csv'
+PRODUCT_PATH = 'seed_csvs/products.csv'
 
 CSV.foreach(MARKET_PATH) do |row|
 
@@ -22,5 +24,46 @@ CSV.foreach(MARKET_PATH) do |row|
   }
 
   market = Market.create(row_hash)
+
+end
+
+
+CSV.foreach(VENDOR_PATH) do |row|
+
+  row_hash = {
+    name: row[1],
+    employee_count: row[2]
+  }
+
+	markets = Market.find(row[3])
+  markets.vendors << Vendor.create(row_hash)
+
+end
+
+CSV.foreach(PRODUCT_PATH) do |row|
+
+  row_hash = {
+    name: row[1]
+  }
+
+	vendor = Vendor.find(row[2])
+  vendor.products << Product.create(row_hash)
+
+end
+
+
+CSV.foreach(SALE_PATH) do |row|
+
+  row_hash = {
+    amount: row[1]
+    purchase_time: row[2]
+
+  }
+
+	vendor = Vendor.find(row[3])
+  vendor.sales << Sale.create(row_hash)
+
+  product = Vendor.find(row[4])
+  product.sales << Product.create(row_hash)
 
 end

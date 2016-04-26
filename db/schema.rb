@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426213814) do
+ActiveRecord::Schema.define(version: 20160426223434) do
 
   create_table "markets", force: :cascade do |t|
     t.string   "name",       null: false
@@ -43,9 +43,9 @@ ActiveRecord::Schema.define(version: 20160426213814) do
   create_table "vendors", force: :cascade do |t|
     t.string   "name",           null: false
     t.integer  "employee_count"
-    t.integer  "market_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "market_id"
   end
 
 end
