@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20160426233140) do
     t.integer  "vendor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "product_id"
   end
 
   create_table "sales", force: :cascade do |t|
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160426233140) do
     t.integer  "product_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "sale_id"
   end
 
   create_table "vendors", force: :cascade do |t|
