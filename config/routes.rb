@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'markets#index'
+
+  resources :markets
+  resources :vendors
+  resources :products
+  resources :sales, except: [:destroy, :update, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
