@@ -4,3 +4,15 @@ Started GET "/" for ::1 at 2016-04-26 15:04:22 -0700
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/RA/.rvm/gems/ruby-2.3.0@FarMarRails/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
 Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 15:26:49 -0700
+Processing by FarmarController#index as HTML
+  Rendered farmar/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1316ms (Views: 1308.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/farmar.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-26 15:26:51 -0700
+
+
+Started GET "/assets/farmar.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-26 15:26:51 -0700
