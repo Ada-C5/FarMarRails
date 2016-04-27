@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426234945) do
+ActiveRecord::Schema.define(version: 20160427162835) do
 
   create_table "markets", force: :cascade do |t|
     t.string   "name"
@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 20160426234945) do
     t.integer  "vendor_id"
   end
 
+  add_index "products", ["vendor_id"], name: "index_products_on_vendor_id"
+
   create_table "sales", force: :cascade do |t|
     t.string   "name"
     t.integer  "amount"
@@ -44,6 +46,9 @@ ActiveRecord::Schema.define(version: 20160426234945) do
     t.integer  "product_id"
   end
 
+  add_index "sales", ["product_id"], name: "index_sales_on_product_id"
+  add_index "sales", ["vendor_id"], name: "index_sales_on_vendor_id"
+
   create_table "vendors", force: :cascade do |t|
     t.string   "name"
     t.string   "no_of_employees"
@@ -52,5 +57,7 @@ ActiveRecord::Schema.define(version: 20160426234945) do
     t.integer  "fake_id"
     t.integer  "market_id"
   end
+
+  add_index "vendors", ["market_id"], name: "index_vendors_on_market_id"
 
 end
