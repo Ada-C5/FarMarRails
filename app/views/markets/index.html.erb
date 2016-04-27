@@ -8,9 +8,14 @@
   <li>
     <%# makes sense to link markets by name %>
     <%= link_to market.name, market_path(market.id) %>
-  
+
+
   </li>
 
 <% end %>
 
 </ul>
+
+<p>
+  <%= link_to "ADD NEW MARKET", new_market_path %>
+</p>
