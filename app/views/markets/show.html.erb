@@ -17,3 +17,8 @@
   </li>
   <% end %>
 </ul>
+
+
+<!-- IF STATEMENT FOR AUTHENTICATION -->
+
+<%= button_to 'Edit Market',url_for(action: :edit, id: @market.id), method: :edit, data: {confirm: "Are you sure you want to edit this task?"} %>
