@@ -20,11 +20,11 @@
         <% end %>
       </li>
       <li>
-        <%#= form_for vendor do |f| %>
-        <%#= f.label :id %>
-        <%#= f.text_field :id %><br/>
-        <%#= f.submit %>
-        <%# end %>
+        <%= form_tag(controller: "login", action: "vendorcreate", method: "post") do%>
+        <%= label_tag(:id, "Enter vendor id:") %>
+        <%= text_field_tag(:id) %>
+        <%= submit_tag("Log in") %>
+        <% end %>
       </li>
     </nav>
     </ul>

@@ -84,6 +84,14 @@ Rails.application.routes.draw do
 #              PATCH  /products/:id(.:format)      products#update
 #              PUT    /products/:id(.:format)      products#update
 #              DELETE /products/:id(.:format)      products#destroy
+# login_index GET    /login(.:format)             login#index
+#              POST   /login(.:format)             login#create
+#    new_login GET    /login/new(.:format)         login#new
+#   edit_login GET    /login/:id/edit(.:format)    login#edit
+#        login GET    /login/:id(.:format)         login#show
+#              PATCH  /login/:id(.:format)         login#update
+#              PUT    /login/:id(.:format)         login#update
+#              DELETE /login/:id(.:format)         login#destroy
 
 
   root 'markets#index'
@@ -91,6 +99,8 @@ Rails.application.routes.draw do
   resources :vendors
   resources :sales, except:[:edit, :destroy, :update]
   resources :products
-  resources :login 
+  post "/login" => "login#vendorcreate"
+  resources :login
+
 
 end
