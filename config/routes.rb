@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+root 'home#index'
 
 #*** MARKET
   resources :markets, except:[:destroy]
