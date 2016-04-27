@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   root 'far_mar#index'
 
+  get    "/markets"          => "markets#index",   as: :markets
+  # post   "/markets"          => "markets#create"
+  # get    "/markets/:id"      => "markets#show",    as: :market
+  # patch  "/markets/:id"      => "markets#update"
+  # delete "/markets/:id"      => "markets#destroy"
+  # get    "/markets/new"      => "markets#new",     as: :new_market
+  # get    "/markets/:id/edit" => "markets#edit",    as: :edit_market
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
