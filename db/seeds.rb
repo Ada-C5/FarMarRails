@@ -16,3 +16,15 @@ FILE_PATH_SALES           = 'db/seed_csvs/sales.csv'
 CSV.foreach(FILE_PATH_MARKETS, headers: true) do |row|
   Market.create(row.to_h)
 end
+
+CSV.foreach(FILE_PATH_VENDORS, headers: true) do |row|
+  Vendor.create(row.to_h)
+end
+
+CSV.foreach(FILE_PATH_PRODUCTS, headers: true) do |row|
+  Product.create(row.to_h)
+end
+
+CSV.foreach(FILE_PATH_SALES, headers: true) do |row|
+  Sale.create(row.to_h)
+end
