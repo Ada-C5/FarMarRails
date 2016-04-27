@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :vendors
   resources :products
   resources :sales, except: [:destroy, :update, :edit]
+
+  get "/vendors/:id/products" => "vendor#products"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
