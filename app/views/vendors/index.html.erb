@@ -1,0 +1,9 @@
+<article>
+  <% @vendors.each do |vendor| %>
+    <section>
+      <%= link_to vendor.name, vendor_path(vendor.id) %>
+      <%= vendor.employee_num %>
+      <%= vendor.market_id %>
+    </section>
+  <% end %>
+</article>
