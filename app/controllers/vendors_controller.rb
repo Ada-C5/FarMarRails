@@ -4,23 +4,29 @@ class VendorsController < ApplicationController
   end
 
   def show
+    @vendor = Vendor.find(params[:id])
+  end
+
+  def new_product
 
   end
 
-  def edit
+  def edit_product
 
   end
 
-  def update
+  def create_product
 
   end
 
-  def create
+  def update_product
 
   end
 
-  def destroy
+  def destroy_product
 
   end
+
+
 
 end
