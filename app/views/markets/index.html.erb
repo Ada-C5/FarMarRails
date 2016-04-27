@@ -1,11 +1,14 @@
-<h1>This is the Market index page</h1>
+<h1>Farmer's Markets!</h1>
 
 <section>
   <ul>
     <% @all_markets.each do |market| %>
-
-      <li><%= link_to market.name, market_path(market.id) %></li>
-
+      <% if market[:id] != market[:market_id] %>
+        <%#to check primary key match market_id %>
+        <%= "This is data doesn't match." %>
+      <% else %>
+        <li><%= link_to market.name, market_path(market.id) %></li>
+      <% end %>
     <%end%>
   </ul>
 </section>
