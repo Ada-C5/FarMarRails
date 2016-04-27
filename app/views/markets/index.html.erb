@@ -1,3 +1,12 @@
-<% @markets.each do |market| %>
-<%= market.name %>
-<% end %>
+<article>
+  <% @markets.each do |market| %>
+    <section>
+      <%= link_to market.name, market_path(market.id) %>
+      <%= market.address %>
+      <%= market.city %>
+      <%= market.county %>
+      <%= market.state %>
+      <%= market.zip %>
+    </section>
+  <% end %>
+</article>
