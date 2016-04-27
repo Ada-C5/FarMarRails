@@ -16,8 +16,7 @@ class MarketsController < ApplicationController
   end
 
   def create
-    @market = Market.new(market_create_params[:task])
-
+    @market = Market.new(market_create_params[:market])
     #any validation?
     if @market.save
       redirect_to root_path
@@ -32,7 +31,7 @@ class MarketsController < ApplicationController
   end
 
   def update
-    @market = Market.update(params[:id], market_edit_params[:task])
+    @market = Market.update(params[:id], market_edit_params[:market])
 
     if @market.save
       redirect_to root_path
