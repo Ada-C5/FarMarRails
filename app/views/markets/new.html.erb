@@ -1,0 +1,30 @@
+<h2 class="forms">Create a New Market</h2>
+
+<%= form_for @market do |f| %>
+	<%= f.label :'Market Name:' %>
+	<br>
+	<%= f.text_field :name, class: 'field' %>
+	<br>
+	<%= f.label :'Street:' %>
+	<br>
+	<%= f.text_field :street, class: 'field' %>
+	<br>
+	<%= f.label :'City:' %>
+	<br>
+	<%= f.text_field :city, class: 'field' %>
+	<br>
+	<%= f.label :'County:' %>
+	<br>
+	<%= f.text_field :county, class: 'field' %>
+	<br>
+	<%= f.label :'State:' %>
+	<br>
+	<%= f.text_field :state, class: 'field' %>
+	<br>
+	<%= f.label :'Zip Code:' %>
+	<br>
+	<%= f.text_field :zip, class: 'field' %>
+	<br>
+
+	<%= f.submit %>
+	<% end %>

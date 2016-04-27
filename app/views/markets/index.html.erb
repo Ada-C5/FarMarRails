@@ -1,20 +1,20 @@
 <h1>Markets</h1>
+<%= link_to "Add a New Market", new_market_path %>
 <pre><%= params %></pre>
 <table class="table table-striped" class="table table-hover">
 <tr class="header-row">
 <th>Name</th>
-<th>Street</th>
-<th>City</th>
-<th>State</th>
-<th>Zip</th>
+<th>Edit</th>
 
 </tr>
 <tr class="row"><% @markets.each do |market| %></tr>
 	<td><%= link_to market.name, market_path(market.id) %></td>
-	<td><%= market.street %></td>
-	<td><%= market.city %></td>
-	<td><%= market.state %></td>
-	<td><%= market.zip %></td>
+
+	<td class="edit">
+    <%= link_to edit_market_path(market.id) do %>
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+    <% end %>
+    </td>
 
 	<% end %>
 

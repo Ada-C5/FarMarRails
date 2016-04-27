@@ -1,7 +1,20 @@
 <pre><%= params %></pre>
+<table class="table table-striped" class="table table-hover">
+<tr class="header-row">
+	<th>Name</th>
+	<th>Street</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+</tr>	
 
-<% @vendors.each do |vendor| %>
-<%= vendor.name %>
-
+<tr><% @markets.each do |market| %></tr>
+	<td><%= market.name %>
+	<td><%= market.street %></td>
+	<td><%= market.city %></td>
+	<td><%= market.state %></td>
+	<td><%= market.zip %></td>
 <% end %>
+
+</table
 	
