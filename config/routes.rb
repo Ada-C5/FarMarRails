@@ -91,5 +91,6 @@ Rails.application.routes.draw do
   resources :vendors
   resources :sales, except:[:edit, :destroy, :update]
   resources :products
-  
+  resources :login 
+
 end
