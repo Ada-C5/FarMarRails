@@ -13,5 +13,13 @@
 <h2><em>Zip Code:</em><br>
   <%= @market.zip_code %></h2>
 
+<ul>
+  <% @all_vendors.each do |vendor| %>
+    <% if vendor.market_id == @market.id %>
+      <li><%= vendor.name %></li>
+    <% end %>
+  <% end %>
+</ul>
+
 <h2><%= link_to 'home', root_path %><h2>
 <h2><%= link_to 'All Markets', markets_path %><h2>
