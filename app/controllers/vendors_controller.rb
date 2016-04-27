@@ -6,7 +6,7 @@ class VendorsController < ApplicationController
   end
 
   def show
-    @vendors_listed = Vendor.find.(params[:id])
+    @vendors_listed = Vendor.find(params[:id])
     render :index
   end
 

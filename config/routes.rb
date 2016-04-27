@@ -5,17 +5,15 @@ Rails.application.routes.draw do
  # only generate the specified routes
  resources :markets
  resources :vendors
-<<<<<<< HEAD
-=======
  resources :products
-
->>>>>>> 136c2acbdfc4d187cb62cd80850963e4bbec7f7d
+ resources :homes
 
   # You can have the root of your site routed with "root"
   root 'homes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  # get 'homes/:id/market' =>   'homes#show', as: 'hmarket'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
