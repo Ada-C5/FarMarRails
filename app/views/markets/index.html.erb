@@ -1,0 +1,11 @@
+<!-- Display a list of markets by iterating over the list of markets. -->
+<h1> Famers Markets </h1>
+<%= link_to "Welcome Page", root_path %>
+<div class="market-container">
+  <% @markets.each do |market| %> <br/>
+  <div class="market-item">
+    <!-- this path links to the marketpath that is identified by the id -->
+    <%= link_to market.name, market_path(market.id) %> <br/>
+  </div>
+  <% end %>
+</div>
