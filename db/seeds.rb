@@ -8,15 +8,27 @@
 
 require 'csv'
 
-MARKET_FILE_PATH = 'db/seed_csvs/markets.csv'
-VENDOR_FILE_PATH = 'db/seed_csvs/vendors.csv'
-SALE_FILE_PATH = 'db/seed_csvs/sales.csv'
-PRODUCT_FILE_PATH = 'db/seed_csvs/products.csv'
+MARKET_FILE_PATH = 'seed_csvs/markets.csv'
+VENDOR_FILE_PATH = 'seed_csvs/vendors.csv'
+SALE_FILE_PATH = 'seed_csvs/sales.csv'
+PRODUCT_FILE_PATH = 'seed_csvs/products.csv'
 
-CSV.foreach(MARKET_FILE_PATH) do |row|
+CSV.foreach(MARKET_FILE_PATH, headers: true) do |row|
   row_hash = row.to_h
-  artist_name = row_hash.delete("artist")
+  Market.create(row_hash)#populating the artist and slbums tables and making connection between them via artist_id assignement
+end
 
-  artist = Artist.find_or_create_by(name: artist_name)
-  artist.albums << Album.create(row_hash)#populating the artist and slbums tables and making connection between them via artist_id assignement
+CSV.foreach(VENDOR_FILE_PATH, headers: true) do |row|
+  row_hash = row.to_h
+  Vendor.create(row_hash)#populating the artist and slbums tables and making connection between them via artist_id assignement
+end
+
+CSV.foreach(SALE_FILE_PATH, headers: true) do |row|
+  row_hash = row.to_h
+  Sale.create(row_hash)#populating the artist and slbums tables and making connection between them via artist_id assignement
+end
+
+CSV.foreach(PRODUCT_FILE_PATH, headers: true) do |row|
+  row_hash = row.to_h
+  Product.create(row_hash)#populating the artist and slbums tables and making connection between them via artist_id assignement
 end
