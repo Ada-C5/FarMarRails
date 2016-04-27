@@ -51,4 +51,6 @@ ActiveRecord::Schema.define(version: 20160426230537) do
     t.integer  "market_id"
   end
 
+  add_index "vendors", ["market_id"], name: "index_vendors_on_market_id"
+
 end

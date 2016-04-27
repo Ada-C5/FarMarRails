@@ -1,4 +1,13 @@
 class VendorsController < ApplicationController
+
+  def index
+    @vendors = Vendor.uniq.order(name: :asc)
+  end
+
+  def show
+    @vendors = Vendor.where(id: params[:id])
+  end
+
   def new
     @vendor = Vendor.new  #creates vendor so that we can access the form
   end
