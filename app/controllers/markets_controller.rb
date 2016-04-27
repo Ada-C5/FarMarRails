@@ -3,6 +3,11 @@ class MarketsController < ApplicationController
     @markets = Market.all 
   end
 
+  def show
+    @market = Market.find(params[:id])
+    render :show
+  end
+
   def new 
     @market = Market.new 
   end 
@@ -17,17 +22,13 @@ class MarketsController < ApplicationController
     end 
   end
   
-  def edit
-
-  end
-
-  def show
+  def edit 
     @market = Market.find(params[:id])
-    render :show
-  end
+  end 
 
   def update
-
+    @market = Market.find(params[:id])
+    @market.update(update_params[:market])
   end
 
 
@@ -38,6 +39,10 @@ class MarketsController < ApplicationController
   private
 
   def new_params
+    params.permit(market: [:name, :address, :city, :county, :state, :zip])
+  end
+
+  def update_params
     params.permit(market: [:name, :address, :city, :county, :state, :zip])
   end
 
