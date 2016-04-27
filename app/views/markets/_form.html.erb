@@ -1,0 +1,21 @@
+<pre><% params %></pre>
+
+<%= form_for @market do |f| %>
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+
+  <p><%= f.label :address %>
+  <%= f.text_area :address %></p>
+
+  <%= f.label :city %>
+  <%= f.text_field :city %></p>
+
+  <p><%= f.label :county %>
+  <%= f.text_field :county %></p>
+
+  <%= f.label :zip_code %>
+  <%= f.text_field :zip_code %></p>
+
+  <%= f.submit %>
+
+<% end %>
