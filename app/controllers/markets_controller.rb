@@ -1,5 +1,6 @@
 class MarketsController < ApplicationController
   def index
+    @markets = Market.all 
   end
 
   def new 
@@ -8,9 +9,9 @@ class MarketsController < ApplicationController
 
   def create
     @market = Market.new(new_params[:market])
-    if @market.save 
-      # show a message saying new market created
-      redirect_to root_path
+    if @market.save
+      # message stating new market created?
+      redirect_to markets_path
     else
       render :new
     end 
@@ -21,7 +22,8 @@ class MarketsController < ApplicationController
   end
 
   def show
-  
+    @market = Market.find(params[:id])
+    render :show
   end
 
   def update

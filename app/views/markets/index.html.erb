@@ -1,2 +1,12 @@
 <h1>I like lists of markets</h1>
 <%= link_to "Add A New Market", new_market_path %>
+<ul>
+  <% @markets.each do |market| %>
+    <li>
+      <%= link_to market.name, market_path(market.id) %>
+      <%= market.address %>
+      <%= market.city %>
+      <%= market.state %>
+    </li>
+  <% end %>
+</ul>

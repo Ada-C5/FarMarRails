@@ -1,3 +1,13 @@
+<h1> Add A New Market!</h1>
+<% if @market.errors.any? %>
+  <ul>
+    <% @market.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_for @market do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br/>
