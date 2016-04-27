@@ -1,0 +1,22 @@
+<h1><%= @market.name %></h1>
+<ul>
+
+
+  <li>
+    <%= @market.address %>, <%= @market.city %>, <%= @market.county %>, <%= @market.state %>, <%= @market.zip %>
+  </li>
+
+</ul>
+
+<h2>All Vendors at this market!</h2>
+<ul>
+
+<% @market.vendors.each do |vendor| %>
+
+  <li>
+    <%= link_to vendor.name, vendor_path(vendor.id) %>
+  </li>
+
+<% end %>
+
+</ul>
