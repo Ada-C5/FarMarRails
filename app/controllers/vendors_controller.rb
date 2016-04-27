@@ -1,6 +1,10 @@
 class VendorsController < ApplicationController
   def index
-    @vendors = Vendor.all
+    if  Market.find(params[:market_id]) == nil
+      @vendors = Vendor.all
+    else
+      @vendors = Vendor.where(market_id: params[:market_id])
+    end
   end
 
   def show

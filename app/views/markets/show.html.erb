@@ -7,4 +7,7 @@
       <%= @market.state %>
       <%= @market.zip %>
     </section>
+    <section>
+      <%= link_to "View All Vendors", market_vendors_path(@market.id) %>
+    </section>
 </article>
