@@ -5,7 +5,9 @@ class MarketsController < ApplicationController
 	end
 
 	def show
-		@markets = Market.where(name: params[:name])
+		@markets = Market.where(id: params[:id])
+		@vendors = Vendor.where(market_id: params[:market_id])
 		render :index
 	end
+	
 end
