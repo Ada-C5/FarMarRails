@@ -1,10 +1,14 @@
 <h1>Here's are your products!</h1>
 
-
+<% @products = Product.where(vendor_id: @vendor.id) %>
 <ul>
-  <% @vendors.each do |vendor| %>
+  <% @products.each do |product| %>
   <li>
-    <%= link_to vendor.name, vendor_path(vendor.id) %>
+    <%= product.name %>
+    <%= link_to "Edit", edit_product_path(product) %>
+    <%= link_to "", {:controller => :products, :action => 'destroy', :id => product.id}, method: :delete, data: {confirm: "Are you sure you want to delete this product?"}, class:"glyphicon glyphicon-trash"%>
   </li>
   <% end %>
 </ul>
+
+<%= link_to "New Product", new_product_path(@vendor) %>
