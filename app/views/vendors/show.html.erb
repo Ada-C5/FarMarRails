@@ -1,25 +1,4 @@
-# a list of all vendors
-
-<h1>Vendors</h1>
-<pre><%= params %></pre>
-
-
-<table class="table table-striped" class="table table-hover">
-  <tr class="header-row">
-    <th>Name</th>
-    <th>No. of Employees</th>
-    <th>Market</th>
-  </tr>
-  <tr class="row">
-    <% @vendors.each do |vendor| %></tr>
-  	 <td><%= vendor.name %></td>
-  	  <td><%= vendor.employee_count %></td>
-      <% if vendor.market_id %>
-        <td><%= link_to vendor.market.name, market_path(vendor.market_id) %></td>
-  	  <% end %>
-    <% end %>
-  </tr>
-</table>
+<%= render '/shared/vendor_list' %>
 
 <%= link_to products_path(@vendors_id), class: 'btn btn-success' do %>
   Products

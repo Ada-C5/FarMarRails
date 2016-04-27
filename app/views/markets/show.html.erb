@@ -8,13 +8,13 @@
 	<th>Zip</th>
 </tr>	
 
-<tr><% @markets.each do |market| %></tr>
-	<td><%= market.name %>
-	<td><%= market.street %></td>
-	<td><%= market.city %></td>
-	<td><%= market.state %></td>
-	<td><%= market.zip %></td>
-<% end %>
+	<td><%= @market.name %>
+	<td><%= @market.street %></td>
+	<td><%= @market.city %></td>
+	<td><%= @market.state %></td>
+	<td><%= @market.zip %></td>
 
-</table
+</table>
+
+<%= render 'shared/vendor_list' %>
 	

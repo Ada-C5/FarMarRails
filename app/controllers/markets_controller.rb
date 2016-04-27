@@ -5,8 +5,8 @@ class MarketsController < ApplicationController
 	end
 
 	def show
-		@markets = Market.where(id: params[:id])
-		@vendors = Vendor.where(market_id: params[:market_id])
+		@market = Market.find(params[:id])
+		@vendors = Vendor.where(market_id: @market.id)
 	end
 
 	def new
