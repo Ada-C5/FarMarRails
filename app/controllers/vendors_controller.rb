@@ -6,6 +6,8 @@ class VendorsController < ApplicationController
   end
 
   def show
+    @vendors_listed = Vendor.find(params[:id])
+    render :index
     @vendors = Vendor.where(id: params[:id])
     render :single_vendor_view
   end
