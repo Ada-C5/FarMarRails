@@ -1,13 +1,13 @@
 class VendorsController < ApplicationController
 
   def index
-    @vendors = Vendor.all
+    @vendors = Vendor.order(vendor_name: :asc)
     render :index
   end
 
   def show
-    @vendors_listed = Vendor.find.(params[:id])
-    render :index
+    @vendors = Vendor.where(id: params[:id])
+    render :single_vendor_view
   end
 
   def new
