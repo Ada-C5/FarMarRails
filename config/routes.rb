@@ -6,10 +6,9 @@ Rails.application.routes.draw do
  resources :markets
  resources :vendors
  resources :products
- resources :homes
 
   # You can have the root of your site routed with "root"
-  root 'homes#index'
+  root 'markets#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
