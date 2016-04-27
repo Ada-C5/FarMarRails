@@ -1,0 +1,16 @@
+<p>cool, it's the vendor you asked for!</p>
+
+<h2><%= @vendor.name %></h2>
+
+<p>Number of Employees: <%= @vendor.no_of_employees %></p>
+
+<p><%= link_to "Add A Product", new_vendor_product_path(@vendor.id) %></p>
+
+<p>This Vendor's Products:</p>
+<ul>
+  <% @all_products.each do |product| %>
+    <% if product.vendor_id == @vendor.id %>
+      <li><%= product.name %></li>
+    <% end %>
+  <% end %>
+</ul>
