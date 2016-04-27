@@ -1,0 +1,4 @@
+<% @products = @products.all %>
+<% @products.each do |product| %>
+    <%= link_to product.name, products_path %><br>
+<% end %>

@@ -1,0 +1,7 @@
+<h1> MARKETS!! </h1>
+
+
+  <% @markets = @markets.all %>
+  <% @markets.each do |market| %>
+      <%= link_to market.name, markets_path %><br>
+  <% end %>

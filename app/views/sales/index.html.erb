@@ -1,0 +1,4 @@
+<% @sales = @sales.all %>
+<% @sales.each do |sale| %>
+    <%= link_to sale.id, sales_path %><br>
+<% end %>

@@ -1,0 +1,7 @@
+<!-- <% render partial: 'index' %> -->
+<h1> INFO </h1>
+
+  <% @markets = @markets.all %>
+  <% @markets.each do |market| %>
+      <%= link_to market.name, market_path(market.id) %><br>
+  <% end %>
