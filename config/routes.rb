@@ -4,10 +4,12 @@ Rails.application.routes.draw do
 
  # only generate the specified routes
  resources :markets
+ resources :vendors
+ resources :products
 
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  root 'homes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

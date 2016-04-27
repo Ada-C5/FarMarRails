@@ -3,7 +3,7 @@ class HomesController < ApplicationController
     @markets = Market.order(market_name: :asc)
   end
 
-  def show
-
-  end
+  # def show
+  #   @market = Mar
+  # end
 end
