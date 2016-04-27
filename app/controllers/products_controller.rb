@@ -6,13 +6,13 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @new_vendor = Vendor.new
+    @new_product = Product.new
     render :new
   end
 
   def create
-    @new_vendor = Vendor.new(new_vendor_create_params[:vendor])
-    if @new_vendor.save
+    @new_product = Product.new(new_product_create_params[:product])
+    if @new_product.save
       redirect_to root_path
     else
       render :new
@@ -20,13 +20,13 @@ class ProductsController < ApplicationController
   end
 
   def edit
-    @vendor = Vendor.find(params[:id])
+    @product = Product.find(params[:id])
     render :edit
   end
 
   def update
-    @vendor = Vendor.find(params[:id])
-    if @vendor.update(new_vendor_create_params[:vendor])
+    @product = Product.find(params[:id])
+    if @product.update(new_product_create_params[:product])
       redirect_to root_path
     else
       render :edit
@@ -34,13 +34,13 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    @vendor = Vendor.destroy(params[:id])
+    @product = Product.destroy(params[:id])
     redirect_to root_path
   end
 
   private
 
-  def new_vendor_create_params
-    params.permit(vendor: [:vendor_id, :vendor_name, :num_of_employees, :market_id]) #you must permit parameters when you want to allow access to the user to create new data using the params. The user is ONLY permitted to access the artist and title parameters.
+  def new_product_create_params
+    params.permit(product: [:product_id, :product_name, :vendor_id]) #you must permit parameters when you want to allow access to the user to create new data using the params. The user is ONLY permitted to access the artist and title parameters.
   end
 end
