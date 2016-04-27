@@ -1,5 +1,15 @@
-<%= @vendor.name %>
+<h1><%= @vendor.name %></h1>
+<div class="vendor-info">
+  <p>Has <%= @vendor.number_of_employees %> Employees.</p>
+  <p>Sells at <link_to @vendor.market.name .</p>
+</div>
 
-<section>
+<div class="vendor-products">
+  <h2><%= @vendor.name %> Products</h2>
   <%= render 'products' %>
-</section>
+</div>
+
+<div class="vendor-sales">
+  <h2><%= @vendor.name %> Sales</h2>
+  <%= render 'sales' %>
+</div>
