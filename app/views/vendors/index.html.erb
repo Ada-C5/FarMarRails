@@ -1,3 +1,5 @@
+<h1> VENDORS </h1>
+
 <% @vendors = @vendors.all %>
 <% @vendors.each do |vendor| %>
     <%= link_to vendor.name, vendor_path(vendor.id) %><br>

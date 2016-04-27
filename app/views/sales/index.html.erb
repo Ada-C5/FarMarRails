@@ -1,3 +1,5 @@
+<h1> SALES </h1>
+
 <% @sales = @sales.all %>
 <% @sales.each do |sale| %>
     <%= link_to sale.id, sale_path(sale.id) %><br>
