@@ -1,0 +1,16 @@
+<% @vendor_sales = Sale.where(vendor_id: @vendor.id) %>
+<% revenue = 0.0 %>
+<% @vendor_sales.each do |sale| %>
+  <% revenue += sale.amount %>
+<% end %>
+
+
+<h1><%= @vendor.name %></h1>
+<ul>
+  <li>Number of Employees: <%= @vendor.no_employees %></li>
+  <li>Market Name: <%= @vendor.market.name %></li>
+  <li>Total Sales Revenue: $<%=revenue/100%>  </li>
+  <li>Total Sales Transactions: <%= @vendor_sales.length %></li>
+</ul>
+
+<%= link_to "See Products", "/vendors/#{@vendor.id}/products" %>
