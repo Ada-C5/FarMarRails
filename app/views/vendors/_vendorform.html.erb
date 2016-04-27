@@ -1,0 +1,17 @@
+<%= form_for @vendor do |f| %>
+<!-- use the instance to give form_for all the information they need to know about tasks! -->
+  <%= field_set_tag 'Vendor Information' do %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :no_employees %>
+    <%= f.text_field :no_employees %>
+
+    <%# need to find a way to do this by market name instead of market IDs, and add markets that don't yet exits? %>
+    <%= f.label :market_id %>
+    <%= f.text_field :market_id %>
+
+    <%= f.submit %>
+
+  <% end %>
+<% end %>
