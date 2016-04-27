@@ -4,9 +4,9 @@
 
 <p>Number of Employees: <%= @vendor.no_of_employees %></p>
 
-<p>Add A Product</p>
+<p><%= link_to "Add A Product", new_vendor_product_path(@vendor.id) %></p>
 
-<p>List of products:</p>
+<p>This Vendor's Products:</p>
 <ul>
   <% @all_products.each do |product| %>
     <% if product.vendor_id == @vendor.id %>

@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'application#index'
   resources :markets
-  resources :vendors
+  resources :vendors do
+    resources :products, except: :index
+  end
 
 
 
