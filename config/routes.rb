@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
  # only generate the specified routes
  resources :markets
-
+ resources :vendors
 
   # You can have the root of your site routed with "root"
   root 'home#index'
