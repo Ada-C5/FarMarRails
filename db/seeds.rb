@@ -3,6 +3,7 @@ require 'csv'
 market_data = File.read(Rails.root.join('seed_csvs', 'markets.csv'))
 csv = CSV.parse(market_data, :headers => true)
 csv.each do |row|
+  puts row
   t = Market.new
   t.market_number = row['market_number']
   t.name = row['name']
@@ -14,6 +15,28 @@ csv.each do |row|
   t.updated_at = row['updated_at']
   t.save
 end
+
+
+#
+# namespace :csv do
+#   csv_file_path = "seed_csvs/markets.csv"
+#   CSV.foreach(csv_file_path) do |row|
+#       t = Market.create!(
+#       :market_number  => row[0]
+#       :name           => row[1]
+#       :address        => row[2]
+#       :city           => row[3]
+#       :state          => row[4]
+#       :zip            => row[5]
+#       :created_at     => row[6]
+#       :updated_at     => row[7]
+#       )
+#       puts t
+#   end
+# end
+
+
+
 
 product_data = File.read(Rails.root.join('seed_csvs', 'products.csv'))
 csv = CSV.parse(product_data, :headers => true)
