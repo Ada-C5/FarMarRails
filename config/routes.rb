@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post   "/markets"          => "markets#create"
   get    "/markets/:id"      => "markets#show",    as: :market
   patch  "/markets/:id"      => "markets#update"
-  # delete "/markets/:id"      => "markets#destroy"
+  delete "/markets/:id"      => "markets#destroy", as: :delete
   get    "/markets/:id/edit" => "markets#edit",    as: :edit_market
 
   # Example of regular route:

@@ -29,11 +29,16 @@ class MarketsController < ApplicationController
   def update
     @market = Market.find(params[:id])
     @market.update(update_params[:market])
+    redirect_to markets_path
   end
 
 
   def destroy
-
+    Market.destroy(params[:id])
+    if params[:id] = true 
+      # message stating that the market has been deleted? 
+      redirect_to markets_path
+    end 
   end
 
   private
