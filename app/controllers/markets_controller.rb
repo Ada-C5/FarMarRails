@@ -8,7 +8,8 @@ class MarketsController < ApplicationController
     # display the market info
     # set to an instance method
     # find is a class method so call on the class Market
-    @markets = Market.find(params[:id])
+    @market = Market.find(params[:id])
+
   end
 
 
