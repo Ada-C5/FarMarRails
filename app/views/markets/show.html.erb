@@ -16,6 +16,7 @@
     <%= @market.county %>
   </p>
 </div>
+<%= link_to "Add a Vendor to this Market", new_market_vendor_path(@market.id) %>
 <h2>List of Vendors</h2>
   <div class='market-vendor-list'>
     <% @market.vendors.each do |vendor| %> 
