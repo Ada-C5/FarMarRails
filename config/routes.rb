@@ -12,10 +12,14 @@ Rails.application.routes.draw do
 
   post '/markets'     => 'markets#create',  as: "create_market"
 
+<<<<<<< HEAD
   get '/markets/update'  => 'markets#update', as: "update"
 
+=======
+>>>>>>> 992a80514a1e7cfd08404c45a2d2fbbcbfb3ee81
   get  '/vendors'      => 'vendors#index', as: "vendor"
 
+  get  '/all_sales/:id'    => 'vendors#show', as: "vendor_sales"
 
 
 

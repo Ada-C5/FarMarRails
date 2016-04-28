@@ -1,0 +1,10 @@
+<header>
+  <h1> All Vendors </h1>
+</header>
+
+<ul>
+<% @vendors.each do |vendor| %>
+      <li><%= link_to vendor.name, vendor_sales_path(vendor.id) %></li>
+
+  <% end %>
+</ul>
