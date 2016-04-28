@@ -1,0 +1,26 @@
+<!-- info about one market-->
+  <%= link_to "Welcome Page", root_path %>
+  <!-- <%= link_to "Add a Market", new_market_path %>
+  <%= link_to "Edit a Market", edit_market_path %> -->
+<section class="vendor_show">
+  <div class="vendor_name">
+    <h2>Name: <%= @vendor.name %> </h2>
+  </div>
+  <div class="vendor_id">
+    <h2>ID: <%= @vendor.ven_id %> </h2>
+  </div>
+  <div class="vendor_num_employees">
+    <h2>Employees: <%= @vendor.num_employees %> </h2>
+  </div>
+  <div class="vendor_market_id">
+    <h2>Market Name: <%= @vendor.market.name %> </h2>
+  </div>
+
+  <div class="vendor_sales">
+    <% @vendor.sales.each do |sale| %>
+      <%= sale.product.name %>
+      <%= sale.amount %>
+    <% end %>
+  </div>
+
+</section>
