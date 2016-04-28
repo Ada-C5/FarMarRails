@@ -1,8 +1,21 @@
 <%= link_to "Vendors", vendors_path %>
 
 <div class="list_of_sales">
-  <% @vendor.sales.each do |sale| %>
-    <%= sale.product.name %>
-    <%= sale.amount %>
-  <% end %>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Sale Amount</th>
+      </tr>
+    </thead>
+    <% @vendor.sales.each do |sale| %>
+      <tr>
+        <td><%= sale.product.name %></td>
+        <td><%= sale.amount %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<p>Total sum of sales: <%= @sum %></p>
