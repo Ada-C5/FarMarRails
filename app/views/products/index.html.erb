@@ -1,11 +1,15 @@
-<h1>Vendor Porducts</h1>
+<h1>Vendor Porducts for</h1>
 
 <%=link_to "add new product",new_vendor_product_path%>
 
-<ul>
+<table>
+
   <%@products.each do |product|%>
-    <span><%=product.name%></span>
-  <span><%=link_to "Edit product",edit_vendor_product_path(id: product.id)%></span>  
-    <span><%=product.vendor_id%></span>
+  <tr>
+    <td><span><%=product.name%></span></td>
+    <td><span><%=link_to "Edit product",edit_vendor_product_path(id: product.id)%></span></td>
+    <td><span><%=link_to "Delete product",vendor_product_path(id: product.id),method: :delete%></span></td>
+  </tr>
     <%end%>
-</ul>
+
+</table>
