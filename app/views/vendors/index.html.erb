@@ -1,0 +1,11 @@
+<h1>Vendors</h1>
+
+
+<ul>
+  <%@vendors.each do |vendor|%>
+    <li>
+      <%=vendor.name%>
+  <%= link_to "Products", vendor_products_path(vendor)%>
+    </li>
+  <%end%>
+</ul>

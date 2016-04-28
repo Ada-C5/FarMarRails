@@ -54,10 +54,12 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  root 'home#index'
 resources :markets, only: [:index, :show]
-resources :vendors, only: [:index, :show]
 
-root 'home#index'
+resources :vendors do
+  resources :products
+end
 
 
 
