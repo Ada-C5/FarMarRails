@@ -1,0 +1,19 @@
+<h2>Edit Market</h2>
+
+
+<%= form_for @market do |f| %>
+  <%= f.label :market_name%>
+  <%= f.text_field :market_name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label :county %>
+  <%= f.text_field :county %>
+  <%= f.label :state %>
+  <%= f.text_field :state %>
+  <%= f.label :zip %>
+  <%= f.text_field :zip %>
+
+  <%= f.submit :'SUBMIT!!' %>
+<%end%>
