@@ -1,4 +1,10 @@
 <h1> Welcome, <%=@vendor.name%>! </h1>
 
-<%=@vendor.name%>
-<%@vendor.id%>
+<h2>Sales: </h2> <br>
+  <% @vendor.sales.each do |sale| %>
+    <ul>
+      <li> Amount: $ <%= sale.amount/100.0 %> </li>
+      <li> Product: <%= Product.find(sale.product_id).name %> </li>
+      <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+    </ul>
+  <% end %>
