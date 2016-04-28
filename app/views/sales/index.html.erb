@@ -18,7 +18,7 @@
 </div>
 
 
-<p>Total sum of sales: $<%= @sum / 100.0 %></p>
+<p>Total sum of sales: $<%= '%.2f' % (@sum / 100.0) %></p>
 
 <% unless @sales_this_month.empty? %>
   <p>All sales this month: </p>
@@ -29,3 +29,5 @@
 <% else %>
   <p>No sales this month!</p>
 <% end %>
+
+<p>Total sum of sales this month: $<%= '%.2f' % (@sales_this_month.sum(:amount) / 100.0) %></p>
