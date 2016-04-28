@@ -1,20 +1,15 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   root 'far_mar#index'
 
   resources :markets do
     resources :vendors
   end
 
-<<<<<<< HEAD
-=======
-
   resources :vendors do
     resources :products
     resources :sales
   end
 
->>>>>>> markets
   resources :sales do
     resources :products
   end
