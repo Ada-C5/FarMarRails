@@ -21,6 +21,7 @@
   <% @vendor.products.each do |product| %>
     <ul>
       <li> <%= product.name %> </li>
+      <%= button_to "Edit product", edit_product_path(product.id), method: :get%>
       <%= button_to "Delete product", product_path(product.id), method: :delete, data: {confirm: "Are you sure?"} %>
     </ul>
   <% end %>
