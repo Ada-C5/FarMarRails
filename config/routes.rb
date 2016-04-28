@@ -102,13 +102,12 @@ Rails.application.routes.draw do
   root 'markets#index'
   get "/sales/new/:vendor_id"  => "sales#new"
   get "/vendors/new/:market_id"  => "vendors#new"
-  get "/vendors/edit/:market_id"  => "vendors#edit"
+  get "/products/new/:vendor_id"  => "products#new"
+  post "/login/vendor" => "login#vendorcreate"
   resources :markets, except:[:destroy]
   resources :vendors
   resources :sales
   resources :products
-  post "/login/vendor" => "login#vendorcreate"
   resources :login
-
 
 end

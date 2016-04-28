@@ -1,5 +1,19 @@
 class ProductsController < ApplicationController
 
+  def new
+    @product = Product.new
+    @vendor = Vendor.find(params["format"])
+  end
+
+  def create
+    @product = Product.new(product_edit_params[:product])
+    if @product.save
+      redirect_to vendor_path(@product.vendor_id)
+    else
+      render :new
+    end
+  end
+
   def index
     @products = Product.all
   end
@@ -11,12 +25,6 @@ class ProductsController < ApplicationController
     else
       flash.now[:alert] = 'Product could not be deleted.'
     end
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def edit
@@ -35,7 +43,7 @@ class ProductsController < ApplicationController
   private
 
   def product_edit_params
-    params.permit(product: [:name])
+    params.permit(product: [:name, :vendor_id])
   end
 
 end
