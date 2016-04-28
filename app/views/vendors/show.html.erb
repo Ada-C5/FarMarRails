@@ -1,10 +1,15 @@
 <h1> Welcome, <%=@vendor.name%>! </h1>
 
 <h2>Sales: </h2> <br>
+  <% total_sales = 0 %>
   <% @vendor.sales.each do |sale| %>
     <ul>
       <li> Amount: $ <%= sale.amount/100.0 %> </li>
       <li> Product: <%= Product.find(sale.product_id).name %> </li>
       <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
     </ul>
+  <% total_sales += sale.amount %>
   <% end %>
+
+<h2>Total sales: </h2> <br>
+<p> $ <%= total_sales/100.0%> </p>

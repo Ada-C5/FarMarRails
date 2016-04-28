@@ -1,6 +1,12 @@
 <h1> Welcome, <%=@market.name%>! </h1>
 
-Address:  <%= @market.address %>, <%= @market.city %>, <%= @market.county %>, <%= @market.state %>, <%= @market.zip %><br>
+<p>
+  Address: <%= @market.address %><br>
+  City: <%= @market.city %><br>
+  County: <%= @market.county %><br>
+  State: <%= @market.state %><br>
+  Zip: <%= @market.zip %><br>
+</p>
 
 <h2>Vendors: </h2><br>
   <% @market.vendors.each do |vendor| %>
