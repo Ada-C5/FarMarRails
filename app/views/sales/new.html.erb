@@ -12,19 +12,19 @@
 
 <%= form_for @sale do |f| %>
 <!-- use the instance to give form_for all the information they need to know about tasks! -->
-  <%= field_set_tag 'Sale Information' do %>
+  <%= field_set_tag 'Sale Information', :html => {:class => "form-control"}  do %>
 
-    <div class="col-xs-2 row">
+
       <%= f.label :product_id %>
-      <%= f.collection_select(:product_id, Product.all, :id,  :name, :prompt => "Select Product", class:  "form-control") %></li>
+      <%= f.collection_select(:product_id, Product.all, :id,  :name, :prompt => "Select Product") %>
       <%= f.label :amount, class: "sr-only" %>
-      <%= f.text_field :amount, class: "form-control",  placeholder: "Sale Amount in Cents"%>
+      <%= f.text_field :amount,  placeholder: "Sale Amount in Cents"%>
 
       <%= f.hidden_field :purchase_time, value: Time.now %>
 
       <%= f.hidden_field :vendor_id, value: params[:vendor_id] || @sale.vendor_id %>
       <%= f.submit %>
-    </div>
+
 
   <% end %>
 <% end %>

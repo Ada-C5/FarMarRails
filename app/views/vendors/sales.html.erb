@@ -1,9 +1,5 @@
 <h1>Here are your sales!</h1>
 
-<%= params %>
-
-
-
 <%= link_to "All", action: "sales", month_display: nil %>
 <%= link_to "Current Month", action: "sales", month_display: DateTime.now %>
 
@@ -17,11 +13,11 @@
 <% end %>
 
 <ul>
-  <% total_sales = 0.0 %>
+  <% total_sales = 0.00 %>
   <% @sales.each do |sale| %>
   <li>
-    <%= sale.product_id %>
-    <%= sale.amount %>
+    <%= Product.find(sale.product_id).name %>
+    <%= "$ #{sprintf("%0.2f",sale.amount/100.00)}" %>
     <%= sale.purchase_time %>
     <% total_sales += sale.amount %>
   </li>
@@ -30,7 +26,7 @@
 </ul>
 
 <p>
-  Your total sales are <%= "$ #{total_sales/100}" %>
+  Your total sales are <%= "$ #{sprintf("%0.2f",total_sales/100.00)}" %>
 </p>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">

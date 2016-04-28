@@ -10,9 +10,9 @@
 
 <%= form_for @product do |f| %>
 <!-- use the instance to give form_for all the information they need to know about tasks! -->
-  <%= field_set_tag 'Product Information' do %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <%= field_set_tag 'Product Information', :html => {:class => "form-control"}  do %>
+    <%= f.label :name,class: "sr-only" %>
+    <%= f.text_field :name, placeholder: "Name" %>
 
     <%= f.hidden_field :vendor_id, value: params[:vendor_id] || @product.vendor_id %>
     <%= f.submit %>
