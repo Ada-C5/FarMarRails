@@ -7,23 +7,40 @@
   <h2>All-time Sales</h2>
   <% @sales = Sale.where(vendor_id: @vendor.id).order(product_id: :asc) %>
 <% else %>
-  <%= @current_month = params[:month_display][0..6] %>
+  <% @current_month = params[:month_display][0..6] %>
   <% @sales = Sale.where(vendor_id: @vendor.id).where('purchase_time LIKE ?', "%#{@current_month}%").order(product_id: :asc) %>
   <h2>Current Month Sales</h2>
 <% end %>
 
-<ul>
-  <% total_sales = 0.00 %>
-  <% @sales.each do |sale| %>
-  <li>
-    <%= Product.find(sale.product_id).name %>
-    <%= "$ #{sprintf("%0.2f",sale.amount/100.00)}" %>
-    <%= sale.purchase_time %>
-    <% total_sales += sale.amount %>
-  </li>
-  <% end %>
+<table class="table table-striped table-hover table-users">
+  <thead>
+    <tr>
+      <th class="hidden-phone">Product Name</th>
+      <th>Sale Amount</th>
+      <th>Purchase Time</th>
+    </tr>
+  </thead>
 
-</ul>
+  <tbody>
+    <% total_sales = 0.00 %>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td class="hidden-phone">
+          <%= Product.find(sale.product_id).name %>
+        </td>
+        <td>
+          <%= "$ #{sprintf("%0.2f",sale.amount/100.00)}" %>
+        </td>
+        <td>
+          <%= sale.purchase_time %>
+        </td>
+      </tr>
+
+      <% total_sales += sale.amount %>
+
+      <% end %>
+    </tbody>
+</table>
 
 <p>
   Your total sales are <%= "$ #{sprintf("%0.2f",total_sales/100.00)}" %>
