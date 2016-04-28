@@ -12,7 +12,7 @@
     <% if product.vendor_id == @vendor.id %>
       <li><%= product.name %> |
         <%= link_to "Edit", edit_vendor_product_path(@vendor.id, product.id) %> |
-        Delete </li>
+        <%= link_to "Delete", vendor_product_path(@vendor.id, product.id), method: :delete, data: {confirm: "Are you sure?"} %> </li>
     <% end %>
   <% end %>
 </ul>
