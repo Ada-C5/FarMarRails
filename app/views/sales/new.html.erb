@@ -1,6 +1,14 @@
-<pre> <%=params%> </pre>
-
 <h2>Insert a new sale</h2>
+
+<% if @sale.errors.any? %>
+  <ul class="errors">
+    <% @sale.errors.each do |column, message| %>
+      <li>
+        <strong><%= column.capitalize %></strong> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 
 <%= form_for @sale do |f| %>
 <!-- use the instance to give form_for all the information they need to know about tasks! -->
