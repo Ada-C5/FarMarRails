@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   resources :markets, except: [:destroy]
   resources :vendors
-  resources :products
-  resources :sales, except: [:destroy, :update, :edit]
+  resources :products, except: [:index]
+  resources :sales, except: [:index, :destroy, :update, :edit]
 
   get "/vendors/:id/products" => "vendors#products"
   get "/vendors/:id/sales" => "vendors#sales"
