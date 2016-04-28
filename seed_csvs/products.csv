@@ -1,4 +1,4 @@
-product_number, name, vendor_number, created_at, updated_at
+product_number,name,vendor_number,created_at,updated_at
 1,"Dry Beets",1
 2,"Fierce Greens",2
 3,"Heavy Chicken",2

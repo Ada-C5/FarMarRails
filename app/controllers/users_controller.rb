@@ -10,8 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @market = Market.find(params[:id])  
-    @vendors = @market.vendors
+    @market = Market.find(params[:id])
+    @vendors = Vendor.where(market_number: @market.market_number) 
     render :single_market
   end
 end
