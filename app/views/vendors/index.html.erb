@@ -1,9 +1,19 @@
+<% if @market_edit == true %>
+<%= link_to "CREATE", new_market_vendor_path %>
+<% end %>
+
 <article>
   <% @vendors.each do |vendor| %>
     <section>
       <%= link_to vendor.name, vendor_path(vendor.id) %>
       <%= vendor.employee_num %>
       <%= vendor.market_id %>
+      <% if @market_edit == true %>
+        <%= link_to "EDIT", edit_market_vendor_path(params[:market_id], vendor.id)  %>
+        <%= form_tag(market_vendor_path(params[:market_id], vendor.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
+        <%= submit_tag "Delete" %>
+        <% end %>
+      <% end %>
     </section>
   <% end %>
 </article>
