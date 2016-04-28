@@ -39,12 +39,6 @@ class MarketsController < ApplicationController
     end
   end
 
-  # delete a Market
-  def destroy
-    @market = Market.delete(params[:id]) # need a private method?
-    redirect_to root_path
-  end
-
   private
   def market_create_params
     params.permit(market: [:name, :address, :city, :county, :state, :zip])

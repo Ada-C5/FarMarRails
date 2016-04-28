@@ -3,5 +3,5 @@ class Sale < ActiveRecord::Base
   belongs_to :product
 
     validates :amount, presence: true, numericality: { only_integer: true }
-    
+
 end
