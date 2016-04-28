@@ -99,7 +99,7 @@ Rails.application.routes.draw do
   resources :vendors
   resources :sales, except:[:edit, :destroy, :update]
   resources :products
-  post "/login" => "login#vendorcreate"
+  post "/login/vendor" => "login#vendorcreate"
   resources :login
 
 
