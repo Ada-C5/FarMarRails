@@ -9,18 +9,24 @@ class VendorsController < ApplicationController
   end
 
   def new
+
     # @market = Market.find(@vendor.market_id)
     # @vendor = Vendor.find(params[:id])
     @vendor = Vendor.new  #creates vendor so that we can access the form
     if @vendor.market_id
       @current_market = @vendor.market.id
     end
+    @vendor = Vendor.new  #creates vendor so that we can access the form
   end
 
   def create
+    # finds market_id from params and finds market with that id
+    @market = Market.where(id: params[:vendor][:market_id]).first
+    # assigns params to @vendor
     @vendor = Vendor.create(vendor_create_params[:vendor])
-    if @vendor.save
-      redirect_to markets_path
+    # creates vendor with params from above and pushes params into @market
+    if @vendor
+      redirect_to market_path(id: @market.id)
     else
       render :new
     end
