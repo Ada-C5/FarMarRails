@@ -1,0 +1,17 @@
+<!-- <% if @product.id == nil %>
+<% vendor = Vendor.find(params[:id]) %>
+<% else %>
+<% product = Product.find(params[:id]) %>
+<% vendor = Vendor.find_by(vendor_id: product.vendor_id) %>
+<% end %> -->
+
+Please enter the dollar amount for the sale of <%=  @product.product_name %>. Enter as dollars and cents, e.g. 50.00. 
+
+<%= form_for @sale do |f| %>
+  <%= f.label :amount %>
+  $ <%= f.number_field :amount, :class => "text_field", :step => "any", :required => true %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Go back to my products...", product_path(vendor.id) %>

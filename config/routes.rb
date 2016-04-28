@@ -4,10 +4,14 @@ Rails.application.routes.draw do
   root 'markets#index'
 
   get "products/new/:id" => "products#new", as: "new_product"
+
+  get "sales/new/:id" => "sales#new", as: "new_sale"
+
  # only generate the specified routes
  resources :markets
  resources :vendors
  resources :products
+ resources :sales
 
   # You can have the root of your site routed with "root"
 
