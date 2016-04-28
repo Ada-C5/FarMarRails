@@ -2,7 +2,18 @@
 
 <%= params %>
 
+
+
+<%= link_to "All", action: "sales", month_display: nil %>
+<%= link_to "Current Month", action: "sales", month_display: DateTime.now %>
+
+<% if params[:month_display].nil? %>
 <% @sales = Sale.where(vendor_id: @vendor.id).order(product_id: :asc) %>
+<% else %>
+<%= @current_month = params[:month_display][0..6] %>
+<% @sales = Sale.where(vendor_id: @vendor.id).where('purchase_time LIKE ?', "%#{@current_month}%").order(product_id: :asc) %>
+<% end %>
+
 <ul>
   <% @sales.each do |sale| %>
   <li>
@@ -11,6 +22,7 @@
     <%= sale.purchase_time %>
   </li>
   <% end %>
+
 </ul>
 
 <%= link_to "New Sale", new_sale_path(vendor_id: @vendor.id) %>
