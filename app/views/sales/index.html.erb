@@ -11,11 +11,21 @@
     <% @vendor.sales.each do |sale| %>
       <tr>
         <td><%= sale.product.name %></td>
-        <td><%= sale.amount %></td>
+        <td>$<%= sale.amount / 100.0 %></td>
       </tr>
     <% end %>
   </table>
 </div>
 
 
-<p>Total sum of sales: <%= @sum %></p>
+<p>Total sum of sales: $<%= @sum / 100.0 %></p>
+
+<% unless @sales_this_month.empty? %>
+  <p>All sales this month: </p>
+  <% @sales_this_month.each do |sale| %>
+    <p><%= sale.product.name %></p>
+    <p><%= sale.purchase_time %></p>
+  <% end %>
+<% else %>
+  <p>No sales this month!</p>
+<% end %>
