@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'farmar/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
   resources :markets, except: [:destroy]
 
   resources :vendors
-
+  get 'vendors/:id/sales' => 'sales#index', as: :sale
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
