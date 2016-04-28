@@ -6,7 +6,8 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
-    @vendor = Vendor.find(params[:id])
+    @vendor = Vendor.find(params["format"])
+    @products = @vendor.products
   end
 
   def create
