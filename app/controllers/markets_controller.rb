@@ -36,10 +36,27 @@ class MarketsController < ApplicationController
     redirect_to markets_path
   end
 
+  def new_vendor
+    @vendor = Vendor.new
+    render :new_vendor
+  end
+
+  def create_vendor
+    @vendor = Vendor.new(vendors_params[:vendor], market_id: params[:id])
+    if @vendor.save
+      redirect_to market_path
+    else
+      render :new_vendor
+    end
+  end
 end
 
 private
 
 def markets_params
   params.permit(market: [:name, :address, :city, :county, :state, :zip])
+end
+
+def vendors_params
+  params.permit(vendor: [:name, :num_employees])
 end

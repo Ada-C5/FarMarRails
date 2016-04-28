@@ -1,0 +1,18 @@
+<%= link_to "Go back to Market", market_path %>
+
+<%= form_for(zone) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :num_employees %>
+    <%= f.text_field :num_employees %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  
+<% end %>

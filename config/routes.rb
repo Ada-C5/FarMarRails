@@ -9,6 +9,11 @@ Rails.application.routes.draw do
 
   resources :markets, except: [:destroy]
 
+  get   '/markets/:id/vendors/new'  => 'markets#new_vendor'
+  post  '/markets/:id/vendors'      => 'markets#create_vendor'
+  get   '/markets/:id/vendors/edit' => 'markets#edit_vendor'
+  patch '/markets/:id/vendors'      => 'markets#update_vendor'
+
   resources :vendors
 
   # Example of regular route:
