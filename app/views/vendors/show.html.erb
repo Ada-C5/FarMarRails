@@ -18,6 +18,7 @@
           <% end %>
         </section>
       <% end %>
+      <%= button_to "Create", vendor_products_path(@vendor.id)+"/new", :method => :get %>
     </section>
     <section>
       <h3>Vendor Sales:</h3>

@@ -11,11 +11,14 @@ class ProductsController < ApplicationController
   end
 
   def new
-
+    @vendor = Vendor.new
   end
 
   def create
+    # @vendor = Vendor.new
+    @vendor.create(product_create_params[:product])
 
+    redirect_to edit_vendor_product_path
   end
 
   def destroy
@@ -28,5 +31,9 @@ class ProductsController < ApplicationController
 
   def product_update_params
     params.permit(product: [:name])
+  end
+
+  def product_create_params
+    params.permit(product: [:name, :vendor_id])
   end
 end

@@ -1,0 +1,9 @@
+<section>
+    <h2><%= form_for [@product.vendor, @product] do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.submit 'Create Product' %>
+    <% end %></h2>
+
+</section>
