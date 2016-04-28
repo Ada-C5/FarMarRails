@@ -23,6 +23,12 @@ class VendorsController < ApplicationController
     end
   end
 
+  def edit
+    @vendor = Vendor.find(params[:id])
+    @all_vendors = Vendor.all
+    render :edit
+  end
+
   def update
     @vendor = Vendor.find(params[:id])
     if @vendor.update(vendor_edit_params[:vendor])
@@ -30,6 +36,12 @@ class VendorsController < ApplicationController
     else
       render :edit
     end#redirect in case user tries to post another form - brings them to entered view
+  end
+
+  def destroy
+    @vendor = Vendor.find(params[:id])
+    @vendor.destroy
+    redirect_to vendor_path(@vendor.id)
   end
 
   private

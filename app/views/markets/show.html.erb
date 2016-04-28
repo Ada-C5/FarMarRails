@@ -1,4 +1,4 @@
-<h1><%= "#{@market.name.gsub(/[A-Za-z']+/,&:capitalize)}" %> Details</h1>
+<h1><%= "#{@market.name.gsub(/[A-Za-z']+/,&:capitalize)}" %></h1>
 
 <h2><em>Name:</em><br>
    <%= @market.name.gsub(/[A-Za-z']+/,&:capitalize) %></h2>
@@ -17,7 +17,11 @@
 <ul>
   <% @all_vendors.each do |vendor| %>
     <% if vendor.market_id == @market.id %>
-      <li><%= link_to vendor.name, vendor_path(vendor.id) %></li>
+    <p><%= link_to vendor.name, vendor_path(vendor.id) %>
+      <%= link_to 'Edit this Vendor', edit_vendor_path(vendor.id) %>
+      <%= link_to 'Delete this Vendor', vendor_path(vendor.id), method: :delete, data:
+      { confirm: "Are you sure you want to delete this vendor?"} %></p>
+
     <% end %>
   <% end %>
 </ul>
