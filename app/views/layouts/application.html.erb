@@ -8,7 +8,30 @@
 </head>
 <body>
 
+  <header>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li>Markets
+          <ul>
+            <li><%= link_to "View Markets", markets_path %></li>
+            <li><%= link_to "Add Market", new_market_path %></li>
+            <li><%= link_to "Add Vendor", new_vendor_path %></li>
+          </ul>
+        </li>
+        <li>Vendors
+          <ul>
+            <li><%= link_to "View Vendors", vendors_path %></li>
+          </ul>
+        </li>
+    </nav>
+  </header>
+
 <%= yield %>
+
+<footer>
+  	&copy; 2016 Val &amp; Suze!
+</footer>
 
 </body>
 </html>
