@@ -31,6 +31,12 @@ class VendorsController < ApplicationController
     Vendor.update(vendors_params[:vendor])
     redirect_to vendors_path
   end
+
+  def destroy
+    @vendor = Vendor.find(params[:id])
+    @vendor.destroy
+    redirect_to vendors_path
+  end
 end
 
 private
