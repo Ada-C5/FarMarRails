@@ -1,12 +1,16 @@
 class MarketsController < ApplicationController
 
-  def index
+  def new    # this is for the get
+    @market = Market.new
   end
 
-  def new_market_form
+  def create        # this is for the post
+    @market = Market.new(params[:market])
+    @market.save
+    redirect_to market_path
   end
 
-  def create
+  def update
   end
 
 end
