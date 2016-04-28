@@ -1,0 +1,7 @@
+<h2> Add a Product </h2>
+
+<% vendor = Vendor.find(params[:id]) %>
+
+<p> Hello, <%= vendor.vendor_name %>. Fill in the form below to create a new product.</p>
+
+<%= render partial: "form" %>
