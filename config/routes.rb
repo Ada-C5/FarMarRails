@@ -6,7 +6,13 @@ root 'home#index'
   resources :markets, except:[:destroy]
 
 #*** VENDOR
-  resources :vendors
+resources :vendors
+
+get '/vendors/:vendor_id/sales'         => 'sales#index', as: 'vendor_sale' # go to slash ablums should execute index method
+
+# get
+# GET    /parents/:parent_id/children/:id(.:format)      children#show
+# GET    /parents/:parent_id/children(.:format)          children#index
 
 #*** PRODUCT
   resources :products

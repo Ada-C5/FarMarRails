@@ -1,0 +1,17 @@
+<pre><%= params %></pre>
+<h1> <%= @vendor.name %> </h1>
+<table class="table table-striped" class="table table-hover">
+    <tr>
+      <th class="headings" colspan=2>SALES </th>
+    </tr>
+    <tr class="header-row">
+	   <th>Amount</th>
+     <th>Purchase Time</th>
+    </tr>
+    <tr class="row">
+	    <td><%= sale.amount %></td>
+      <td><%= sale.purchase_time %></td>
+      <td><%= link_to 'Show', vendor_sale_path(@vendor, sale) %></td>
+      <td><%= link_to 'Destroy', [@vendor, sale], confirm: 'Are you sure?', method: :delete %></td>
+    <% end %>
+</table>

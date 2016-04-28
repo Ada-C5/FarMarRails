@@ -11,7 +11,7 @@ class VendorsController < ApplicationController
   def new
     # @market = Market.find(@vendor.market_id)
     # @vendor = Vendor.find(params[:id])
-    @vendor = Vendor.new  #creates vendor so that we can access the form 
+    @vendor = Vendor.new  #creates vendor so that we can access the form
     if @vendor.market_id
       @current_market = @vendor.market.id
     end
@@ -28,7 +28,7 @@ class VendorsController < ApplicationController
 
   def edit
     @vendor = Vendor.find(params[:id])
-    if @vendor.id 
+    if @vendor.id
       @current_market = @vendor.market.id
     end
     render :new
