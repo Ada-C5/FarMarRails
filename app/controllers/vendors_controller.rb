@@ -35,7 +35,7 @@ class VendorsController < ApplicationController
   def update
     vendor = Vendor.find(params[:id])
     vendor.update!(vendor_create_params[:vendor])
-    redirect_to root_path
+    redirect_to market_vendors_path(params[:market_id])
   end
 
   def destroy
