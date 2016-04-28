@@ -1,11 +1,20 @@
-<%= params %>
+<% if @vendor.errors.any? %>
+  <ul class="errors">
+    <% @vendor.errors.each do |column, message| %>
+      <li>
+        <strong><%= column.capitalize %></strong> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= form_for @vendor do |f| %>
 <%# use the instance to give form_for all the information they need to know about tasks! %>
   <%= field_set_tag 'Vendor Information' do %>
     <%= f.label :name %>
     <%= f.text_field :name %>
 
-    <%= f.label :no_employees %>
+    <%= f.label :no_employees, value: "Number of Employees" %>
     <%= f.text_field :no_employees %>
 
     <%# we don't want the user to have to remember what their market_ID is when adding/updating a vendor - even when adding a new vendor they will have navigated to that option from their specific market#show view and should ONLY be able to add a vendor to their market.  Pass a market_id field to the params hash when market_id is not available because the @vendor is from Vendor.new %>

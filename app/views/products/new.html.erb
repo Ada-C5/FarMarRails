@@ -2,14 +2,16 @@
 
 <h2>Offer a new product</h2>
 
-<%= form_for @product do |f| %>
+<%= render 'productform' %>
+
+<%# form_for @product do |f| %>
 <!-- use the instance to give form_for all the information they need to know about tasks! -->
-  <%= field_set_tag 'Product Information' do %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <%# field_set_tag 'Product Information' do %>
+    <%# f.label :name %>
+    <%# f.text_field :name %>
 
-    <%= f.hidden_field :vendor_id, value: params[:vendor_id] || @product.vendor_id %>
-    <%= f.submit %>
+    <%# f.hidden_field :vendor_id, value: params[:vendor_id] || @product.vendor_id %>
+    <%# f.submit %>
 
-  <% end %>
-<% end %>
+  <%# end %>
+<%# end %>
