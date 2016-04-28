@@ -4,4 +4,17 @@
       <%= @vendor.employee_num %>
       <%= @vendor.market_id %>
     </section>
+    <section>
+      <% @vendor.products.each do |product| %>
+        <section>
+          <%= product.name %>
+          <%= product.vendor_id %>
+          <%= product.created_at %>
+          <%= product.updated_at %>
+          <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
+            <%= submit_tag "Delete" %>
+          <% end %>
+        </section>
+      <% end %>
+    </section>
 </article>
