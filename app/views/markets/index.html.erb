@@ -5,7 +5,7 @@
     <% @all_markets.each do |market| %>
       <% if market[:id] != market[:market_id] %>
         <%#to check primary key match market_id %>
-        <%= "This is data doesn't match." %>
+        <%= "This data doesn't match." %>
       <% else %>
         <li><%= link_to market.name, market_path(market.id) %></li>
       <% end %>
@@ -15,3 +15,5 @@
 
 <h2><%= link_to 'home', root_path %><h2>
 <h2><%= link_to 'Register your Farmers Market', new_market_path %><h2>
+<h2><%= link_to 'Register a New Vendor', new_vendor_path %><h2>
+<h2><%= link_to "All Vendors", vendors_path %><h2>
