@@ -14,6 +14,15 @@
   <li>Total Sales Transactions: <%= @vendor_sales.length %></li>
 </ul>
 
-<%= link_to "See Products", "/vendors/#{@vendor.id}/products" %>
 
-<%= link_to "See Sales", "/vendors/#{@vendor.id}/sales" %>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li><%= link_to "See Products", "/vendors/#{@vendor.id}/products" %></li>
+         <li><%= link_to "See Sales", "/vendors/#{@vendor.id}/sales" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>

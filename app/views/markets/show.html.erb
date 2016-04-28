@@ -38,7 +38,16 @@
 
 </ul>
 
-<p>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li><%= link_to "ADD NEW VENDOR", new_vendor_path(market_id: @market.id) %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <%# could make a "secret formula" to encode the market_id when it is passed since it will show up in the URL exposed to the user :( not sure.  See comment on _vendorform.html.erb for why we pass the market_id into the params hash %>
-  <%= link_to "ADD NEW VENDOR", new_vendor_path(market_id: @market.id) %>
-</p>
+
+
