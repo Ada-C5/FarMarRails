@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
-  get  'users/all_markets'  =>'users#all_markets', as: "all_markets"
+  get  'users/all_markets'  => 'users#all_markets', as: "all_markets"
 
-  get  'all_markets/:id'  => 'users#show', as: "single_market"
+  get  'all_markets/:id'    => 'users#show', as: "single_market"
 
   get  'markets'     => 'market#index', as: "market"
 
