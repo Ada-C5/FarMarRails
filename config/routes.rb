@@ -12,8 +12,9 @@ Rails.application.routes.draw do
 
   post '/markets'     => 'markets#create'  #submitting the form
 
-  get  '/vendors'      => 'vendor#index', as: "vendor"
+  get  '/vendors'      => 'vendors#index', as: "vendor"
 
+  get  '/all_sales/:id'    => 'vendors#show', as: "vendor_sales"
 
 
 

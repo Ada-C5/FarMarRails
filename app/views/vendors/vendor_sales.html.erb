@@ -1,0 +1,12 @@
+<h2>
+  All Sales:
+</h2>
+  <ul>
+
+    <% @sales.each do  |sale| %>
+       <% money = sale.amount/100 %>
+      <li>Sale Amount: $<%= money %>.00 </li>
+      <li>Purchase Time: <%= sale.purchase_time %> </li>
+      <li>Product Number: <%= sale.product_number %> </li>
+    <% end %>
+  </ul>
