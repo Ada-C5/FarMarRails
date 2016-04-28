@@ -5,6 +5,7 @@
       <%= @vendor.market_id %>
     </section>
     <section>
+      <h3>Vendor Products:</h3>
       <% @vendor.products.each do |product| %>
         <section>
           <%= product.name %>
@@ -14,6 +15,20 @@
           <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
             <%= submit_tag "Delete" %>
           <% end %>
+        </section>
+      <% end %>
+    </section>
+    <section>
+      <h3>Vendor Sales:</h3>
+      <% @vendor.sales.each do |sale| %>
+        <section>
+          <%= sale.amount %>
+          <%= sale.vendor_id %>
+          <%= sale.created_at %>
+          <%= sale.updated_at %>
+          <!-- <%#= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
+            <%#= submit_tag "Delete" %>
+          <%# end %> -->
         </section>
       <% end %>
     </section>
