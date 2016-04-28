@@ -21,7 +21,7 @@
   <div class='market-vendor-list'>
     <% @market.vendors.each do |vendor| %> 
       <p>
-        <%= link_to vendor.name, vendor_path %>
+        <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id) %>
         <%= link_to "Edit This Vendor", edit_vendor_path %>
         <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
      </p>
