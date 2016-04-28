@@ -1,9 +1,11 @@
 <h1>Vendor Porducts</h1>
 
 <%=link_to "add new product",new_vendor_product_path%>
+
 <ul>
   <%@products.each do |product|%>
     <span><%=product.name%></span>
+  <span><%=link_to "Edit product",edit_vendor_product_path(id: product.id)%></span>  
     <span><%=product.vendor_id%></span>
     <%end%>
 </ul>
