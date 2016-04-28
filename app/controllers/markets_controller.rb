@@ -44,6 +44,3 @@ def markets_params
   params.permit(market: [:name, :address, :city, :county, :state, :zip])
 end
 
-def vendors_params
-  params.permit(vendor: [:name, :num_employees])
-end
