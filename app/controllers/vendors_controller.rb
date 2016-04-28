@@ -32,6 +32,20 @@ class VendorsController < ApplicationController
     end
   end
 
+  def edit
+    @vendor = Vendor.find(params[:id])
+    @market = Market.find(@vendor.market_id)
+  end
+
+  def update
+    @vendor = Vendor.find(params[:id])
+    if @vendor.update(vendor_create_params[:vendor])
+      redirect_to market_path(@vendor.market_id)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def vendor_create_params

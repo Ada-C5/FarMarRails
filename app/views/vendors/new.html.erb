@@ -1,10 +1,3 @@
 <h1> Welcome, <%=@market.name%>! Create a new vendor: </h1>
 
-<%= form_for @vendor do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :no_of_employees %>
-  <%= f.text_field :no_of_employees %>
-  <%= f.hidden_field :market_id, :value => @market.id %> <br>
-  <%= f.submit %>
-<% end %>
+<%=render partial: 'form'%>

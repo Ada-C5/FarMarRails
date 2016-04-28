@@ -102,6 +102,7 @@ Rails.application.routes.draw do
   root 'markets#index'
   get "/sales/new/:vendor_id"  => "sales#new"
   get "/vendors/new/:market_id"  => "vendors#new"
+  get "/vendors/edit/:market_id"  => "vendors#edit"
   resources :markets, except:[:destroy]
   resources :vendors
   resources :sales
