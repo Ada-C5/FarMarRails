@@ -31,5 +31,6 @@
           <%# end %> -->
         </section>
       <% end %>
+      <h3>Total sales : $<%= (@vendor.sales.sum(:amount))/100.to_f %></h3>
     </section>
 </article>
