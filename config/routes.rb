@@ -14,7 +14,11 @@ Rails.application.routes.draw do
 
   get  '/vendors'      => 'vendors#index', as: "vendor"
 
-  get  '/all_sales/:id'    => 'vendors#show', as: "vendor_sales"
+  get  '/vendors/:id'  =>  'vendors#show', as: "vendor_info"
+
+  get  '/all_sales/:id'    => 'vendors#sales', as: "vendor_sales"
+
+  get  '/all_products/:id' => 'vendors#products', as: "vendor_products"
 
 
 
