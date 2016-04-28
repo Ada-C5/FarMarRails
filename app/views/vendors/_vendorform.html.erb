@@ -1,0 +1,16 @@
+<% if @vendor.errors.any? %>
+  <ul>
+    <% @vendor.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_for [@market, @vendor] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :number_of_employees %>
+  <%= f.text_field :number_of_employees %><br/>
+  <%= f.submit %>
+<% end %>
