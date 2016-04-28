@@ -12,19 +12,20 @@ Rails.application.routes.draw do
   get    "/markets/:id"      => "markets#show",    as: :market
   patch  "/markets/:id"      => "markets#update"
   delete "/markets/:id"      => "markets#destroy"
-  get    "/markets/new"      => "markets#new",     as: :new_market
-  get    "/markets/:id/edit" => "markets#edit",    as: :edit_market
+  get    "/markets/new"      => "markets#new"
+  get    "/markets/:id/edit" => "markets#edit"
 
   get    "/vendors"          => "vendors#index",   as: :vendors
   get    "/vendors/:id"      => "vendors#show",    as: :vendor
 
   # product related routes
-  get    "/vendors/:id/products"                  => "vendors#products",        as: :products
-  get    "/vendors/:id/products/new"              => "vendors#new_product",     as: :new_product
-  get    "/vendors/:id/products/:product_id/edit" => "vendors#edit_product",    as: :edit_product
-  post   "/vendors/:id/products"                  => "vendors#create_product"
-  patch  "/vendors/:id/products/:product_id"      => "vendors#update_product"
-  delete "/vendors/:id/products/:product_id"      => "vendors#destroy_product"
+  get    "/products"          => "products#products", as: :products
+  post   "/products"          => "products#create"
+  get    "/products/new"      => "products#new"
+  get    "/products/:id/edit" => "products#edit",     as: :products_edit
+  get    "/products/:id"      => "products#show",     as: :product
+  patch  "/products/:id"      => "products#update"
+  delete "/products/:id"      => "products#destroy"
 
 
 
