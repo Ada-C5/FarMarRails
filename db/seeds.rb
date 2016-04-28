@@ -7,7 +7,7 @@ require 'csv'
 #  row_hash = row.to_h
 #  # artist_name = row_hash.delete("artist")
 #  # artist = Artist.find_or_create_by(name: artist_name)
-#  artist.albums << Album.create(row_hash)  
+#  artist.albums << Album.create(row_hash)
 # end
 
 
@@ -21,6 +21,7 @@ csv.each do |row|
   t.name = row['name']
   t.address = row['address']
   t.city = row['city']
+  t.county = row['county']
   t.state = row['state']
   t.zip = row['zip']
   t.created_at = row['created_at']
