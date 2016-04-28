@@ -14,5 +14,8 @@
 
 <div class="vendor-sales">
   <h2><%= @vendor.name %> Sales</h2>
+  <%= link_to new_vendor_sale_path(@vendor.id) do %>
+    <p>Create New Sale</p>
+  <% end %>
   <%= render 'sales' %>
 </div>

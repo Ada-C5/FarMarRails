@@ -1,0 +1,16 @@
+<h1>Create New Sale</h1>
+<%= params %>
+<%= form_for [@vendor, @sale] do |f| %>
+
+  <%= f.label :amount do %>
+    Amount:
+    <%= f.text_field :amount %>
+  <% end %>
+
+  <%= f.label :purchase_time do %>
+    Purchased At: 
+    <%= f.text_field :purchase_time %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>
