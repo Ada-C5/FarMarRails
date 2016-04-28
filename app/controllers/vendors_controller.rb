@@ -52,10 +52,10 @@ class VendorsController < ApplicationController
 
   private
   def vendor_create_params
-    params.permit(vendor: [:name, :address, :city, :county, :state, :zip])
+    params.permit(vendor: [:name, :no_employees])
   end
 
   def vendor_edit_params
-    params.permit(vendor: [:name, :address, :city, :county, :state, :zip, :updated_at])
+    params.permit(vendor: [:name, :no_employees])
   end
 end
