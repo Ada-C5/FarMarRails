@@ -12,6 +12,7 @@
           <%= product.vendor_id %>
           <%= product.created_at %>
           <%= product.updated_at %>
+          <%= button_to "Edit", vendor_product_path(@vendor.id, product.id)+"/edit", :method => :get %>
           <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
             <%= submit_tag "Delete" %>
           <% end %>
@@ -26,11 +27,10 @@
           <%= sale.vendor_id %>
           <%= sale.created_at %>
           <%= sale.updated_at %>
-          <!-- <%#= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
-            <%#= submit_tag "Delete" %>
-          <%# end %> -->
         </section>
       <% end %>
+      <%=  %>
       <h3>Total sales : $<%= (@vendor.sales.sum(:amount))/100.to_f %></h3>
     </section>
+    <!-- Sales.where(month=4).sum(amount) Use something like this for a month? -->
 </article>
