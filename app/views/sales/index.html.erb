@@ -1,9 +1,12 @@
 <h1>My Sales</h1>
 
 <ul>
+  <% sales_total = [] %>
   <% @all_sales.each do |sale| %>
     <% if sale.vendor_id == @vendor.id %>
       <li><%= sale.amount %></li>
+      <% sales_total << sale.amount %>
     <% end %>
   <% end %>
+  <h1>Total Sales: </h1><%= sales_total.reduce(0){|sum,x| sum + x } %>
 </ul>
