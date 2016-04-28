@@ -32,7 +32,7 @@ class MarketsController < ApplicationController
 
   def update
     @market = Market.find(params[:id])
-    if @market.update
+    if @market.update(market_edit_params[:market])
       redirect_to market_path(@market.id)#redirect in case user tries to post another form - brings them to entered view
     else
       render :edit

@@ -13,14 +13,15 @@
 <h2><em>Zip Code:</em><br>
   <%= @market.zip_code %></h2>
 
+<h2>Vendors at <%= "#{@market.name.gsub(/[A-Za-z']+/,&:capitalize)}" %></h2>
 <ul>
   <% @all_vendors.each do |vendor| %>
     <% if vendor.market_id == @market.id %>
-      <li><%= vendor.name %></li>
+      <li><%= link_to vendor.name, vendor_path(vendor.id) %></li>
     <% end %>
   <% end %>
 </ul>
+<h2><%= link_to 'Edit this market information', edit_market_path(@market.id) %><h2>
 
 <h2><%= link_to 'home', root_path %><h2>
 <h2><%= link_to 'All Markets', markets_path %><h2>
-<h2><%= link_to 'Edit your Farmers Market Information', edit_market_path(@market.id) %><h2>
