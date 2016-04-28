@@ -10,7 +10,9 @@
 <ul>
   <% @all_products.each do |product| %>
     <% if product.vendor_id == @vendor.id %>
-      <li><%= product.name %></li>
+      <li><%= product.name %> |
+        <%= link_to "Edit", edit_vendor_product_path(@vendor.id, product.id) %> |
+        Delete </li>
     <% end %>
   <% end %>
 </ul>

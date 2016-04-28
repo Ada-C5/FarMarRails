@@ -15,6 +15,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def edit
+    @product = Product.find(params[:id])
+    render :edit
+  end
+
+  def update
+    
+    render :edit
+  end
+
   private
 
   def product_create_params
