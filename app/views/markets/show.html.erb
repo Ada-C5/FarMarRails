@@ -17,22 +17,13 @@
 
 <% @market.vendors.each do |vendor| %>
 
-  <li>
+  <li class="inline-list">
     <%= link_to vendor.name, vendor_path(vendor.id) %>
+
+    <%= link_to "",  vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure you want to delete this vendor?"}, class:"glyphicon glyphicon-trash", alt: "Delete Vendor" %>
+
+    <%= link_to "", edit_vendor_path(vendor.id), class:"glyphicon glyphicon-pencil", alt: "Edit Vendor" %>
   </li>
-
-  <ul class="list-inline">
-
-    <li>
-      <%= link_to "",  vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure you want to delete this vendor?"}, class:"glyphicon glyphicon-trash", alt: "Delete Vendor" %>
-    </li>
-
-    <li>
-      <%= link_to "", edit_vendor_path(vendor.id), class:"glyphicon glyphicon-pencil", alt: "Edit Vendor" %>
-    </li>
-
-  </ul>
-
 
 <% end %>
 
@@ -49,5 +40,3 @@
   </div>
 </nav>
   <%# could make a "secret formula" to encode the market_id when it is passed since it will show up in the URL exposed to the user :( not sure.  See comment on _vendorform.html.erb for why we pass the market_id into the params hash %>
-
-
