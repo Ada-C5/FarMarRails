@@ -7,9 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'farmar#index'
 
-  resources :markets, except: [:destroy]
-
-  resources :markets do
+  resources :markets, except: [:destroy] do
     resources :vendors
   end
 
