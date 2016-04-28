@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :markets, except: [:destroy]
 
   resources :vendors
-  get 'vendors/:id/sales' => 'sales#index', as: :sale
+  get 'vendors/:id/sales' => 'sales#index', as: :sales
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
