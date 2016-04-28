@@ -19,6 +19,7 @@ class VendorsController < ApplicationController
   def new
     # give them a shell and invite them to fill out the data.  Allows introspection into the object in the view!
     @vendor = Vendor.new
+    @market_name = Market.find(params[:market_id]).name
   end
 
   def create
@@ -34,6 +35,7 @@ class VendorsController < ApplicationController
   # methods for updating a Vendor that already EXISTS
   def edit
     @vendor = Vendor.find(params[:id])
+    @market_name = Market.find(@vendor.market_id).name
   end
 
   def update
@@ -54,10 +56,10 @@ class VendorsController < ApplicationController
 
   private
   def vendor_create_params
-    params.permit(vendor: [:name, :address, :city, :county, :state, :zip])
+    params.permit(vendor: [:name, :no_employees])
   end
 
   def vendor_edit_params
-    params.permit(vendor: [:name, :address, :city, :county, :state, :zip, :updated_at])
+    params.permit(vendor: [:name, :no_employees])
   end
 end
