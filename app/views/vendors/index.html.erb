@@ -9,7 +9,7 @@
       <%= vendor.employee_num %>
       <%= vendor.market_id %>
       <% if @market_edit == true %>
-        <%= "EDIT" %>
+        <%= link_to "EDIT", edit_market_vendor_path(params[:market_id], vendor.id)  %>
         <%= form_tag(market_vendor_path(params[:market_id], vendor.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
         <%= submit_tag "Delete" %>
         <% end %>
