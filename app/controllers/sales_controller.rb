@@ -22,6 +22,15 @@ class SalesController < ApplicationController
       end
   end
 
+  def destroy
+    @sale = Sale.find(params[:id])
+    if @sale.destroy
+      redirect_to vendor_path(@sale.vendor_id)
+    else
+      flash.now[:alert] = 'Sale could not be deleted.'
+    end
+  end
+
   private
   def sale_create_params
   params.permit(sale: [:amount, :purchase_time, :vendor_id, :product_id])
