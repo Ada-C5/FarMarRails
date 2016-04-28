@@ -1,0 +1,9 @@
+<h1><%= @product.name.nil? ? "Create New Product" : "Update Product" %></h1>
+<%= form_for [@vendor, @product] do |f| %>
+
+  <%= f.label :name do %>
+    <%= f.text_field :name %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>
