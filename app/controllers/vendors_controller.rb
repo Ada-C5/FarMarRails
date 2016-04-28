@@ -11,10 +11,6 @@ class VendorsController < ApplicationController
 
   end
 
-  def edit_product
-
-  end
-
   def create_product
 
   end

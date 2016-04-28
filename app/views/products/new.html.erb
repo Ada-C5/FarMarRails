@@ -1,0 +1,9 @@
+<p>test</p>
+<%= form_for @product do |f| %>
+
+  <%= f.label :name do %>
+    <%= f.text_field :name %>
+  <% end %>
+
+  <% f.submit %>
+<% end %>
