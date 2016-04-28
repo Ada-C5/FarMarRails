@@ -8,6 +8,8 @@
   <%= f.label :product_name %>
   <%= f.text_field :product_name, :required => true %>
 
+  <%= f.hidden_field :vendor_id, :value => vendor.id %>
+
   <%= f.submit %>
 <% end %>
 

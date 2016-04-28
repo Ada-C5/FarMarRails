@@ -7,13 +7,16 @@ class ProductsController < ApplicationController
 
   def new
     @new_product = Product.new
+    @vendor = Vendor.find(params[:id])
     render :new
   end
 
   def create
     @new_product = Product.new(new_product_create_params[:product])
     if @new_product.save
-      redirect_to root_path
+      @new_product[:product_id] = @new_product[:id]
+      @new_product.save
+      redirect_to product_path(@new_product.vendor_id)
     else
       render :new
     end
@@ -35,7 +38,7 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.destroy(params[:id])
-    redirect_to root_path
+    redirect_to product_path(@product.vendor_id)
   end
 
   private
