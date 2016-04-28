@@ -1,9 +1,9 @@
 class SalesController < ApplicationController
 
-  # def show
-  #   @products = Product.where(vendor_id: params[:id]).order(product_name: :asc)
-  #   render :index
-  # end
+  def show
+    @sale = Sale.where(vendor_id: params[:id]).order(purchase_time: :asc)
+    render :show
+  end
 
   def new
     @sale = Sale.new
