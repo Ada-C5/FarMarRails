@@ -44,3 +44,4 @@ private
 def markets_params
   params.permit(market: [:name, :address, :city, :county, :state, :zip])
 end
+
