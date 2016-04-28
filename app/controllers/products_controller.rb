@@ -1,22 +1,22 @@
 class ProductsController < ApplicationController
 
   def show
-    @products = Product.where(vendor_id: params[:id])
+    @products = Product.where(vendor_id: params[:id]).order(product_name: :asc)
     render :index
   end
 
   def new
-    @new_product = Product.new
+    @product = Product.new
     @vendor = Vendor.find(params[:id])
     render :new
   end
 
   def create
-    @new_product = Product.new(new_product_create_params[:product])
-    if @new_product.save
-      @new_product[:product_id] = @new_product[:id]
-      @new_product.save
-      redirect_to product_path(@new_product.vendor_id)
+    @product = Product.new(new_product_create_params[:product])
+    if @product.save
+      @product[:product_id] = @product[:id]
+      @product.save
+      redirect_to product_path(@product.vendor_id)
     else
       render :new
     end
@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     if @product.update(new_product_create_params[:product])
-      redirect_to root_path
+      redirect_to product_path(@product.vendor_id)
     else
       render :edit
     end

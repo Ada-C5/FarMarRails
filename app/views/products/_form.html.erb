@@ -1,0 +1,18 @@
+<% if @product.id == nil %>
+<% vendor = Vendor.find(params[:id]) %>
+<% else %>
+<% product = Product.find(params[:id]) %>
+<% vendor = Vendor.find_by(vendor_id: product.vendor_id) %>
+<% end %>
+
+
+<%= form_for @product do |f| %>
+  <%= f.label :product_name %>
+  <%= f.text_field :product_name, :required => true, :value => @product.product_name %>
+
+  <%= f.hidden_field :vendor_id, :value => vendor.id %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Go back to my products...", product_path(vendor.id) %>

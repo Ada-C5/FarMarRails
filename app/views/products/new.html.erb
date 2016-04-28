@@ -4,13 +4,4 @@
 
 <p> Hello, <%= vendor.vendor_name %>. Fill in the form below to create a new product.</p>
 
-<%= form_for @new_product do |f| %>
-  <%= f.label :product_name %>
-  <%= f.text_field :product_name, :required => true %>
-
-  <%= f.hidden_field :vendor_id, :value => vendor.id %>
-
-  <%= f.submit %>
-<% end %>
-
-<%= link_to "Go back to my products...", product_path(vendor.id) %>
+<%= render partial: "form" %>
