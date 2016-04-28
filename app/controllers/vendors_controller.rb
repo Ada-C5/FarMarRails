@@ -1,6 +1,6 @@
 class VendorsController < ApplicationController
   def index
-    @vendors = Vendor.order(id: :asc)
+    @vendors = Vendor.order(name: :asc)
   end
 
   def show
