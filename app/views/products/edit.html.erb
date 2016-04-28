@@ -1,1 +1,8 @@
-<h1>Edit A Task</h1>
+<h1>Edit A Product</h1>
+
+<%= form_for @product, url: vendor_product_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, value: @product.name %>
+
+  <%= f.submit %>
+  <% end %>

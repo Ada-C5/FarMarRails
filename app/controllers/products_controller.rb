@@ -21,13 +21,18 @@ class ProductsController < ApplicationController
   end
 
   def update
-    
-    render :edit
+    @product = Product.find(params[:id])
+    @product.update(product_update_params[:product])
+    redirect_to vendor_path(params[:vendor_id])
   end
 
   private
 
   def product_create_params
+    params.permit(product: [:name])
+  end
+
+  def product_update_params
     params.permit(product: [:name])
   end
 end
