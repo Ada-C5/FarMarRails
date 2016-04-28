@@ -1,0 +1,19 @@
+<h1>Add a Market</h1>
+
+<%= form_for @market, url: create_market_path do |f| %>
+  <%= f.label :market_number %>
+  <%= f.text_field :market_number %><br><br>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br><br>
+  <%= f.label :address %>
+  <%= f.text_field :address %><br><br>
+  <%= f.label :city %>
+  <%= f.text_field :city %><br><br>
+  <%= f.label :county %>
+  <%= f.text_field :county %><br><br>
+  <%= f.label :state %>
+  <%= f.text_field :state %><br><br>
+  <%= f.label :zip %>
+  <%= f.text_field :zip %><br><br>
+  <%= f.submit %>
+<% end %>
