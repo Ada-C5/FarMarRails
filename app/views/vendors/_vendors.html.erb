@@ -1,3 +1,5 @@
 <% vendors.each do |ven| %>
-  <%= link_to ven.name, vendor_path(ven.id) %>
+  <ul>
+    <li><%= link_to ven.name, vendor_path(ven.id) %></li>
+  </ul>
 <% end %>
