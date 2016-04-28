@@ -23,9 +23,32 @@ class VendorsController < ApplicationController
     end 
   end
 
+  def edit 
+    @vendor = Vendor.find(params[:id])
+  end 
+
+  def update
+    @vendor = Vendor.find(params[:id])
+    @vendor.update(update_params[:vendor])
+    redirect_to market_path
+  end
+
+
+  def destroy
+    Vendor.destroy(params[:id])
+    if params[:id] = true 
+      # message stating that the market has been deleted? 
+      redirect_to market_path
+    end 
+  end
+
   private
 
   def new_params
+    params.permit(vendor: [:name, :number_of_employees])
+  end
+
+  def update_params
     params.permit(vendor: [:name, :number_of_employees])
   end
 
