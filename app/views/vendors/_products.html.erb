@@ -1,3 +1,5 @@
 <% @vendor.products.each do |prod| %>
-  <%= prod.name %> <%= link_to "Edit", products_edit_path(prod.id) %>
+  <p><%= prod.name %></p>
+  <%= link_to "Edit", edit_vendor_product_path(@vendor.id,prod.id) %>
+
 <% end %>

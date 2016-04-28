@@ -6,12 +6,12 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Product.find(params[:id])
+    @product = Product.new
   end
 
   private
   def create_product_params
-    params.permit(:format, :id)
+    params.permit(:id)
   end
 
 end

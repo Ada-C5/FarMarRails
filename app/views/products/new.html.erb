@@ -1,5 +1,5 @@
 <p>test</p>
-<%= form_for @product do |f| %>
+<%= form_for [@vendor, @product] do |f| %>
 
   <%= f.label :name do %>
     <%= f.text_field :name %>
