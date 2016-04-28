@@ -1,12 +1,9 @@
 <h1>Add Product</h1>
 <%= params %>
 
-<%= form_for [@vendor, @product] do |f| %>
+<%= form_for @product, url: vendor_products_path do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
-
-  <%= f.label :vendor_id %>
-  <%= f.select "vendor_id", options_from_collection_for_select(@all_vendors, "id", "vendor_id") %>
 
   <%= f.submit %>
   <% end %>
