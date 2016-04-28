@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
   get  'users/all_markets'  =>'users#all_markets', as: "all_markets"
 
-  get  'users/all_markets/:id'  => 'users#show', as: "single_market"
+  get  'all_markets/:id'  => 'users#show', as: "single_market"
 
-  get  'market'     => 'market#index', as: "market"
+  get  'markets'     => 'market#index', as: "market"
 
-  get  'vendor'     => 'vendor#index', as: "vendor"
+  get  'vendors'     => 'vendor#index', as: "vendor"
 
 
 

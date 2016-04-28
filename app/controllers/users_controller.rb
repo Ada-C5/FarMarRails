@@ -6,6 +6,6 @@ class UsersController < ApplicationController
 
   def all_markets
     @all_markets = Market.all
-    raise
+    # raise
   end
 end
