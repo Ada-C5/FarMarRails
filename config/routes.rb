@@ -6,9 +6,13 @@ Rails.application.routes.draw do
 
   get  'all_markets/:id'    => 'users#show', as: "single_market"
 
-  get  'markets'     => 'market#index', as: "market"
+  get  'markets'      => 'market#index', as: "market"
 
-  get  'vendors'     => 'vendor#index', as: "vendor"
+  get  '/markets/new' => 'markets#new'  #requesting the form
+
+  post '/markets'     => 'markets#create'  #submitting the form
+
+  get  'vendors'      => 'vendor#index', as: "vendor"
 
 
 

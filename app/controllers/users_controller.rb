@@ -8,4 +8,10 @@ class UsersController < ApplicationController
     @all_markets = Market.all
     # raise
   end
+
+  def show
+    @market = Market.find(params[:id])  
+    @vendors = @market.vendors
+    render :single_market
+  end
 end

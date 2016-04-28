@@ -1,0 +1,28 @@
+<h1>
+  <% market = @market %>
+
+  <%= task.name %>
+</h1>
+
+  <p>
+    <%= market.address %>
+  </p>
+  <p>
+    <%= market.city %>
+  </p>
+  <p>
+    <%= market.county %>
+  </p>
+  <p>
+    <%= market.state %>
+  </p>
+  <p>
+    <%= market.zip %>
+  </p>
+
+
+  <ul>
+    <% @vendors.each do  |vendor| %>
+      <li> <%= vendor.name %> </li>
+    <% end %>
+  </ul>
