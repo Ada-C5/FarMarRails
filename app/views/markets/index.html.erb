@@ -1,3 +1,5 @@
+<%= link_to "Create", new_market_path %>
+
 <article>
   <% @markets.each do |market| %>
     <section>
@@ -7,6 +9,7 @@
       <%= market.county %>
       <%= market.state %>
       <%= market.zip %>
+      <%= link_to "Edit", edit_market_path(market.id) %>
     </section>
   <% end %>
 </article>
