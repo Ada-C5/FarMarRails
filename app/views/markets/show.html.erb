@@ -23,11 +23,11 @@
   <ul>
 
     <li>
-      <%= link_to "DELETE",  vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure you want to delete this vendor?"} %>
+      <%= link_to "",  vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure you want to delete this vendor?"}, class:"glyphicon glyphicon-trash", alt: "Delete Vendor"%>
     </li>
 
     <li>
-      <%= link_to "EDIT", edit_vendor_path(vendor.id) %>
+      <%= link_to content_tag(:span, "EDIT"), edit_vendor_path(vendor.id) %>
     </li>
 
   </ul>
