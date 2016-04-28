@@ -1,19 +1,18 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
   root 'far_mar#index'
 
-  get    "/markets"          => "markets#index",   as: :markets
-  # post   "/markets"          => "markets#create"
-  # get    "/markets/:id"      => "markets#show",    as: :market
-  # patch  "/markets/:id"      => "markets#update"
-  # delete "/markets/:id"      => "markets#destroy"
-  # get    "/markets/new"      => "markets#new",     as: :new_market
-  # get    "/markets/:id/edit" => "markets#edit",    as: :edit_market
+  resources :markets do
+    resources :vendors
+  end
+
+  resources :vendors do
+    resources :products
+    resources :sales
+  end
+
+  resources :sales do
+    resources :products
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
