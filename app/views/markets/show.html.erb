@@ -1,7 +1,6 @@
 <h1><%= @market.name %></h1>
 <ul>
 
-
   <li>
     <%= @market.address %>, <%= @market.city %>, <%= @market.county %>, <%= @market.state %>, <%= @market.zip %>
   </li>
@@ -39,5 +38,6 @@
 </ul>
 
 <p>
+  <%# could make a "secret formula" to encode the market_id when it is passed since it will show up in the URL exposed to the user :( not sure.  See comment on _vendorform.html.erb for why we pass the market_id into the params hash %>
   <%= link_to "ADD NEW VENDOR", new_vendor_path(market_id: @market.id) %>
 </p>
