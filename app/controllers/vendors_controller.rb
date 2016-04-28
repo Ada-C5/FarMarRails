@@ -12,13 +12,14 @@ class VendorsController < ApplicationController
 
   def new
     @new_vendor = Vendor.new
-    render :new
+    @market = Market.where(id: params[:id]).first
   end
 
   def create
     @new_vendor = Vendor.new(new_vendor_create_params[:vendor])
+    @mark_id = @new_vendor.market_id
     if @new_vendor.save
-      redirect_to root_path
+      redirect_to market_path(@mark_id)
     else
       render :new
     end

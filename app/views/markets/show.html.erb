@@ -9,12 +9,16 @@
   <li><%="#{@market.county}" unless @market.county.nil?%></li>
 </ul>
 
-<h3>Market Vendors</h3>
+<h3>Vendors</h3>
 <ul>
   <% @vendors.each do |vendor| %>
   <li>
     <%= link_to vendor.vendor_name, vendor_path(vendor.id)%>
+    <!-- IF STATEMENT FOR MARKETS TO EDIT -->
+    <%= button_to 'Delete', url_for(action: :destroy, id: vendor.id),method: :delete, data: {confirm: "Are you sure you want to delete this task?"} %>
+
   </li>
+
   <% end %>
 </ul>
 
@@ -22,3 +26,5 @@
 <!-- IF STATEMENT FOR AUTHENTICATION -->
 
 <%= link_to 'Edit Market', edit_market_path(@market)%>
+
+<%= link_to "Add Vendor", new_vendor_path%>

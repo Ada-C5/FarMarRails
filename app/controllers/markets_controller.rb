@@ -28,10 +28,16 @@ class MarketsController < ApplicationController
   def update
     @market = Market.update(params[:id],market_edit_params[:market])
     if @market.save
-      redirect_to root_path
+      redirect_to market_path
     else
       render :market
     end
+  end
+
+  def destroy
+    @mark_id = Vendor.find(params[:id]).market_id
+    @vendor = Vendor.find(params[:id]).destroy
+    redirect_to market_path(@mark_id)
   end
 
   private
