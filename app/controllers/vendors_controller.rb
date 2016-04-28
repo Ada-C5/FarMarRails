@@ -41,7 +41,7 @@ class VendorsController < ApplicationController
   def destroy
     @vendor = Vendor.find(params[:id])
     @vendor.destroy
-    redirect_to vendor_path(@vendor.id)
+    redirect_to market_path(@vendor.market_id)
   end
 
   private
