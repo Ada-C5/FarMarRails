@@ -30,7 +30,7 @@ class MarketsController < ApplicationController
     if @market.save
       redirect_to root_path
     else
-      render :edit
+      render :market
     end
   end
 

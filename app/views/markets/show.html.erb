@@ -21,4 +21,4 @@
 
 <!-- IF STATEMENT FOR AUTHENTICATION -->
 
-<%= button_to 'Edit Market',url_for(action: :edit, id: @market.id), method: :edit, data: {confirm: "Are you sure you want to edit this task?"} %>
+<%= link_to 'Edit Market', edit_market_path(@market)%>
