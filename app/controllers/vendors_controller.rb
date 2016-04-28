@@ -28,7 +28,7 @@ class VendorsController < ApplicationController
   end
 
   def update
-    Vendor.update(vendors_params[:vendor])
+    Vendor.update(params[:id], vendors_params[:vendor])
     redirect_to vendors_path
   end
 
