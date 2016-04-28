@@ -2,12 +2,14 @@
  
 <h1>Vendors</h1>
 <pre><%= params %></pre>
-
+<%= link_to "Add a New Vendor", new_vendor_path %>
 
 <table class="table table-striped" class="table table-hover">
   <tr class="header-row">
     <th>Name</th>
     <th>No. of Employees</th>
+    <th>Edit</th>
+    <th>Delete</th>
   <% if params["controller"] == "vendors" %>
     <th>Market</th>
     <% end %>
@@ -21,6 +23,22 @@
         <td><%= link_to vendor.market.name, market_path(vendor.market_id) %></td>
   	  <% end %>
       <% end %>
+
+      <td class="edit">
+        <%= link_to edit_vendor_path(vendor.id) do %>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        <% end %>
+      </td>
+
+      <td class="delete">
+         <%= link_to vendor_path(vendor.id), method: :delete, data: {confirm: 'Are you sure you want to delete this vendor?' } do %>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+    <% end %>
+      </td>
+
     <% end %>
   </tr>
+
+
+
 </table>
