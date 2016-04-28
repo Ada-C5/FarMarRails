@@ -1,5 +1,4 @@
 class VendorsController < ApplicationController
-<<<<<<< HEAD
 
   def index
     @vendors = Vendor.order(id: :asc)
