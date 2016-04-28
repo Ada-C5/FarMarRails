@@ -1,0 +1,9 @@
+<h1>My Sales</h1>
+
+<ul>
+  <% @all_sales.each do |sale| %>
+    <% if sale.vendor_id == @vendor.id %>
+      <li><%= sale.amount  %></li>
+    <% end %>
+  <% end %>
+</ul>

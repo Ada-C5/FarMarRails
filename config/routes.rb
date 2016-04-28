@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :markets
   resources :vendors do
     resources :products, except: :index
+    resources :sales
+
+
   end
 
 
