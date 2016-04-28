@@ -2,7 +2,9 @@
  
 <h1>Vendors</h1>
 <pre><%= params %></pre>
+<% if params["controller"] == "markets" %>
 <%= link_to "Add a New Vendor", new_vendor_path %>
+<% end %>
 
 <table class="table table-striped" class="table table-hover">
   <tr class="header-row">
