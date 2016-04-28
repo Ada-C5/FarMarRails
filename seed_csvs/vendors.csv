@@ -1,4 +1,4 @@
-vendor_number, name, num_of_employees, market_number, created_at, updated_at
+vendor_number,name,num_of_employees,market_number,created_at,updated_at
 1,Feil-Farrell,8,1
 2,"Hamill, Kilback and Pfeffer",5,1
 3,"Breitenberg Inc",5,1
