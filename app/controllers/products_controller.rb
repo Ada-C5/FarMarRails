@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
   end
 
   def new
+    @vendor = Vendor.find(params[:vendor_id])
     @product = Product.new
   end
 
