@@ -1,5 +1,7 @@
 <h1> Welcome, <%=@vendor.name%>! </h1>
 
+<%= button_to "Add a sale", new_sale_path(@vendor.id), method: :get %>
+
 <h2>Sales: </h2> <br>
   <% total_sales = 0 %>
   <% @vendor.sales.each do |sale| %>
@@ -7,9 +9,22 @@
       <li> Amount: $ <%= sale.amount/100.0 %> </li>
       <li> Product: <%= Product.find(sale.product_id).name %> </li>
       <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+      <%#= button_to "Delete sale", delete_path(entry.id), method: :delete, data: {confirm: "Are you sure?"} %>
     </ul>
   <% total_sales += sale.amount %>
   <% end %>
 
 <h2>Total sales: </h2> <br>
 <p> $ <%= total_sales/100.0%> </p>
+
+<h2>Products: </h2> <br>
+  <% @vendor.products.each do |product| %>
+    <ul>
+      <li> <%= product.name %> </li>
+      <%= button_to "Edit", edit_product_path(product.id), method: :get %>
+      <%#= button_to "Delete product", delete_path(entry.id), method: :delete, data: {confirm: "Are you sure?"} %>
+    </ul>
+  <% end %>
+
+<h2>Total products: </h2> <br>
+<%= @vendor.products.count %>

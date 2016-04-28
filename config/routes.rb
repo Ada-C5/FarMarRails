@@ -56,48 +56,54 @@ Rails.application.routes.draw do
 
 
 #   Prefix Verb   URI Pattern                  Controller#Action
-#         root GET    /                            markets#index
-#      markets GET    /markets(.:format)           markets#index
-#              POST   /markets(.:format)           markets#create
-#   new_market GET    /markets/new(.:format)       markets#new
-#  edit_market GET    /markets/:id/edit(.:format)  markets#edit
-#       market GET    /markets/:id(.:format)       markets#show
-#              PATCH  /markets/:id(.:format)       markets#update
-#              PUT    /markets/:id(.:format)       markets#update
-#      vendors GET    /vendors(.:format)           vendors#index
-#              POST   /vendors(.:format)           vendors#create
-#   new_vendor GET    /vendors/new(.:format)       vendors#new
-#  edit_vendor GET    /vendors/:id/edit(.:format)  vendors#edit
-#       vendor GET    /vendors/:id(.:format)       vendors#show
-#              PATCH  /vendors/:id(.:format)       vendors#update
-#              PUT    /vendors/:id(.:format)       vendors#update
-#              DELETE /vendors/:id(.:format)       vendors#destroy
-#        sales GET    /sales(.:format)             sales#index
-#              POST   /sales(.:format)             sales#create
-#     new_sale GET    /sales/new(.:format)         sales#new
-#         sale GET    /sales/:id(.:format)         sales#show
-#     products GET    /products(.:format)          products#index
-#              POST   /products(.:format)          products#create
-#  new_product GET    /products/new(.:format)      products#new
+#     root GET    /                            markets#index
+#  markets GET    /markets(.:format)           markets#index
+#          POST   /markets(.:format)           markets#create
+# new_market GET    /markets/new(.:format)       markets#new
+# edit_market GET    /markets/:id/edit(.:format)  markets#edit
+#   market GET    /markets/:id(.:format)       markets#show
+#          PATCH  /markets/:id(.:format)       markets#update
+#          PUT    /markets/:id(.:format)       markets#update
+#  vendors GET    /vendors(.:format)           vendors#index
+#          POST   /vendors(.:format)           vendors#create
+# new_vendor GET    /vendors/new(.:format)       vendors#new
+# edit_vendor GET    /vendors/:id/edit(.:format)  vendors#edit
+#   vendor GET    /vendors/:id(.:format)       vendors#show
+#          PATCH  /vendors/:id(.:format)       vendors#update
+#          PUT    /vendors/:id(.:format)       vendors#update
+#          DELETE /vendors/:id(.:format)       vendors#destroy
+#    sales GET    /sales(.:format)             sales#index
+#          POST   /sales(.:format)             sales#create
+# new_sale GET    /sales/new(.:format)         sales#new
+# edit_sale GET    /sales/:id/edit(.:format)    sales#edit
+#     sale GET    /sales/:id(.:format)         sales#show
+#          PATCH  /sales/:id(.:format)         sales#update
+#          PUT    /sales/:id(.:format)         sales#update
+#          DELETE /sales/:id(.:format)         sales#destroy
+# products GET    /products(.:format)          products#index
+#          POST   /products(.:format)          products#create
+# new_product GET    /products/new(.:format)      products#new
 # edit_product GET    /products/:id/edit(.:format) products#edit
-#      product GET    /products/:id(.:format)      products#show
-#              PATCH  /products/:id(.:format)      products#update
-#              PUT    /products/:id(.:format)      products#update
-#              DELETE /products/:id(.:format)      products#destroy
+#  product GET    /products/:id(.:format)      products#show
+#          PATCH  /products/:id(.:format)      products#update
+#          PUT    /products/:id(.:format)      products#update
+#          DELETE /products/:id(.:format)      products#destroy
+# login_vendor POST   /login/vendor(.:format)      login#vendorcreate
 # login_index GET    /login(.:format)             login#index
-#              POST   /login(.:format)             login#create
-#    new_login GET    /login/new(.:format)         login#new
-#   edit_login GET    /login/:id/edit(.:format)    login#edit
-#        login GET    /login/:id(.:format)         login#show
-#              PATCH  /login/:id(.:format)         login#update
-#              PUT    /login/:id(.:format)         login#update
-#              DELETE /login/:id(.:format)         login#destroy
+#          POST   /login(.:format)             login#create
+# new_login GET    /login/new(.:format)         login#new
+# edit_login GET    /login/:id/edit(.:format)    login#edit
+#    login GET    /login/:id(.:format)         login#show
+#          PATCH  /login/:id(.:format)         login#update
+#          PUT    /login/:id(.:format)         login#update
+#          DELETE /login/:id(.:format)         login#destroy
 
 
   root 'markets#index'
+  get "/sales/new/:vendor_id"  => "sales#new"
   resources :markets, except:[:destroy]
   resources :vendors
-  resources :sales, except:[:edit, :destroy, :update]
+  resources :sales
   resources :products
   post "/login/vendor" => "login#vendorcreate"
   resources :login
