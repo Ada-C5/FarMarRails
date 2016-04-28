@@ -12,7 +12,7 @@ class VendorsController < ApplicationController
 
   def new
     @new_vendor = Vendor.new
-    render :new
+    @market = Market.where(id: params[:id]).first
   end
 
   def create

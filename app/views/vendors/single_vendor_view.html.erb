@@ -12,6 +12,6 @@
     <td><%= link_to vendor.vendor_name, vendor_path(vendor.id) %></td>
     <td><%= vendor.num_of_employees %></td>
     <td><%= link_to Market.find(vendor.market_id).market_name, market_path(vendor.market_id) %></td>
-    <td><%= link_to "View all #{vendor.vendor_name}  products", product_path(vendor.vendor_id) %></td>
+    <td><%= link_to "View all #{vendor.vendor_name}  products", product_path(vendor.id) %></td>
     <% end %>
   </tbody>
