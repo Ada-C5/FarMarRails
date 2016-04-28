@@ -1,2 +1,8 @@
-<h1>Sale#index</h1>
-<p>Find me in app/views/sale/index.html.erb</p>
+<%= link_to "Vendors", vendors_path %>
+
+<div class="list_of_sales">
+  <% @vendor.sales.each do |sale| %>
+    <%= sale.product.name %>
+    <%= sale.amount %>
+  <% end %>
+  </div>

@@ -15,13 +15,6 @@
     <h2>Market Name: <%= @vendor.market.name %> </h2>
   </div>
 
-  <div class="vendor_sales">
-    <% @vendor.sales.each do |sale| %>
-      <%= sale.product.name %>
-      <%= sale.amount %>
-    <% end %>
-    </div>
-
 </section>
 
 <p class="edit-link">
