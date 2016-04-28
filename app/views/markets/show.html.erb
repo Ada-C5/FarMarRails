@@ -8,6 +8,8 @@
   Zip: <%= @market.zip %><br>
 </p>
 
+<%= button_to "Add a new vendor", new_vendor_path(@market.id), method: :get %>
+
 <h2>Vendors: </h2><br>
   <% @market.vendors.each do |vendor| %>
     <ul>
