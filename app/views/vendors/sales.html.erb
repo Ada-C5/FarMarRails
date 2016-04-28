@@ -33,4 +33,4 @@
   Your total sales are <%= "$ #{total_sales/100}" %>
 </p>
 
-<%= link_to "New Sale", new_sale_path(vendor_id: @vendor.id) %>
+<%= link_to " New Sale", new_sale_path(vendor_id: @vendor.id), class: "glyphicon glyphicon-shopping-cart" %>
