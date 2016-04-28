@@ -6,6 +6,15 @@ Rails.application.routes.draw do
     resources :vendors
   end
 
+  resources :vendors do
+    resources :products
+    resources :sales
+  end
+
+  resources :sales do
+    resources :products
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
