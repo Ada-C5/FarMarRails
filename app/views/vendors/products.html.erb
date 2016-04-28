@@ -1,4 +1,4 @@
-<h1>Here's are your products!</h1>
+<h1>Here are your products!</h1>
 
 <% @products = Product.where(vendor_id: @vendor.id) %>
 <ul>
@@ -11,4 +11,4 @@
   <% end %>
 </ul>
 
-<%= link_to "New Product", new_product_path(@vendor) %>
+<%= link_to "New Product", new_product_path(vendor_id: @vendor.id) %>

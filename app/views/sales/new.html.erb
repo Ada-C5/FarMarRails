@@ -1,0 +1,20 @@
+<pre> <%=params%> </pre>
+
+<h2>Insert a new sale</h2>
+
+<%= form_for @sale do |f| %>
+<!-- use the instance to give form_for all the information they need to know about tasks! -->
+  <%= field_set_tag 'Sale Information' do %>
+    <%= f.label :product_id %>
+    <%= f.collection_select(:product_id, Product.all, :id, :name) %></li>
+
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+
+    <%= f.hidden_field :purchase_time, value: Time.now %>
+
+    <%= f.hidden_field :vendor_id, value: params[:vendor_id] || @sale.vendor_id %>
+    <%= f.submit %>
+
+  <% end %>
+<% end %>

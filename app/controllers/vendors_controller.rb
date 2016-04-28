@@ -11,6 +11,10 @@ class VendorsController < ApplicationController
     @vendor = Vendor.find(params[:id])
   end
 
+  def sales
+    @vendor = Vendor.find(params[:id])
+  end
+
   # methods for making a NEW (not yet existing) Vendor
   def new
     # give them a shell and invite them to fill out the data.  Allows introspection into the object in the view!

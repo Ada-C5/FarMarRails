@@ -1,0 +1,16 @@
+<h1>Here are your sales!</h1>
+
+<%= params %>
+
+<% @sales = Sale.where(vendor_id: @vendor.id).order(product_id: :asc) %>
+<ul>
+  <% @sales.each do |sale| %>
+  <li>
+    <%= sale.product_id %>
+    <%= sale.amount %>
+    <%= sale.purchase_time %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Sale", new_sale_path(vendor_id: @vendor.id) %>

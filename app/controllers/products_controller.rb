@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_create_params[:product])
     #any validation?
     if @product.save
-      redirect_to "/vendors/#{@vendor.id)}/products"
+      redirect_to "/vendors/#{@product.vendor_id}/products"
     else
       render :new
     end
