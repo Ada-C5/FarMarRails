@@ -16,6 +16,17 @@
     <%= @market.county %>
   </p>
 </div>
+<h2>List of Vendors</h2>
+  <div class='market-vendor-list'>
+    <% @market.vendors.each do |vendor| %> 
+      <p>
+        <%= link_to vendor.name, vendor_path %>
+        <%= link_to "Edit This Vendor", edit_vendor_path %>
+        <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
+     </p>
+    <% end %> 
+  </div>
+</h2>
 <aside>
   <p>
     <%= link_to "Edit This Market", edit_market_path %>
