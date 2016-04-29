@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FarMarRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <nav class="sidenav">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li>Markets
+          <ul>
+            <li><%= link_to "View Markets", markets_path %></li>
+            <li><%= link_to "Add Market", new_market_path %></li>
+            <li><%= link_to "Add Vendor", new_vendor_path %></li>
+          </ul>
+        </li>
+        <li>Vendors
+          <ul>
+            <li><%= link_to "View Vendors", vendors_path %></li>
+          </ul>
+        </li>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+<footer>
+  	&copy; 2016 Val &amp; Suze!
+</footer>
+
+</body>
+</html>

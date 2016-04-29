@@ -1,0 +1,18 @@
+<h1><%= @vendor.name %></h1>
+
+<p>Number of Employees: <%= @vendor.no_of_employees %></p>
+
+<p>This Vendor's Products:</p>
+<ul>
+  <% @all_products.each do |product| %>
+    <% if product.vendor_id == @vendor.id %>
+      <li><%= product.name %> |
+        <%= link_to "Edit", edit_vendor_product_path(@vendor.id, product.id) %> |
+        <%= link_to "Delete", vendor_product_path(@vendor.id, product.id), method: :delete, data: {confirm: "Are you sure?"} %> </li>
+    <% end %>
+  <% end %>
+</ul>
+<p><%= link_to "» Add A Product", new_vendor_product_path(@vendor.id) %></p>
+
+<p><%= link_to "» See My Sales", vendor_sales_path(@vendor.id) %></p>
+<p><%= link_to "» Add A New Sale", new_vendor_sale_path(@vendor.id) %></p>

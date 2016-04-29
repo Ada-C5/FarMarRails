@@ -1,0 +1,10 @@
+<h1>Vendors</h1>
+
+<p>This is the vendors index page yay.</p>
+
+
+<ul>
+  <% @all_vendors.each do |vendor| %>
+    <li><%= link_to "#{vendor.name}", vendor_path(vendor.id) %></li>
+  <% end %>
+</ul>
