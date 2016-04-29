@@ -38,6 +38,7 @@ ul li a {
   text-decoration: none;
 }
 
+
 form {
   display: inline;
 }
@@ -66,3 +67,9 @@ header nav ul li a{
 /*h2{
   color:green;
 }*/
+.groupheading{
+  text-align: center;
+}
+.groupheading li{
+  display: inline;
+}

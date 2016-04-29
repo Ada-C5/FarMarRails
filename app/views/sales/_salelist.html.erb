@@ -1,0 +1,50 @@
+<% @month_num = { "01" => 'JAN', "02" => 'FEB', "03" => 'MAR',  "04" => 'APR',  "05" => 'MAY',  "06" => 'JUN', "07" => 'JUL',  "08" => 'AUG', "09" => 'SEP',  "10" => 'OCT',  "11" => 'NOV',  "12" => 'DEC'} %>
+
+<ul class = "groupheading">
+  <% @group.each do |key, value| %>
+    <li>
+      <% v_id = params[:id] %>
+      <% used_month = @month_num[key] %>
+      <%= link_to used_month, "/sales/#{v_id}/#{used_month}", method: :get %>
+    </li>
+  <% end %>
+  <li>
+    <%="|"%>
+  </li>
+  <li>
+    <%= link_to "ALL", "/sales/#{params[:id]}", method: :get %>
+  </li>
+</ul>
+
+<% vendor = Vendor.find(params[:id]) %>
+<% @sale.each do |thing| %>
+<% thing.product_id %>
+<% end %>
+
+<h2><%= vendor.vendor_name %></h2>
+<h3>List of Sales</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Sale Items</th>
+      <th>Amount ($)</th>
+      <th>Purchase Date</th>
+      <th>Purchase Time</th>
+    </tr>
+  </thead>
+
+  <% @total = 0.to_i %>
+  <% @sale.each do |sal| %>
+    <% name = Sale.find(sal.id) %>
+    <% @total += sal.amount.to_i %>
+    <% date = DateTime.parse("#{sal.purchase_time}") %>
+    <tbody>
+      <td><%= Product.find(sal.product_id).product_name %></td>
+      <td><%= sal.amount %></td>
+      <td><%= date.strftime('%Y-%m-%d') %></td>
+      <td><%= date.strftime('%H:%M') %></td>
+  <% end %>
+  </tbody>
+
+<%= link_to "Vendor Info", vendor_path(vendor.id) %>
+<%= link_to "Add Product", new_product_path(params[:id]) %>
