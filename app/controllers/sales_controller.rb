@@ -10,4 +10,6 @@ def show
   @sales = Sale.all.where(params[:vendor_id])
 end
 
+
+
 end

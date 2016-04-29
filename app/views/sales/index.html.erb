@@ -1,9 +1,17 @@
 <h1>Sales</h1>
+<%sum = 0%>
 
+<table>
 <%@sales.each do |sale|%>
+<%sum = sum + sale.amount%>
+
 <tr>
-  <td>
-    <span> <%=sale.vendor_id%></span>
-  </td>
+
+  <td><span>Vendor: <%=sale.vendor_id%></span></td>
+  <td><span>Product: <%=sale.product_id%></span></td>
+  <td><span>Sale Amount: <%=sale.amount%></span></td>
 </tr>
 <%end%>
+</table>
+
+<span>Total Sales:</span> <%=sum%>
