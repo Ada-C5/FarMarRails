@@ -1,8 +1,16 @@
 <h1>
-  <%= image_tag "my_little_farmar.png" %> 
+  <div class='page-title'>
+    <%= image_tag 'my_little_farmar.png' %> 
+  </div>
 </h1>
+<nav class='far-mar-index'> 
 <ul>
-  <li><%= link_to "I'm a Market YAY", markets_path(:user => "market")%></li>
-  <li><%= link_to "I'm a Vendor YAY", vendors_path(:user => "vendor") %></li>
-  <li><%= link_to "I'm a Guest YAY",  markets_path(:user => "guest")%></li>
-</ul>
+    <div class='far-mar-index'>
+      <li><%=link_to(image_tag("market.png"), markets_path(:user => "market"))%></li>
+
+      <li><%=link_to(image_tag("vendor.png"), vendors_path(:user => "vendor"))%></li>
+
+      <li><%=link_to(image_tag("guest.png"), markets_path(:user => "guest"))%></li>
+    </div>
+  </ul>
+</nav>
