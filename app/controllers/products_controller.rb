@@ -37,6 +37,7 @@ class ProductsController < ApplicationController
     if @product.update(product_edit_params[:product])
       redirect_to vendor_path(@product.vendor_id)
     else
+      @vendor = @product.vendor
       render :edit
     end
   end

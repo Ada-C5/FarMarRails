@@ -46,6 +46,7 @@ class VendorsController < ApplicationController
     if @vendor.update(vendor_create_params[:vendor])
       redirect_to market_path(@vendor.market_id)
     else
+      @market = @vendor.market
       render :edit
     end
   end
