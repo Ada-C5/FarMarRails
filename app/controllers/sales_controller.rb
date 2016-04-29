@@ -13,6 +13,7 @@ class SalesController < ApplicationController
 
   def new
     @vendor = Vendor.find(params[:vendor_id])
+    @products = Product.where(vendor_id: params[:vendor_id])
     @sale = @vendor.sales.new
   end
 
@@ -22,14 +23,13 @@ class SalesController < ApplicationController
       if  @sale.save
       redirect_to vendor_sales_path
       end
-
   end
 
 
     private
 
     def sales_params
-      params.require(:sale).permit(:amount, :purchase_time)
+      params.require(:sale).permit(:amount, :purchase_time, :product_id)
     end
 
 end

@@ -6,7 +6,8 @@
   <span><%=form_for ([@vendor, @sale]) do |f| %></span><br>
   <span>Amount:<%=f.text_field :amount %></span><br>
   <span>Purchase Tme:<%=f.text_field :purchase_time %></span><br>
-  <span>Product ID:<%=f.text_field :product_id %></span><br>
+  <span>Product ID:<%= f.select "product_id", options_from_collection_for_select( @products , "id", "name", :include_blank => true) %><br>
+
   <span><%=f.submit%></span>
   <% end %>
 
