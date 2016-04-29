@@ -7,10 +7,9 @@ class Market < ActiveRecord::Base
   # must have address data
   validates :address, presence: true
   validates :city, presence: true
-  validates :county, presence: true
   validates :state, presence: true
   # zip must be numerical, 5 digits in length
-  validates :zip, numericality: { only_integer: true }, length: { is: 5 }
+  validates :zip, length: { maximum: 10 }
 
 
 end
