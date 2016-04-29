@@ -15,7 +15,7 @@
     <% @market.vendors.each do |vendor| %>
       <ul>
         <li> <%= link_to vendor.name, vendor_path(vendor.id) %> </li>
-        <%= button_to "Edit vendor info", edit_vendor_path(vendor.market_id), method: :get%>
+        <%= button_to "Edit vendor info", edit_vendor_path(vendor.id), method: :get%>
         <%= button_to "Delete vendor", vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure?"} %>
       </ul>
     <% end %>
