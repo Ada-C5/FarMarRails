@@ -32,8 +32,7 @@
           <%= sale.updated_at %>
         </section>
       <% end %>
-      <%=  %>
-      <h3>Total sales : $<%= (@vendor.sales.sum(:amount))/100.to_f %></h3>
+      <h3>Total sales : $<%= @vendor_sales %></h3>
     </section>
     <section>
       <%= button_to "New Sale", vendor_sales_path(@vendor.id)+"/new", :method => :get %>

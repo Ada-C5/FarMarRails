@@ -11,6 +11,7 @@ class VendorsController < ApplicationController
 
   def show
     @vendor = Vendor.find(params[:id])
+    @vendor_sales = (@vendor.sales.sum(:amount))/100.to_f
   end
 
   def new
