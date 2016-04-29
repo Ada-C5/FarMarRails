@@ -1,6 +1,6 @@
 class VendorsController < ApplicationController
   def index
-    @all_vendors = Vendor.all
+    @all_vendors = Vendor.all.order(name: :asc)
     render :index
   end
 
@@ -17,7 +17,7 @@ class VendorsController < ApplicationController
   def create
     @vendor = Vendor.new(vendor_create_params[:vendor])
     if(@vendor.save)
-      redirect_to vendors_path(@vendor.id)#redirect in case user tries to post another form - brings them to entered view
+      redirect_to vendor_path(@vendor.id)#redirect in case user tries to post another form - brings them to entered view
     else
       render :new
     end
@@ -25,7 +25,7 @@ class VendorsController < ApplicationController
 
   def edit
     @vendor = Vendor.find(params[:id])
-    @all_vendors = Vendor.all
+    @all_vendors = Vendor.all.order(name: :asc)
     render :edit
   end
 
