@@ -10,19 +10,20 @@
 </ul>
 
 <% vendor = Vendor.find(params[:id]) %>
+<% @sale.each do |thing| %>
+<%= thing.product_id %>
+<% end %>
 
 <h2>Total Sale List For: <%= vendor.vendor_name %></h2>
-
 
 <table>
   <thead>
     <tr>
-      <th>Product Name</th>
+      <th>Sale Time</th>
       <th>Amount</th>
     </tr>
   </thead>
   <% @total = 0.to_i %>
-  <%= @total.inspect %>
   <% @sale.each do |sal| %>
     <% name = Sale.find(sal.id) %>
     <%= @total += sal.amount.to_i %>
@@ -34,6 +35,15 @@
 <p> Total sales are <%= @total %>. </p>
 </tbody>
   </table>
+  
+  <% @total += sal.amount.to_i %>
+  <tbody>
+    <td><%= sal.purchase_time %></td>
+    <td><%= sal.amount %></td>
+    <% end %>
+    <p> Total sales are <%= @total %>. </p>
+  </tbody>
+</table>
 
 <%= link_to "Would you like to view your market info again, #{vendor.vendor_name}?", vendor_path(vendor.id) %>
 <%= link_to "Would you like to create a new product?", new_product_path(params[:id]) %>
