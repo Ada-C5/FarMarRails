@@ -13,10 +13,39 @@
  *= require_tree .
  *= require_self
  */
+header{
+  text-align: center;
+  width: 100%;
+}
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
+div {
+  background-image: url("header_pic.jpg");
+  height: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+image{
+  text-align: center;
+}
+
+footer {
+  background-image: url('grass.jpg');
+  height: 150px;
+  background-size: cover;
 
 
+}
+.btn-success {
+  margin-top: 25%;
+  border-radius: 24px;
+  margin-left: 5%;
+}
 
-
+.home-buttons {
+   display: inline;
+   text-align: center;
+   margin-left: 35%;
+}

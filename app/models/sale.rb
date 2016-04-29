@@ -3,4 +3,9 @@ class Sale < ActiveRecord::Base
 
 	belongs_to :vendor
 	belongs_to :product
+
+	def dollar_format
+		amount = self.amount/100
+		format("$%.2f",amount)
+	end
 end
