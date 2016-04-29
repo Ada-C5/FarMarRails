@@ -1,0 +1,11 @@
+<main>
+	<%= form_for @product, url: product_new_path do |f| %>
+	<ul>
+		<li><%= f.label :name %>
+		  <%= f.text_field :name %>
+			<%= f.label :vendor_id %>
+		  <%= f.text_field :vendor_id %>
+		  <%= f.submit %></li>
+		<% end %>
+	</ul>
+</main>
