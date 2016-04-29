@@ -7,7 +7,6 @@ class SalesController < ApplicationController
   def create
     @vendor = Vendor.find(params[:vendor_id])
     @sale = Sale.new(create_sale_params[:sale])
-    # raise
     if @sale.save
       # We thought the purchase time should be generated at the time the Sale is created
       # as if from a POS system, we didn't think Vendor should have to manually input

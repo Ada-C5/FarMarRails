@@ -6,9 +6,14 @@ class VendorsController < ApplicationController
   def show
     @vendor = Vendor.find(params[:id])
     @vendor ||= Vendor.find(params[:vendor_id])
+    @all_sales = @vendor.sales
+    thirty_days = Time.now - (30*24*60*60)
+    @month_sales = @vendor.sales.where(purchase_time: thirty_days..Time.now)
+    params[:sales_list] == "2" ? @sales_list = @month_sales : @sales_list = @all_sales
+    @selected = params[:sales_list].to_i
   end
 
-  def new 
+  def new
     @vendor = Vendor.new
     @market = Market.find(params[:market_id])
   end
@@ -20,12 +25,12 @@ class VendorsController < ApplicationController
       redirect_to market_path(params[:market_id])
     else
       render :new
-    end 
+    end
   end
 
-  def edit 
+  def edit
     @vendor = Vendor.find(params[:id])
-  end 
+  end
 
   def update
     @vendor = Vendor.find(params[:id])
@@ -36,10 +41,10 @@ class VendorsController < ApplicationController
 
   def destroy
     Vendor.destroy(params[:id])
-    if params[:id] = true 
-      # message stating that the market has been deleted? 
+    if params[:id] = true
+      # message stating that the market has been deleted?
       redirect_to market_path
-    end 
+    end
   end
 
   private

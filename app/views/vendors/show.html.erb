@@ -17,5 +17,9 @@
   <%= link_to new_vendor_sale_path(@vendor.id) do %>
     <p>Create New Sale</p>
   <% end %>
-  <%= render 'sales' %>
+  <%= form_tag(vendor_path(params[:id]), method: "get") do %>
+    <%= select_tag(:sales_list, options_for_select([['All Sales', 1], ['Last Month Sales', 2]], @selected)) %>
+    <%= submit_tag %>
+  <% end %>
+  <%= render partial: 'sales', object: @sales_list %>
 </div>
