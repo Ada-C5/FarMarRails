@@ -13,7 +13,12 @@ Rails.application.routes.draw do
   end
 
   resources :vendors
+  # get the sales of this vendor
   get 'vendors/:id/sales' => 'sales#index', as: :sales
+
+  # create a new sale for vendor
+  get 'vendors/:id/sales/new' => 'sales#new'
+  post'vendors/:id/sales'     => 'sales#create'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

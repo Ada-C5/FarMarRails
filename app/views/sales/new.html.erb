@@ -1,0 +1,14 @@
+<%= link_to "Vendors", vendors_path %>
+
+<%= form_for @sale do |f| %>
+<p>
+  <%= f.label :amount %>
+  <%= f.text_field :amount %>
+</p>
+<p>
+  <%= f.select :product_id, @products.map {|product| [product.name, product.id]} %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
