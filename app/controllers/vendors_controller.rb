@@ -1,4 +1,7 @@
 class VendorsController < ApplicationController
+  # (30*24*60*60) = 2592000
+  ONE_MONTH = 2592000
+
   def index
     @vendors = Vendor.all
   end
@@ -7,10 +10,11 @@ class VendorsController < ApplicationController
     @vendor = Vendor.find(params[:id])
     @vendor ||= Vendor.find(params[:vendor_id])
     @all_sales = @vendor.sales
-    thirty_days = Time.now - (30*24*60*60)
+    thirty_days = Time.now - ONE_MONTH
     @month_sales = @vendor.sales.where(purchase_time: thirty_days..Time.now)
     params[:sales_list] == "2" ? @sales_list = @month_sales : @sales_list = @all_sales
     @selected = params[:sales_list].to_i
+    @total_sales =  @sales_list.map { |s| s.amount }.reduce(:+).to_f
   end
 
   def new

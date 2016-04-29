@@ -1,4 +1,4 @@
-<%= params %> 
+<%= params %>
 <% if params[:user] == 'market' %>
   <h1>
     <%= @vendor.name %>
@@ -40,6 +40,9 @@
       <%= select_tag(:sales_list, options_for_select([['All Sales', 1], ['Last Month Sales', 2]], @selected)) %>
       <%= submit_tag %>
     <% end %>
+    <div>
+      <p>Total: $<%= number_with_precision(@total_sales, precision: 2)  %></p>
+    </div>
     <%= render partial: 'sales', object: @sales_list %>
   </div>
 <% end %>
