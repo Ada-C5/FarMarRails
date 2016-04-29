@@ -9,9 +9,11 @@ class SalesController < ApplicationController
     @sale = Sale.new
     @vendor = Vendor.find(params["format"])
     @products = @vendor.products
+
   end
 
   def create
+
     @sale = Sale.new(sale_create_params[:sale])
     @sale.purchase_time = Chronic.parse(@sale.purchase_time.to_s)
     # redirect_to root_path

@@ -6,6 +6,9 @@ class VendorsController < ApplicationController
 
   def show
     @vendor = Vendor.find(params[:id])
+    @beg_month = Time.now.beginning_of_month
+    @end_month = Time.now.end_of_month
+    @all_sales = @vendor.sales.where(purchase_time: (@beg_month..@end_month))
   end
 
   def new

@@ -17,6 +17,18 @@
 <h2>Total sales: </h2> <br>
 <p> $ <%= total_sales/100.0%> </p>
 
+<h2>Sales this month:</h2>
+<% month_sales = 0 %>
+<% @all_sales.each do |sale| %>
+  <ul>
+    <li> Amount: $ <%= sale.amount/100.0 %> </li>
+    <li> Product: <%= Product.find(sale.product_id).name %> </li>
+    <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+  </ul>
+<% month_sales += sale.amount %>
+<% end %>
+<p>Revenue this month: $ <%= month_sales/100.0 %></p>
+
 <h2>Products: </h2> <br>
 
 <%= button_to "Add a product", new_product_path(@vendor.id), method: :get %>
