@@ -13,9 +13,13 @@
 </ul>
 
 <h2> Vendor List </h2>
-
-<ul>
-<% @vendors.each do |vendor| %>
-  <li><%=vendor.name%></li>
-<%end%>
-</ul>
+<%=link_to "Create New Vendor", new_vendor_path(:market_id => @market.id)%>
+<table>
+  <tr>
+    <% @vendors.each do |vendor| %>
+      <td><%=vendor.name%></td>
+      <td><%=link_to "Edit", edit_vendor_path(id: vendor.id, :market_id => @market.id)%></td>
+      <td><%=link_to "Delete", vendor_path(id: vendor.id), method: :delete%></td>
+    <%end%>
+  </tr>
+</table>
