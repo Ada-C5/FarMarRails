@@ -22,7 +22,6 @@ class ProductsController < ApplicationController
   end
 
   def edit
-    # @vendor = Vendor.find(params[:vendor_id])
     @product = Product.find(params[:id])
     render :edit
   end
