@@ -1,10 +1,6 @@
-<p>cool, it's the vendor you asked for!</p>
-
-<h2><%= @vendor.name %></h2>
+<h1><%= @vendor.name %></h1>
 
 <p>Number of Employees: <%= @vendor.no_of_employees %></p>
-
-<p><%= link_to "Add A Product", new_vendor_product_path(@vendor.id) %></p>
 
 <p>This Vendor's Products:</p>
 <ul>
@@ -17,4 +13,6 @@
   <% end %>
 </ul>
 
-<p><%= link_to "See my Sales", vendor_sales_path(@vendor.id) %></p>
+<p><%= link_to "» Add A Product", new_vendor_product_path(@vendor.id) %></p>
+
+<p><%= link_to "» See my Sales", vendor_sales_path(@vendor.id) %></p>
