@@ -29112,3 +29112,255 @@ Processing by SalesController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
   Rendered sales/index.html.erb within layouts/application (9.1ms)
 Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:15:26 -0700
+Processing by HomeController#index as HTML
+  [1m[36mMarket Load (0.9ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered home/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:15:28 -0700
+Processing by HomeController#index as HTML
+  [1m[35mMarket Load (2.5ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered home/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:15:29 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.8ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 146ms (Views: 141.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:15:32 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.5ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-04-29 15:15:34 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.2ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.1ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:15:37 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.0ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:15:39 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (1.7ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:15:40 -0700
+Processing by HomeController#index as HTML
+  [1m[36mMarket Load (1.0ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:15:53 -0700
+Processing by HomeController#index as HTML
+  [1m[35mMarket Load (7.3ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 39ms (Views: 31.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:15:54 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.2ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 114ms (Views: 111.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:15:56 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.6ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:15:59 -0700
+Processing by HomeController#index as HTML
+  [1m[36mMarket Load (0.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:16:06 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.5ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:16:08 -0700
+Processing by HomeController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered home/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:16:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:16:40 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (1.3ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:16:43 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.3ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:16:44 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:23:09 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 199ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:23:09 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:24:07 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 249ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-6d3f57229e2471345cc489643c558e633bf519ab99aac401c45aa18e417234f9.css?body=1" for ::1 at 2016-04-29 15:24:08 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:24:08 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:24:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-b37d80abae98196fe954ba09dc38d401b75ba6a16bce5b54cf3ad5cffd8bf3e5.css?body=1" for ::1 at 2016-04-29 15:24:18 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:24:18 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:24:58 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-2c4c21b3ddc0d3a6684266ef8fc432b9ec07b504fe002d99b89a43a957c55b63.css?body=1" for ::1 at 2016-04-29 15:24:58 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:24:58 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:27:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-06c27cdceec81d72578cca4e4b39c47c3237351154fbf902da7e65d71e138a3f.css?body=1" for ::1 at 2016-04-29 15:27:47 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:27:47 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:28:05 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:28:06 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:28:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-9bda5fefaa001701e1f623df7ac99974fbec5edb9cb689b7997de43fbff55ebb.css?body=1" for ::1 at 2016-04-29 15:28:37 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:28:37 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:29:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-04-29 15:29:47 -0700
+
+
+Started GET "/" for ::1 at 2016-04-29 15:29:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:29:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:29:52 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (10.4ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 108ms (Views: 95.6ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-29 15:30:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-04-29 15:30:04 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 15:30:06 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.0ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 2.0ms)

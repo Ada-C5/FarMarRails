@@ -1,15 +1,1 @@
 
-
-
-
-<h4>Choose Vendor or Market</h4>
-<%=link_to "Market", markets_path%>
-<%=link_to "Vendor", vendors_path%>
-
-<ul>
-  <%@markets.each do |market|%>
-    <li>
-      <%= link_to market.name, market_path(market.id)%>
-    </li>
-  <%end%>
-</ul>
