@@ -8,7 +8,7 @@
   <%@markets.each do |market|%>
   <tr>
     <td>
-      <%=market.name%>
+      <%= link_to market.name, market_path(market.id)%>
     </td>
     <td>
       <%=link_to "Edit", edit_market_path(market.id)%>

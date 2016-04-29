@@ -1,5 +1,5 @@
 
-
+<h1> Market Information </h1>
 <ul class = "market_info">
   <li><div class="tag">Name:</div><%=@market.name%></li>
   <li><div class="tag">Address:</div>
@@ -9,4 +9,12 @@
     <%=@market.state%><br>
     <%=@market.zip%><br>
   </li>
+</ul>
+
+<h2> Vendor List </h2>
+
+<ul>
+<% @vendors.each do |vendor| %>
+  <li><%=vendor.name%></li>
+<%end%>
 </ul>
