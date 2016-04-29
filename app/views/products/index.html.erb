@@ -9,6 +9,16 @@
     <tr class="row">
      <% @products.each do |product| %></tr>
 	    <td><%= product.name %></td>
-      <td><%= link_to "Delete", [@vendor, product], confirm: 'Are you sure?', method: :delete %></td>
+      <td><%= link_to vendor_product_path(@vendor, product), confirm: 'Are you sure?', method: :delete do %>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+        <% end %>
+      </td>
+
+       <td class="edit">
+        <%= link_to edit_vendor_product_path(@vendor, product) do %>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        <% end %>
+      </td>
+
     <% end %>
 </table>

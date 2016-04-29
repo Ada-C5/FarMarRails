@@ -6,7 +6,10 @@ root 'home#index'
   resources :markets, except:[:destroy]
 
 #*** VENDOR
-resources :vendors
+resources :vendors do
+  resources :sales, only: [:index, :show]
+  resources :products
+end
 
 get '/vendors/:vendor_id/sales' => 'sales#index', as: 'vendor_sale' # go to slash ablums should execute index method
 
@@ -15,10 +18,10 @@ get '/vendors/:vendor_id/sales' => 'sales#index', as: 'vendor_sale' # go to slas
 # GET    /parents/:parent_id/children(.:format)          children#index
 
 #*** PRODUCT
-  resources :products
-
-  get '/vendors/:vendor_id/products' => 'products#index', as: 'vendor_product' # go to slash ablums should execute index method
-  get '/vendors/:vendor_id/products' => 'products#delete', as: 'product_delete'
+  # resources :products
+  # get '/vendors/:vendor_id/products' => 'products#index', as: 'vendor_product' # go to slash ablums should execute index method
+  # get '/vendors/:vendor_id/products/:id' => 'products#delete', as: 'product_delete'
+  # get '/vendors/:vendor_id/products' => 'products#edit', as: 'product_edit'
 
 
 #*** SALES
