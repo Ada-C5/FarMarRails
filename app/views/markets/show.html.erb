@@ -1,0 +1,31 @@
+<!-- info about one market-->
+  <%= link_to "Welcome Page", root_path %>
+  <%= link_to "Back to all Markets", markets_path %>
+  <%= link_to "Edit this Market", edit_market_path %>
+  <%= link_to "Add a Vendor", new_market_vendor_path(@market.id) %>
+<section class="marketlist_show">
+  <div class="market__name">
+    <h2>Name: <%= @market.name %> </h2>
+  </div>
+  <div class="market_id">
+    <h2>ID: <%= @market.mar_id %> </h2>
+  </div>
+  <div class="market_address">
+    <h2>Address: <%= @market.address %> </h2>
+  </div>
+  <div class="market_city">
+    <h2>City: <%= @market.city %> </h2>
+  </div>
+  <div class="market_county">
+    <h2>County: <%= @market.county %> </h2>
+  </div>
+  <div class="market_zip">
+    <h2>Zip: <%= @market.zip %> </h2>
+  </div>
+  <div class="market_vendors">
+    <h2>Vendors for this market:</h2>
+    <% @vendors.each do |vendor| %>
+    <p><%= link_to vendor.name, market_vendor_path(@market.id, vendor.id) %></p>
+    <% end %>
+  </div>
+</section>

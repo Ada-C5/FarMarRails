@@ -1,0 +1,14 @@
+
+<!-- Display a list of vendors -->
+
+<h1> Vendors </h1>
+
+<%= link_to "Welcome Page", root_path %>
+<div class="vendor-container">
+  <% @vendors.each do |vendor| %> <br/>
+  <div class="vendor-item">
+    <!-- this path links to the vendor path that is identified by the id -->
+    <%= link_to vendor.name, vendor_path(vendor.id) %> <br/>
+  </div>
+  <% end %>
+</div>
