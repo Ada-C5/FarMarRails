@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+/*html {
+   background-color: red;
+ }*/
+
+a{
+  /*color: rgb(0, 224, 224);*/
+}
+
+.header{
+  /*background-color: green;*/
+  text-align: center;
+  font-size: 5vw;
+  color: black;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+
+form {
+  display: inline;
+}
+
+.homeheader {
+  /*font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.1vw;*/
+  background-color: rgba(21, 232, 175, 1);
+  width: 100%;
+  margin: 0;
+    /*border: solid white;*/
+  height: 15%;
+}
+header nav ul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+header nav ul li{
+  display: inline;
+}
+
+header nav ul li a{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+/*h2{
+  color:green;
+}*/
+.groupheading{
+  padding: 0;
+  text-align: center;
+}
+.groupheading li{
+  display: inline;
+}
+
+table {
+  width: 100%
+}
+table.tableheader {
+  border-bottom: solid 1px;
+}
+
+tr td {
+  text-align: center;
+}
+.tablerow{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+h1, h2, h3, p{
+  text-align: center;
+}
+
+h1{
+  font-size: 4vw;
+  text-decoration: none;
+}
+h2, h2 a{
+  font-size: 3vw;
+  text-decoration: none;
+}
+h3{
+  font-size: 3vw;
+  text-decoration: underline;
+}

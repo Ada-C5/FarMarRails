@@ -1,0 +1,31 @@
+<% @letter_array = [] %>
+
+<% @all_markets.each do |market| %>
+  <% @letter_array << market.market_name[0] %>
+<% end %>
+<% @letters = @letter_array.uniq %>
+
+<ul class = "groupheading">
+  <% @letters.each do |letter| %>
+    <li>
+      <%= link_to letter, "/markets/1/#{letter}", method: :get %>
+    </li>
+    <li>
+      <%="|"%>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to "ALL", "/markets", method: :get %>
+  </li>
+</ul>
+
+<ul>
+  <% @markets.each do |mark| %>
+    <li>
+      <%= link_to mark.market_name, market_path(mark.id)%>
+    </li>
+  <% end %>
+</ul>
+
+<!-- IF STATEMENT FOR Authentication -->
+<%= link_to "Add Market", new_market_path%>

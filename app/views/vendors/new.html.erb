@@ -1,0 +1,14 @@
+<% @new_vendor.market_id = @market.id  %>
+<h2><%= "#{@new_vendor.market.market_name} Market" %></h2>
+<h3>Add A New Vendor</h3>
+<%= form_for @new_vendor do |f| %>
+  <%= f.label :vendor_name%>
+  <%= f.text_field :vendor_name %>
+  <%= f.label :num_of_employees %>
+  <%= f.text_field :num_of_employees %>
+  <%= f.hidden_field :market_id %>
+  <%= hidden_field_tag :market_id %>
+  <!-- <%= "Associated Market: #{@new_vendor.market.market_name}" %> -->
+
+  <%= f.submit :'SUBMIT!!' %>
+<%end%>

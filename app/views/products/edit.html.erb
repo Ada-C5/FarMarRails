@@ -1,0 +1,8 @@
+<h2> Edit a Product </h2>
+
+<% product = Product.find(params[:id]) %>
+<% vendor = Vendor.find_by(vendor_id: product.vendor_id) %>
+
+<p> Hello, <%= vendor.vendor_name %>. Fill in the form below to edit your product.</p>
+
+<%= render partial: "form" %>
