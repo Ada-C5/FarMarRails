@@ -1,42 +1,44 @@
-<h1><%= @market.name %></h1>
-<div class='market-info'>
-  <p>
-    <%= @market.address %>
-  </p>
-  <p>
-    <%= @market.city %>
-  </p>
-  <p>
-    <%= @market.state %>
-  </p>
-  <p>
-    <%= @market.zip %>
-  </p>
-  <p>
-    <%= @market.county %>
-  </p>
-</div>
-<%= link_to "Add a Vendor to this Market", new_market_vendor_path(@market.id) %>
-<h2>List of Vendors</h2>
-  <div class='market-vendor-list'>
-    <% @market.vendors.each do |vendor| %> 
-      <p>
-        <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id) %>
-        <%= link_to "Edit This Vendor", edit_market_vendor_path(@market.id,vendor.id)  %>
-        <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
-     </p>
-    <% end %> 
-  </div>
-</h2>
-<aside>
-  <p>
-    <%= link_to "Edit This Market", edit_market_path %>
-  </p>
-  <p>
-    <%= link_to "Delete This Market", @market, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
-  </p>
-  <p>
-    <%= link_to "Back to All Markets", markets_path %>
-  </p>
-</aside>
+<%= params %> 
+
+<% if params[:user] == 'guest' %>
+  <%= render "marketinfo" %>
+  <h2>List of Vendors</h2>
+    <div class='market-vendor-list'>
+      <% @market.vendors.each do |vendor| %> 
+        <p>
+          <%= vendor.name %>
+       </p>
+      <% end %> 
+  <aside>
+    <p>
+      <%= link_to "Back to All Markets", markets_path %>
+    </p>
+  </aside>
+<% else %>
+  <%= render "marketinfo" %>
+
+  <%= link_to "Add a Vendor to this Market", new_market_vendor_path(@market.id) %>
+  <h2>List of Vendors</h2>
+    <div class='market-vendor-list'>
+      <% @market.vendors.each do |vendor| %> 
+        <p>
+          <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id) %>
+          <%= link_to "Edit This Vendor", edit_market_vendor_path(@market.id,vendor.id)  %>
+          <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
+       </p>
+      <% end %> 
+    </div>
+  </h2>
+  <aside>
+    <p>
+      <%= link_to "Edit This Market", edit_market_path %>
+    </p>
+    <p>
+      <%= link_to "Delete This Market", @market, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
+    </p>
+    <p>
+      <%= link_to "Back to All Markets", markets_path %>
+    </p>
+  </aside>
+<% end %>
 
