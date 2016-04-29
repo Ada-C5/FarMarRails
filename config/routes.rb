@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resources :vendors, only: [:index, :show] do
     resources :products, except: [:index, :show]
-    get '/sales' => 'sales#index'
+    resources :sales, only: [:new, :create]
+    # get '/sales' => 'sales#index'
   end
 end

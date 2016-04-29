@@ -18,7 +18,7 @@
           <% end %>
         </section>
       <% end %>
-      <%= button_to "Create", vendor_products_path(@vendor.id)+"/new", :method => :get %>
+      <%= button_to "New Product", vendor_products_path(@vendor.id)+"/new", :method => :get %>
     </section>
     <section>
       <h3>Vendor Sales:</h3>
@@ -26,12 +26,17 @@
         <section>
           <%= sale.amount %>
           <%= sale.vendor_id %>
+          <%= sale.purchase_time %>
+          <%= sale.product_id %>
           <%= sale.created_at %>
           <%= sale.updated_at %>
         </section>
       <% end %>
       <%=  %>
       <h3>Total sales : $<%= (@vendor.sales.sum(:amount))/100.to_f %></h3>
+    </section>
+    <section>
+      <%= button_to "New Sale", vendor_sales_path(@vendor.id)+"/new", :method => :get %>
     </section>
     <!-- Sales.where(month=4).sum(amount) Use something like this for a month? -->
 </article>
