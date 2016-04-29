@@ -4,7 +4,7 @@
   <% sales_total = [] %>
   <% @all_sales.each do |sale| %>
     <% if sale.vendor_id == @vendor.id %>
-      <li><%= sale.amount %></li>
+      <li><%= sale.amount %> <%= sale.product_id %><%= sale.vendor %></li>
       <% sales_total << sale.amount %>
     <% end %>
   <% end %>
