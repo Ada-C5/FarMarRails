@@ -26,9 +26,7 @@ Rails.application.routes.draw do
 
   post 'vendors/:vendor_id/products'    => 'products#create'
 
-  get 'products/:id/edit' => 'products#edit', as: :edit_product
-  put 'products/:id'      => 'products#update'
-  delete 'products/:id'   => 'products#destroy'
+  delete 'vendors/:vendor_id/products/:id'   => 'products#destroy'
 
 
   # Example of regular route:
