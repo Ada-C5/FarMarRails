@@ -6,7 +6,10 @@ class MarketsController < ApplicationController
 
   def create        # this is for the post
     @market = Market.create(market_create_params[:market])
-    redirect_to market_path
+    redirect_to created_path
+  end
+
+  def created
   end
 
 

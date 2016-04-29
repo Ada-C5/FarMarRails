@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   post '/markets'     => 'markets#create',  as: "create_market"
 
+  get '/markets/created'  => 'markets#created', as: "created"
+
   get '/markets/update'  => 'markets#update', as: "edit_market"
 
   get  '/vendors'      => 'vendors#index', as: "vendor"
