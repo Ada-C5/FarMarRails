@@ -3,7 +3,7 @@ class CreateSales < ActiveRecord::Migration
     create_table :sales do |t|
       t.integer :sale_number
       t.integer :amount
-      t.datetime :purchase_time
+      t.datetime :purchase_time   #rails helper for a month ago...Time.now
       t.integer :vendor_number
       t.integer :product_number
 

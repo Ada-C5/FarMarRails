@@ -22,7 +22,13 @@ Rails.application.routes.draw do
 
   get  '/vendors/:id/all_products' => 'vendors#products', as: "vendor_products"
 
-  get  'vendors/:id/products/new'  =>  'products#new', as:  "new_product"
+  get  'vendors/:id/products/new'  => 'products#new', as:  "new_product"
+
+  get  '/vendors/:id/products/:p_id' => 'products#show', as: "product"
+
+  post 'vendors/:id/all_products'  => 'products#create', as: "create_product"
+
+  delete 'vendors/:id/all_products/products/:p_id'  => 'products#destroy', as: "destroy_product"
 
 
 
