@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+/** General **/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #FAF9F9;
+  margin: 0;
+  padding: 0;
+}
+
+/** Long Lists **/
+
+div.page-title {
+  width: 100%;
+  /*height: 9rem;*/
+  padding: .5rem;
+  background-color: #F9F7F1;
+  border-bottom: 1rem solid #F59999;
+  box-shadow: 0 .2rem #DF7979;
+}
+
+.page-title img {
+  display: block;
+  width: 50%;
+  margin: .5rem auto;
+}
+
+div.list {
+  width: 90%;
+  max-height: 34rem;
+  margin: 3rem auto;
+  background-color: #F59999;
+  overflow: scroll;
+}
