@@ -13,12 +13,12 @@ class VendorsController < ApplicationController
     @vendor = Vendor.find(params[:id])
     @vendor_sales = (@vendor.sales.sum(:amount))/100.to_f
 
-    month_number = Time.now.strftime("%m")
+    month_number = Time.now.strftime("%m").to_i
     month_beginning = DateTime.new(Date.today.year, month_number)
     month_ending = month_beginning.end_of_month
 
-    @monthly_sales = Sale.where(:purchase_time => month_beginning..month_ending)
-
+    @monthly_sales = Sale.where(:purchase_time => month_beginning..month_ending).where(:vendor_id => @vendor.id)
+    @monthly_sales_total = (@monthly_sales.sum(:amount))/100.to_f
   end
 
   def new

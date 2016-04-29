@@ -34,6 +34,12 @@
       <% end %>
       <h3>Total sales : $<%= @vendor_sales %></h3>
     </section>
+
+    <section>
+      <h3>Current Month Sales</h3>
+      <%= @monthly_sales_total %>
+    </section>
+
     <section>
       <%= button_to "New Sale", vendor_sales_path(@vendor.id)+"/new", :method => :get %>
     </section>
