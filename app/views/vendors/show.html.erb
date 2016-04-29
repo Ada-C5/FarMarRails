@@ -1,6 +1,6 @@
 <%= render '/shared/vendor_list' %>
 
-<%= link_to products_path(@vendors_id), class: 'btn btn-success' do %>
+<%= link_to vendor_product_path(@vendors.first.id), class: 'btn btn-success' do %>
   Products
 <% end %>
 
