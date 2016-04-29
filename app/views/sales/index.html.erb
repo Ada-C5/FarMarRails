@@ -8,5 +8,7 @@
       <% sales_total << sale.amount %>
     <% end %>
   <% end %>
-  <h1>Total Sales: </h1><%= sales_total.reduce(0){|sum,x| sum + x } %>
+  <h1>Total Sales: </h1><%= sales_total.reduce(0){|sum,x| sum + x } %></h1>
 </ul>
+
+<p><%= link_to "Add a New Sale", new_vendor_sale_path(@vendor.id) %></p>

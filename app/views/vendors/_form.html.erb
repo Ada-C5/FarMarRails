@@ -8,7 +8,7 @@
   <%= f.text_field :no_of_employees %></p>
 
   <p><%= f.label :market_id %>
-  <%= f.text_field :market_id %></p>
+  <%= f.collection_select :market_id, Market.all.order(name: :asc), :id, :name %></p>
 
   <%= f.submit %>
 
