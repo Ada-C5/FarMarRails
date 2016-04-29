@@ -1,3 +1,5 @@
 <% sales.each do |sale| %>
-  <p>$<%= number_with_precision(sale.amount, precision: 2) %>, <%= sale.purchase_time %></p>
+  <p>
+    $<%= number_with_precision(sale.amount, precision: 2) %>, <%= sale.purchase_time %>
+  </p>
 <% end %>

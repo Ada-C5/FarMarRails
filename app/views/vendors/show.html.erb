@@ -1,25 +1,45 @@
-<h1><%= @vendor.name %></h1>
-<div class="vendor-info">
-  <p>Has <%= @vendor.number_of_employees %> Employees.</p>
-  <p>Sells at <%= link_to @vendor.market.name %>.</p>
-</div>
+<%= params %> 
+<% if params[:user] == 'market' %>
+  <h1>
+    <%= @vendor.name %>
+  </h1>
+  <div class="vendor-info">
+    <p>
+      Has <%= @vendor.number_of_employees %> Employees
+    </p>
+  </div>
+  <h2>
+    Products
+  </h2>
+  <% @vendor.products.each do |product| %>
+    <p>
+      <%= product.name %>
+    </p>
+  <% end %>
+<% else %>
+  <h1><%= @vendor.name %></h1>
+  <div class="vendor-info">
+    <p>Has <%= @vendor.number_of_employees %> Employees.</p>
+    <p>Sells at <%= link_to @vendor.market.name, market_path(@vendor.market.id, :user => 'vendor') %></p>
+  </div>
 
-<div class="vendor-products">
-  <h2><%= @vendor.name %> Products</h2>
-  <%= link_to new_vendor_product_path(@vendor.id) do %>
-    <p>Create New Product</p>
-  <% end %>
-  <%= render 'products' %>
-</div>
+  <div class="vendor-products">
+    <h2><%= @vendor.name %> Products</h2>
+    <%= link_to new_vendor_product_path(@vendor.id) do %>
+      <p>Create New Product</p>
+    <% end %>
+    <%= render 'products' %>
+  </div>
 
-<div class="vendor-sales">
-  <h2><%= @vendor.name %> Sales</h2>
-  <%= link_to new_vendor_sale_path(@vendor.id) do %>
-    <p>Create New Sale</p>
-  <% end %>
-  <%= form_tag(vendor_path(params[:id]), method: "get") do %>
-    <%= select_tag(:sales_list, options_for_select([['All Sales', 1], ['Last Month Sales', 2]], @selected)) %>
-    <%= submit_tag %>
-  <% end %>
-  <%= render partial: 'sales', object: @sales_list %>
-</div>
+  <div class="vendor-sales">
+    <h2><%= @vendor.name %> Sales</h2>
+    <%= link_to new_vendor_sale_path(@vendor.id) do %>
+      <p>Create New Sale</p>
+    <% end %>
+    <%= form_tag(vendor_path(params[:id]), method: "get") do %>
+      <%= select_tag(:sales_list, options_for_select([['All Sales', 1], ['Last Month Sales', 2]], @selected)) %>
+      <%= submit_tag %>
+    <% end %>
+    <%= render partial: 'sales', object: @sales_list %>
+  </div>
+<% end %> 

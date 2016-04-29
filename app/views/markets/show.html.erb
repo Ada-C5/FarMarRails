@@ -1,14 +1,14 @@
 <%= params %> 
 
-<% if params[:user] == 'guest' %>
+<% if params[:user] == 'guest' || params[:user] == 'vendor'%>
   <%= render "marketinfo" %>
   <h2>List of Vendors</h2>
-    <div class='market-vendor-list'>
-      <% @market.vendors.each do |vendor| %> 
-        <p>
-          <%= vendor.name %>
-       </p>
-      <% end %> 
+  <div class='market-vendor-list'>
+    <% @market.vendors.each do |vendor| %> 
+      <p>
+        <%= vendor.name %>
+      </p>
+    <% end %> 
   <aside>
     <p>
       <%= link_to "Back to All Markets", markets_path %>
@@ -22,7 +22,7 @@
     <div class='market-vendor-list'>
       <% @market.vendors.each do |vendor| %> 
         <p>
-          <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id) %>
+          <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id,:user => "market") %>
           <%= link_to "Edit This Vendor", edit_market_vendor_path(@market.id,vendor.id)  %>
           <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
        </p>
