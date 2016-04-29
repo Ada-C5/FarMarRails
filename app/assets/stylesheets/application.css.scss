@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body { padding-top: 50px; }
+body {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 html { padding-left: 20px; }
 a    {padding: 10px;}
