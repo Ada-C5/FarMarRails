@@ -15,7 +15,7 @@ class SalesController < ApplicationController
 
   def create
     @sale = Sale.new(sales_params[:sale])
-    @sale.vendor_id = (params[:id])
+    @sale.vendor_id = (params[:vendor_id])
     @sale.purchase_time = Time.now
     if @sale.save
       redirect_to sales_path
@@ -23,8 +23,6 @@ class SalesController < ApplicationController
       render :new
     end
   end
-
-
 
   private
 

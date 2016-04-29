@@ -1,0 +1,12 @@
+<%= link_to "Go back to Vendors", vendors_path %>
+
+<%= form_for(zone) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+<p>
+  <%= f.submit %>
+</p>
+
+<% end %>

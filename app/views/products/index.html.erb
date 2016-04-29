@@ -1,0 +1,14 @@
+<%= link_to "All Vendors", vendors_path %>
+<%= link_to "Make a New Product", new_product_path %>
+
+
+<h1> All Products </h1>
+
+<div class="product-container">
+  <% @products.each do |product| %> <br/>
+  <div class="product-item">
+    <!-- this path links to the vendor path that is identified by the id -->
+    <%= link_to product.name, product_path(product.vendor_id, product.id) %> <br/>
+  </div>
+  <% end %>
+</div>
