@@ -37,7 +37,7 @@
       <%= link_to "Delete This Market", @market, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
     </p>
     <p>
-      <%= link_to "Back to All Markets", markets_path %>
+      <%= link_to "Back to All Markets", markets_path(:user => 'market') %>
     </p>
   </aside>
 <% end %>
