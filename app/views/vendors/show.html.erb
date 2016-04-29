@@ -6,7 +6,8 @@
   <% total_sales = 0 %>
   <% @vendor.sales.each do |sale| %>
     <ul>
-      <li> Amount: $ <%= sale.amount/100.0 %> </li>
+
+      <li> Amount: $ <%= number_with_precision (sale.amount/100.0), precision: 2 %> </li>
       <li> Product: <%= Product.find(sale.product_id).name %> </li>
       <li> Purchase time:
       <% if !sale.purchase_time.nil? %>
@@ -18,7 +19,8 @@
   <% end %>
 
 <h2>Total sales: </h2> <br>
-<p> $ <%= total_sales/100.0%> </p>
+<% tsales = total_sales/100.0 %>
+<p> $ <%=  number_with_precision tsales , precision: 2 %> </p>
 
 <h2>Sales this month:</h2>
 <% month_sales = 0 %>
@@ -32,7 +34,8 @@
   </ul>
 <% month_sales += sale.amount %>
 <% end %>
-<p>Revenue this month: $ <%= month_sales/100.0 %></p>
+<% msales = month_sales/100.0 %>
+<p>Revenue this month: $ <%= number_with_precision msales , precision: 2  %></p>
 
 <h2>Products: </h2> <br>
 
