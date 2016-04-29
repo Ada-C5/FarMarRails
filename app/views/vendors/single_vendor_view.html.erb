@@ -1,17 +1,15 @@
 <table>
-  <thead>
-    <tr>
+    <tr class="tableheader">
       <th>Vendor Name</th>
       <th>Number of Employees</th>
       <th>Market</th>
       <th>Products</th>
     </tr>
-  </thead>
-  <tbody>
+  <tr class="tablerow">
     <% @vendors.each do |vendor| %>
     <td><%= link_to vendor.vendor_name, vendor_path(vendor.id) %></td>
     <td><%= vendor.num_of_employees %></td>
     <td><%= link_to Market.find(vendor.market_id).market_name, market_path(vendor.market_id) %></td>
     <td><%= link_to "View all", product_path(vendor.id) %></td>
     <% end %>
-  </tbody>
+  </tr>

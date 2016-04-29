@@ -76,3 +76,12 @@ header nav ul li a{
 .groupheading li{
   display: inline;
 }
+
+.tableheader {
+  border-bottom: solid 1px;
+}
+
+.tablerow{
+  border-collapse: collapse;
+  width: 100%;
+}
