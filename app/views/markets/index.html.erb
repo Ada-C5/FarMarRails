@@ -1,25 +1,29 @@
 <h1>
   <div class='page-title'>
-    <%= image_tag 'markets-banner.png' %> 
+    <%= image_tag 'markets-banner.png' %>
   </div>
 </h1>
 <% if params[:user] == 'market' %>
-  <%= link_to "Add A New Market", new_market_path %>
+  <%= link_to new_market_path do %>
+    <div class="create-button">Add A New Market</div>
+  <% end %>
   <div class='list'>
     <ul>
       <% @markets.each do |market| %>
     <div class='list-item'>
         <li>
           <%= link_to market.name, market_path(market.id) %>
-          <%= market.address %>
-          <%= market.city %>
-          <%= market.state %>
+          <span class="list-info">
+            <%= market.address %>
+            <%= market.city %>
+            <%= market.state %>
+          </span>
         </li>
     </div>
       <% end %>
     </ul>
   </div>
-<% else %> 
+<% else %>
   <ul>
     <% @markets.each do |market| %>
       <li>
@@ -30,4 +34,4 @@
       </li>
     <% end %>
   </ul>
-<% end %> 
+<% end %>

@@ -16,7 +16,7 @@
 
  /*Reset CSS!*/
 
- /* http://meyerweb.com/eric/tools/css/reset/ 
+ /* http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
  */
@@ -30,8 +30,8 @@
  dl, dt, dd, ol, ul, li,
  fieldset, form, label, legend,
  table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed, 
- figure, figcaption, footer, header, hgroup, 
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
  menu, nav, output, ruby, section, summary,
  time, mark, audio, video {
    margin: 0;
@@ -42,7 +42,7 @@
    vertical-align: baseline;
  }
  /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure, 
+ article, aside, details, figcaption, figure,
  footer, header, hgroup, menu, nav, section {
    display: block;
  }
@@ -73,6 +73,7 @@
 
 html {
     font-size: 20px;
+    font-family: 'Arimo';
 }
 
 body {
@@ -81,15 +82,28 @@ body {
   padding: 0;
 }
 
+article.container {
+  padding: 1rem 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #C66767;
+}
+
+a:hover {
+  color: #7A3333;
+}
+
 /** Long Lists **/
 
 div.page-title {
   width: 100%;
   /*height: 9rem;*/
   padding: .5rem;
-  background-color: #F9F7F1;
-  border-bottom: 1rem solid #F59999;
-  box-shadow: 0 .2rem #DF7979;
+  background-color: #F9F7F1; /** cream **/
+  border-bottom: 1rem solid #FCA19A; /** salmon **/
+  box-shadow: 0 .2rem #C66767; /** toasted-bagel **/
 }
 
 .page-title img {
@@ -98,45 +112,73 @@ div.page-title {
   margin: .5rem auto;
 }
 
+.create-button {
+  width: 12rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #F9F7F1;
+  border: .2rem solid #FBD6D3;
+  border-radius: .2rem;
+  text-align: center;
+}
+
+.create-button:hover {
+  background-color: #FBD6D3;
+  border: .2rem solid #FCA19A;
+  /*color: #F9F7F1;*/
+}
+
 div.list {
   width: 90%;
   max-height: 34rem;
   margin: 3rem auto;
-  background-color: pink;
-  border-radius: .5rem; 
+  background-color: #FBD6D3;
+  border-radius: .35rem;
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
-  padding: 2%;
+  padding: 4%;
+}
+
+div.list ul {
+  width: 100%;
 }
 
 div.list-item {
-  font-color: #F59999;
+  font-color: #FCA19A;
   display: block;
-  margin: .5rem;
+  margin: 0;
   padding: 1rem;
-  text-align: left;
+  border-radius: .2rem
+  /*text-align: left;*/
 }
+
+.list-item:nth-child(2n+1) {
+  background-color: #F9F7F1;
+}
+
+.list-info {
+  color: #7A3333; /** burnt-bagel **/
+
+}
+
+/** HOME **/
 
 nav ul li {
   display: inline;
-  padding: 10px; 
-  color: #F59999;
+  padding: 10px;
+  color: #FCA19A;
 }
 
 .far-mar-index {
-  margin: 60px auto 40px auto; 
+  margin: 60px auto 40px auto;
   text-align: center;
   width: 100%;
 }
 
 .far-mar-index img {
-  border-radius: .25rem; 
-  border: .1rem solid; 
+  border-radius: .25rem;
+  border: .1rem solid;
   border-color: #F59999;
   height: 9rem;
 }
-
-
-
-
