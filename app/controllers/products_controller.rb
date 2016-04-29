@@ -12,12 +12,9 @@ class ProductsController < ApplicationController
   def new
     @vendor = Vendor.find(params[:vendor_id])
     @product = @vendor.products.new
-		raise
   end
 
   def create
-    # @vendor = Vendor.find(params[:vendor_id])
-    # raise
     Product.create(product_create_params[:product])
       redirect_to vendor_products_path(params[:vendor_id])
   end
