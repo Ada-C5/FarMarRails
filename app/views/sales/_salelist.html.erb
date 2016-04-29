@@ -1,6 +1,6 @@
 <% require 'date' %>
 
-<% @month_num = { "01" => 'JAN', "02" => 'FEB', "03" => 'MAR',  "04" => 'APR',  "05" => 'MAY',  "06" => 'JUN', "07" => 'JUL',  "08" => 'AUG', "09" => 'SEP',  "10" => 'OCT',  "11" => 'NOV',  "12" => 'DEC'} %>
+<% @month_num = {"01" => 'JAN', "02" => 'FEB', "03" => 'MAR', "04" => 'APR', "05" => 'MAY', "06" => 'JUN', "07" => 'JUL', "08" => 'AUG', "09" => 'SEP', "10" => 'OCT', "11" => 'NOV', "12" => 'DEC'} %>
 
 <ul class = "groupheading">
   <li>
@@ -11,16 +11,18 @@
   <li>
     <%="|"%>
   </li>
+  <% @group.delete(nil) %>
   <% @group.each do |key, value| %>
     <li>
       <% v_id = params[:id] %>
       <% used_month = @month_num[key] %>
-      <%= link_to used_month, "/sales/#{v_id}/#{used_month}", method: :get %>
+      <%= link_to "#{used_month}", "sales/#{v_id}/#{used_month}", method: :get %>
+    </li>
+    <li>
+      <%="|"%>
     </li>
   <% end %>
-  <li>
-    <%="|"%>
-  </li>
+
   <li>
     <%= link_to "ALL", "/sales/#{params[:id]}", method: :get %>
   </li>
@@ -48,12 +50,14 @@
   <% @sale.each do |sal| %>
     <% name = Sale.find(sal.id) %>
     <% @total += sal.amount.to_i %>
-    <% date = DateTime.parse("#{sal.purchase_time}") %>
+    <% if sal.purchase_time != nil %>
+      <% date = DateTime.parse("#{sal.purchase_time}") %>
+    <%end%>
     <tbody>
       <td><%= Product.find(sal.product_id).product_name %></td>
       <td><%= sal.amount %></td>
-      <td><%= date.strftime('%Y-%m-%d') %></td>
-      <td><%= date.strftime('%H:%M') %></td>
+      <td><%= date.strftime('%Y-%m-%d') unless sal.purchase_time.nil?  %></td>
+      <td><%= date.strftime('%H:%M') unless sal.purchase_time.nil?%></td>
   <% end %>
   </tbody>
 
