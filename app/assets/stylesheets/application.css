@@ -32,13 +32,13 @@
 
 
 header {
-  background: url("/assets/cabbage.png");
+  background: url("/images/cabbage.png");
 	background-size: 25%;
   height: 13.5rem;
 }
 
 .nav_bar {
-  background: url("/assets/blue-check-pattern-background.jpg");
+  background: url("/images/blue-check-pattern-background.jpg");
   background-size: 20%;
 }
 
