@@ -1,3 +1,34 @@
+
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #FFFDD0;
+}
+
+.sidenav {
+  float: left;
+  background-color: white;
+  border: 0.15rem solid black;
+  padding: 1rem;
+}
+
+main {
+  width: 60%;
+  margin: 1rem auto;
+  padding: 3rem;
+  border: 0.15rem solid black;
+  border-radius: 25%;
+  background-color: #ADD8E6;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

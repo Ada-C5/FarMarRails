@@ -9,7 +9,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav class="sidenav">
       <ul>
         <li><%= link_to "Home", root_path %></li>
         <li>Markets
@@ -27,7 +27,9 @@
     </nav>
   </header>
 
-<%= yield %>
+  <main>
+    <%= yield %>
+  </main>
 
 <footer>
   	&copy; 2016 Val &amp; Suze!
