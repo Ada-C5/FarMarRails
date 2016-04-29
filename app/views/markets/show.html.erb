@@ -25,7 +25,7 @@
   <div class="market_vendors">
     <h2>Vendors for this market:</h2>
     <% @vendors.each do |vendor| %>
-    <p><%= link_to vendor.name, vendor_path %></p>
+    <p><%= link_to vendor.name, market_vendor_path(@market.id, vendor.id) %></p>
     <% end %>
   </div>
 </section>
