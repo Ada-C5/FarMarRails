@@ -1,5 +1,18 @@
 class MarketsController < ApplicationController
 
+  def new
+    @market = Market.new
+  end
+
+  def create
+    @market = Market.new(market_edit_params[:market])
+    if @market.save
+      redirect_to markets_path
+    else
+      render :new
+    end
+  end
+
   def index
     @markets = Market.all
     @market = Market.first
