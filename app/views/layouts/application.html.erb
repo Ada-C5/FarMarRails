@@ -8,8 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<article class="container">
-<%= yield %>
-</article>
+  <header class="page-title">
+      <% @page = request.env['PATH_INFO'].gsub(/[\/]/, "") %>
+      <%= image_tag "#{@page}-banner.png" %>
+  </header>
+  <article class="container">
+    <%= yield %>
+  </article>
 </body>
 </html>
