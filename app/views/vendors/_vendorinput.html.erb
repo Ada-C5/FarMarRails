@@ -2,12 +2,12 @@
   <%= form_for ([@market, @vendor]) do |t| %>
   <article class="form">
     <%= t.label :name %>
-    <%= t.text_field :name %>
+    <span class="field"><%= t.text_field :name %></span>
   </article>
 
   <article class="form">
     <%= t.label :employee_num %>
-    <%= t.text_field :employee_num %>
+    <span class="field"><%= t.text_field :employee_num %></span>
 
     <%= t.hidden_field :market_id %>
   </article>

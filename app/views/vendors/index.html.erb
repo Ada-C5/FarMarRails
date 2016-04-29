@@ -4,10 +4,10 @@
 
 <article>
   <% @vendors.each do |vendor| %>
-    <section class="vendor-card">
-      <span class="m-card"><%= link_to vendor.name, vendor_path(vendor.id) %></span>
-      <span class="m-card"><%= vendor.employee_num %> - Employee(s)</span>
-      <span class="m-card"><%= vendor.market_id %></span>
+    <section class="vend-card">
+      <p><%= link_to vendor.name, vendor_path(vendor.id) %></p>
+      <p><%= vendor.employee_num %> - Employee(s)</p>
+      <p><%= vendor.market_id %></p>
       <% if @market_edit == true %>
         <%= link_to "EDIT", edit_market_vendor_path(params[:market_id], vendor.id)  %>
         <%= form_tag(market_vendor_path(params[:market_id], vendor.id), method: "delete", data: {confirm: "Are you sure?"}) do %>

@@ -1,19 +1,32 @@
 <article>
-    <section>
-      <%= @vendor.name %>
-      <%= @vendor.employee_num %>
-      <%= @vendor.market_id %>
+  <h3>Vendor Information</h3>
+    <section class="vend-show">
+      <p>
+        <%= @vendor.name %>
+      </p>
+      <p>
+        <%= @vendor.employee_num %> Employee(s)
+      </p>
+      <p>
+        Market ID <%= @vendor.market_id %>
+      </p>
     </section>
-    <section>
-      <h3>Vendor Products:</h3>
+    <section class="prod">
+      Vendor Products:
       <% @vendor.products.each do |product| %>
-        <section>
-          <%= product.name %>,
-          <%= product.vendor_id %>,
-          <%= product.created_at.strftime("%m-%e-%y %H:%M") %>,
-          <%= product.updated_at.strftime("%m-%e-%y %H:%M") %>,
-          <%= button_to "Edit", vendor_product_path(@vendor.id, product.id)+"/edit", :method => :get %>
-          <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
+        <section class="prod-show">
+          <p>
+            <%= product.name %></p>
+          <p>
+            <%= product.vendor_id %></p>
+          <p>
+            <%= product.created_at.strftime("%m-%e-%y %H:%M") %></p>
+          <p>
+            <%= product.updated_at.strftime("%m-%e-%y %H:%M") %></p>
+          <p>
+            <%= button_to "Edit", vendor_product_path(@vendor.id, product.id)+"/edit", :method => :get %>
+          <p>
+            <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
             <%= submit_tag "Delete" %>
           <% end %>
         </section>
@@ -23,7 +36,7 @@
     <section>
       <h3>Vendor Sales:</h3>
       <% @vendor.sales.each do |sale| %>
-        <section>
+        <section class="vend-show">
           <%= sale.amount %>,
           <%= sale.vendor_id %>,
           <%= sale.purchase_time.strftime("%m-%e-%y %H:%M") %>,
@@ -38,7 +51,7 @@
     <section>
       <h3>Current Month Transactions: </h3>
       <% @monthly_sales.each do |transaction| %>
-      <section>
+      <section class="vend-show">
         <%= transaction.amount %>,
         <%= transaction.vendor_id %>,
         <%= transaction.purchase_time.strftime("%m-%e-%y %H:%M") %>,

@@ -28,6 +28,30 @@ body {
   float: left;
 }
 
+.vend-show {
+  line-height: 4rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 30rem;
+}
+
+.prod-show {
+  line-height: 1rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 27rem;
+  float: left;
+  display: inline-block;
+}
+
 .vendor-card {
   line-height: 4rem;
   font-size: 3rem;
@@ -37,6 +61,16 @@ body {
   color: #000!important;
   width: 25rem;
   height: 30rem;
+}
+
+.vend-card {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 15rem;
+  float: left;
 }
 
 .big-card {
@@ -82,5 +116,15 @@ a {
 
 .form {
   line-height: 7rem;
+  font-size: 3rem;
+}
+
+.form-add {
+  line-height: 7rem;
+  font-size: 3rem;
+  margin: 3% 33%;
+}
+
+.field {
   font-size: 3rem;
 }
