@@ -4,7 +4,7 @@
 
 <article>
   <% @vendors.each do |vendor| %>
-    <section class="vend-card">
+    <section class="vend">
       <p><%= link_to vendor.name, vendor_path(vendor.id) %></p>
       <p><%= vendor.employee_num %> - Employee(s)</p>
       <p><%= vendor.market_id %></p>

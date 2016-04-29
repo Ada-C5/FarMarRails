@@ -39,6 +39,16 @@ body {
   height: 30rem;
 }
 
+.vend {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 22rem;
+  float: left;
+}
+
 .prod-show {
   line-height: 1rem;
   font-size: 3rem;

@@ -1,10 +1,12 @@
 <section>
     <h2><%= form_for [@vendor, @sale] do |f| %>
-      <%= f.label :amount %>
-      <%= f.number_field :amount %>
-      <%= f.hidden_field(:vendor_id, :value => @vendor.id)  %>
-
-      <%= select_tag "sale[product_id]", options_from_collection_for_select(@product, "id", "name") %>
+      <p>
+        <%= f.label :amount %>
+        <%= f.number_field :amount %>
+        <%= f.hidden_field(:vendor_id, :value => @vendor.id) %> </p>
+      <p>
+        <%= select_tag "sale[product_id]", options_from_collection_for_select(@product, "id", "name") %>
+      </p>
 
       <%= f.submit 'Create Sale' %>
     <% end %></h2>
