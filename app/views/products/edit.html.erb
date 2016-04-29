@@ -1,0 +1,11 @@
+<%= form_for @product do |f| %>
+
+	<%= f.hidden_field :id %>
+
+  <%= f.label :item %>
+  <%= f.text_field :item %><br>
+
+
+  <%= f.submit %>
+
+<% end %>

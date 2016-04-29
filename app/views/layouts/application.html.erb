@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FarMarRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <%= link_to "All Markets and Vendors", markets_path %>
+        </li>
+        <li>
+          <%= link_to "All Products", products_path %>
+        </li>
+        <li>
+          <%= link_to "Sales", index_vendor_path %>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<%= yield %>
+
+<footer>
+  <p class="footer">Farmers Market Finder made possible by <%= link_to "Ada Developers Academy", "http://adadevelopersacademy.org/" %></p>
+  <p class="footer">
+    A collaboration of Nicole Iwasaki and Rowan Cota
+  </p>
+
+</footer>
+
+</body>
+</html>

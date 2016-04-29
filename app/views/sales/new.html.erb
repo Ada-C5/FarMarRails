@@ -1,0 +1,15 @@
+<%= form_for @sale do |f| %>
+  <%= f.label :product_id %>
+  <%= f.collection_select(:product_id, @products, :id, :item) %>
+
+  <%= f.label :vendor_id %>
+  <%= f.collection_select(:vendor_id, @vendors, :id, :name) %>
+
+  <%= f.label :sale_amount %>
+  <%= f.text_field :sale_amount %>
+
+  <%= f.hidden_field :transaction_time %>
+  <%= f.text_field :transaction_time, value: Time.now %>
+
+  <%= f.submit %>
+<% end %>

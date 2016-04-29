@@ -1,0 +1,6 @@
+<h2>Select your identity to view your sales:</h2>
+<%@vendors.each do |vendor| %>
+  <div class = "vendor">
+    <b><%= link_to vendor.name, sales_show_path(vendor.id) %></b>
+  </div>
+<%end%>

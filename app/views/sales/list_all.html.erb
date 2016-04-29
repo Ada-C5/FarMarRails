@@ -1,0 +1,22 @@
+<h1 class="vendor"><%= @vendor.name%></h1>
+<h2 class="">Sales</h2>
+
+
+<% sales = Sale.where(vendor_id: @vendor.id) %>
+<% sales_total = 0 %>
+
+<% sales.each do |sale| %>
+	<p class="sale-detail-listing">
+		<% sales_total += sale.sale_amount.to_i %>
+		Sale ID: <%= sale.id %><br>
+    Sale Amount in Cents: <%= sale.sale_amount %><br>
+    Sale Date: <%= sale.transaction_time %><br>
+    Sale Product: <%= sale.product_id %><br>
+
+	</p>
+<%end%>
+
+Total Sales (in Cents):
+<%= sales_total  %>
+
+<%= link_to "Create a New Product", products_new_path %>

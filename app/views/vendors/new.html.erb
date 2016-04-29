@@ -1,0 +1,17 @@
+<h2>Create a new vendor:</h2>
+
+<%= form_for @vendor do |f| %>
+  Vendor name:
+  <%= f.label :name do %>
+    <%= f.text_field :name, placeholder: "Cantelop Watermel Stalle" %>
+  <%end%>
+  Vendor number of employees (digits):
+  <%= f.label :employees do %>
+    <%= f.text_field :employees, placeholder: "4"%>
+  <%end%>
+  Vendor market number (digits):
+  <%= f.label :market_id do %>
+    <%= f.text_field :market_id, placeholder: "34"%>
+  <%end%>
+  <%= f.submit %>
+<%end%>

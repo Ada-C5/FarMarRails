@@ -1,0 +1,33 @@
+<section class="make-edit">
+<%= link_to "Create a market", new_market_path%>
+<%= link_to "Create a vendor", new_vendor_path%>
+</section>
+
+<section class="body-columns">
+  <section class="left-col">
+  <h2>All markets:</h2>
+  <%@markets.each do |market| %>
+    <div class = "market">
+      <%= link_to market.name, market_path(market.id) %>
+      <%= market.city%>, <%= market.state%>
+      <%= link_to "Edit", edit_market_path(market.id)%>
+    </div>
+  <%end%>
+  </section>
+
+
+
+  <section class="right-col">
+    <h2>All vendors:</h2>
+    <%@vendors.each do |vendor| %>
+      <div class = "vendor">
+        <b><%= link_to vendor.name, products_show_path(vendor.id) %></b>,
+        <%= Market.find(vendor.market_id).name %>
+        <%= link_to "Edit", vendor_path(vendor.id)%>
+        <%= button_to delete_vendor_path(vendor.id), data: {confirm: "DELETE DIS SHIT??"}, method: :delete do%>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+        <%end%>
+      </div>
+    <%end%>
+  </section>
+</section>

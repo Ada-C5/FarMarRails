@@ -1,0 +1,9 @@
+<%= form_for @product do |f| %>
+  <%= f.label :vendor_id %>
+  <%= f.collection_select(:vendor_id, @vendors, :id, :name) %>
+
+  <%= f.label :item %>
+  <%= f.text_field :item %>
+
+  <%= f.submit %>
+<% end %>

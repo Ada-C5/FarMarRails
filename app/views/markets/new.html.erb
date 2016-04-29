@@ -1,0 +1,25 @@
+<h2>Create a new market:</h2>
+
+<%= form_for @market do |f| %>
+  Market name:
+  <%= f.label :name do %>
+    <%= f.text_field :name, placeholder: "Pike Place Market" %>
+  <%end%>
+  Market address:
+  <%= f.label :address do %>
+    <%= f.text_field :address, placeholder: "123 Someplace St"%>
+  <%end%>
+  Market city:
+  <%= f.label :city do %>
+    <%= f.text_field :city, placeholder: "Seattle"%>
+  <%end%>
+  Market state:
+  <%= f.label :state do %>
+    <%= f.text_field :state, placeholder: "Washington"%>
+  <%end%>
+  Market zip code:
+  <%= f.label :zip_code do %>
+    <%= f.text_field :zip_code, placeholder: "98104"%>
+  <%end%>
+  <%= f.submit %>
+<%end%>

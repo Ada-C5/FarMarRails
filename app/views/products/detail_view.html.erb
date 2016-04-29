@@ -1,0 +1,18 @@
+<h1 class="vendor"><%= @vendor.name %></h1>
+<h2 class="">Products</h2>
+
+<% products = Product.where(vendor_id: @vendor.id) %>
+
+<% products.each do |product| %>
+	<p class="product-detail-listing">
+		<span class="product-bold-text">Product ID:</span> <%= product.id %><br>
+		<%= product.item.capitalize %><br>
+		<%= link_to "Edit product?", product_path(product.id) %>
+		<%= button_to "delete", 
+        {:controller => :products, :action => 'destroy', :id => product.id }, 
+        :method => :delete, data: { confirm: "Are you sure?" } %>
+
+	</p>	
+<%end%>
+
+<%= link_to "Create a New Product", products_new_path %>

@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/********** GLOBAL **********/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 18px Helvetica, sans-serif;
+	background-color: #FEFEFE;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+/********** INDEX *********/
+
+.front-page-flexbox {
+	clear: both;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 3rem;
+}
+
+.type-of-user a {
+	flex-grow: 1;
+	display: inline-block;
+	list-style: none;
+	background-color: #CCFFDD;
+	padding: 1rem;
+	margin: 1rem;
+	border: 5px double #B8EBCE;
+	border-radius: 50rem;
+	text-decoration: none;
+	font-size: 24px;
+	color: #9B8169;
+}
+
+/********** NAVBAR *********/
+
+ul {
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #E6CCAA;
+	border: 5px double #D7BD9B;
+}
+
+li {
+	flex-grow: 1;
+	display: flex;
+	float: left;
+}
+
+li > a {
+	flex-grow: 1;
+	display: inline-block;
+	list-style: none;
+	background-color: #CCFFDD;
+	padding: 1rem;
+	margin: 1rem;
+	border: 5px double #B8EBCE;
+	border-radius: 50rem;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+/********** FOOTER *********/
+
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+p.footer {
+	font-size: 12px;
+	font-style: italic;
+
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover {
+	background-color: #CCFFDD;
+}

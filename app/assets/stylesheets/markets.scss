@@ -1,0 +1,58 @@
+// Place all the styles related to the markets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+	color: #6C5235;
+}
+
+button {
+	float: right;
+	margin: -1rem;
+}
+
+.market {
+  padding: 1rem;
+}
+
+.market:nth-child(even) {
+  background: #E6CCAA;
+	border: 1px solid #E6CCAA;
+}
+
+.vendor {
+	padding: 1rem;
+}
+
+.vendor:nth-child(even) {
+  background: #E6CCAA;
+	border: 1px solid #E6CCAA;
+}
+
+.make-edit {
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #E6CCAA;
+	border: 5px double #D7BD9B;
+}
+
+.make-edit a {
+	flex-grow: 1;
+	display: inline-block;
+	list-style: none;
+	background-color: #CCFFDD;
+	padding: 1rem;
+	margin: 1rem;
+	border: 5px double #B8EBCE;
+	border-radius: 50rem;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.body-columns {
+	display: flex;
+}
+

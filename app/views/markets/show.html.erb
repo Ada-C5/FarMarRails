@@ -1,0 +1,8 @@
+<h2><%=@market.name%></h2>
+<address><%=@market.address%> <%=@market.city%>, <%=@market.state%> <%=@market.zip_code%></address><br>
+
+Vendors at <b><%=@market.name%></b>: <%#non-semantic, visual help only%>
+<%@vendors.each do |vendor|%>
+<br />
+<%=link_to vendor.name, products_show_path(vendor.id)%>
+<%end%>
