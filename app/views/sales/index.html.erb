@@ -1,4 +1,6 @@
 <h1>Sales</h1>
+
+<%=link_to "Add new sale" , new_vendor_sale_path%>
 <%sum = 0%>
 
 <table>
@@ -10,6 +12,7 @@
   <td><span>Vendor: <%=sale.vendor_id%></span></td>
   <td><span>Product: <%=sale.product_id%></span></td>
   <td><span>Sale Amount: <%=sale.amount%></span></td>
+  <td><span>Purchase Time <%=sale.purchase_time%></span></td>
 </tr>
 <%end%>
 </table>
