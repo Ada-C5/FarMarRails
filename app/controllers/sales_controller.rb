@@ -21,7 +21,7 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
-    @product = Product.where(vendor_id: params[:id])
+    @product = Product.find_by(product_id: params[:id])
     @vendor = Vendor.find(@product.vendor_id)
     render :new
   end
