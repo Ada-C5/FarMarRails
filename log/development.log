@@ -28678,3 +28678,13 @@ Processing by SalesController#index as HTML
   [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 5]]
   Rendered sales/index.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vendors/5/sales" for ::1 at 2016-04-29 14:51:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[35mSale Load (1.5ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')  [["vendor_id", 5]]
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 5]]
+  Rendered sales/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 289ms (Views: 267.0ms | ActiveRecord: 2.1ms)
