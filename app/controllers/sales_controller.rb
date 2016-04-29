@@ -13,13 +13,14 @@ class SalesController < ApplicationController
   end
 
   def create
-
     @sale = Sale.new(sale_create_params[:sale])
     @sale.purchase_time = Chronic.parse(@sale.purchase_time.to_s)
     # redirect_to root_path
       if @sale.save
         redirect_to vendor_path(@sale.vendor_id)
       else
+        @vendor = @sale.vendor
+        @products = @vendor.products
         render :new
       end
   end

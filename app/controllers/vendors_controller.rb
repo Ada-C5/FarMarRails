@@ -22,6 +22,7 @@ class VendorsController < ApplicationController
       redirect_to market_path(@vendor.market_id)
     else
       flash.now[:alert] = 'Vendor could not be saved.'
+      @market = @vendor.market
       render :new
     end
   end

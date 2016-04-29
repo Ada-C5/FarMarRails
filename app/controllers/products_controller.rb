@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to vendor_path(@product.vendor_id)
     else
+      @vendor = @product.vendor
       render :new
     end
   end

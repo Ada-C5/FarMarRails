@@ -1,5 +1,20 @@
 <h1> Create a new market: </h1>
 
+
+
+<% if @market.errors.any? %>
+  <ul>
+    <% @market.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    </ul>
+    <% end %>
+<% end %>
+
+
+
+
 <%= form_for @market do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>

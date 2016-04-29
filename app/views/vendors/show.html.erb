@@ -8,7 +8,10 @@
     <ul>
       <li> Amount: $ <%= sale.amount/100.0 %> </li>
       <li> Product: <%= Product.find(sale.product_id).name %> </li>
-      <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+      <li> Purchase time:
+      <% if !sale.purchase_time.nil? %>
+         <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+        <% end %>
       <%= button_to "Delete sale", sale_path(sale.id), method: :delete, data: {confirm: "Are you sure?"} %>
     </ul>
   <% total_sales += sale.amount %>
@@ -23,7 +26,9 @@
   <ul>
     <li> Amount: $ <%= sale.amount/100.0 %> </li>
     <li> Product: <%= Product.find(sale.product_id).name %> </li>
-    <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+    <% if !sale.purchase_time.nil? %>
+      <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+    <% end %>
   </ul>
 <% month_sales += sale.amount %>
 <% end %>
