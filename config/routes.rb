@@ -14,7 +14,9 @@ Rails.application.routes.draw do
 
   get '/markets/created'  => 'markets#created', as: "created"
 
-  get '/markets/update'  => 'markets#update', as: "edit_market"
+  get '/markets/:id/update'  => 'markets#update', as: "edit_market"
+
+  patch '/markets/'  => 'markets#updated', as: "updated"
 
   get  '/vendors'      => 'vendors#index', as: "vendor"
 
