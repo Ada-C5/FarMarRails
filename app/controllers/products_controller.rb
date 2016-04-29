@@ -16,13 +16,6 @@ class ProductsController < ApplicationController
   end
 
   def create
-    # @product = Product.new(product_create_params[:product])
-    # if @product.save
-    #   redirect_to vendor_path(params[:vendor_id])
-    # else
-    #   redirect_to new_vendor_product_path(params[:vendor_id])
-    # end
-
     if Product.create(product_create_params[:product])
       redirect_to vendor_path(params[:vendor_id])
     else
