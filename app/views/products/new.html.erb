@@ -1,9 +1,14 @@
 <section>
-    <h2><%= form_for [@product.vendor, @product] do |f| %>
+    <h2><%= form_for [@vendor, @product] do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
+      <%= f.hidden_field(:vendor_id, :value => @vendor.id)  %>
 
       <%= f.submit 'Create Product' %>
     <% end %></h2>
+
+    <pre>
+      <%= params %>
+    </pre>
 
 </section>
