@@ -5,10 +5,10 @@
 </h1>
 <% if params[:user] == 'market' %>
   <%= link_to "Add A New Market", new_market_path %>
-  <div class='container'>
+  <div class='list'>
     <ul>
       <% @markets.each do |market| %>
-    <div class='container-item'>
+    <div class='list-item'>
         <li>
           <%= link_to market.name, market_path(market.id) %>
           <%= market.address %>
