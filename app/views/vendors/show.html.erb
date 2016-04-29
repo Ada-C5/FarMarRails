@@ -8,10 +8,10 @@
       <h3>Vendor Products:</h3>
       <% @vendor.products.each do |product| %>
         <section>
-          <%= product.name %>
-          <%= product.vendor_id %>
-          <%= product.created_at %>
-          <%= product.updated_at %>
+          <%= product.name %>,
+          <%= product.vendor_id %>,
+          <%= product.created_at.strftime("%m-%e-%y %H:%M") %>,
+          <%= product.updated_at.strftime("%m-%e-%y %H:%M") %>,
           <%= button_to "Edit", vendor_product_path(@vendor.id, product.id)+"/edit", :method => :get %>
           <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
             <%= submit_tag "Delete" %>
@@ -24,12 +24,12 @@
       <h3>Vendor Sales:</h3>
       <% @vendor.sales.each do |sale| %>
         <section>
-          <%= sale.amount %>
-          <%= sale.vendor_id %>
-          <%= sale.purchase_time %>
-          <%= sale.product_id %>
-          <%= sale.created_at %>
-          <%= sale.updated_at %>
+          <%= sale.amount %>,
+          <%= sale.vendor_id %>,
+          <%= sale.purchase_time.strftime("%m-%e-%y %H:%M") %>,
+          <%= sale.product_id %>,
+          <%= sale.created_at.strftime("%m-%e-%y %H:%M") %>,
+          <%= sale.updated_at.strftime("%m-%e-%y %H:%M") %>
         </section>
       <% end %>
       <h3>Total sales : $<%= @vendor_sales %></h3>
