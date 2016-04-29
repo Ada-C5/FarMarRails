@@ -6,10 +6,9 @@
       <th>Products</th>
     </tr>
   <tr class="tablerow">
-    <% @vendors.each do |vendor| %>
+    <% @vendors.each do |vendor| %></tr>
     <td><%= link_to vendor.vendor_name, vendor_path(vendor.id) %></td>
     <td><%= vendor.num_of_employees %></td>
     <td><%= link_to Market.find(vendor.market_id).market_name, market_path(vendor.market_id) %></td>
     <td><%= link_to "View all", product_path(vendor.id) %></td>
     <% end %>
-  </tr>

@@ -1,4 +1,9 @@
-Please enter the dollar amount for the sale of <%=  @product.product_name %>. Enter as dollars and cents, e.g. 50.00.
+<h1><%="#{@vendor.vendor_name}"%></h1>
+<h2>Add A Sale</h2>
+
+
+Enter New Sale for <%= @product.product_name %>. (e.g. 50.00)
+
 
 <%= form_for @sale do |f| %>
   <%= f.label :amount %>
@@ -10,4 +15,5 @@ Please enter the dollar amount for the sale of <%=  @product.product_name %>. En
   <%= f.submit %>
 <% end %>
 
-<%= link_to "Go back to my products...", product_path(@vendor.id) %>
+
+<%= link_to "Back to Products", product_path(@vendor.id) %>
