@@ -19,6 +19,7 @@ class VendorsController < ApplicationController
 
     @monthly_sales = Sale.where(:purchase_time => month_beginning..month_ending).where(:vendor_id => @vendor.id)
     @monthly_sales_total = (@monthly_sales.sum(:amount))/100.to_f
+    # @monthly_sales_transactions = (@monthly_sales)
   end
 
   def new

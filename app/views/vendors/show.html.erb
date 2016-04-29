@@ -36,6 +36,20 @@
     </section>
 
     <section>
+      <h3>Current Month Transactions: </h3>
+      <% @monthly_sales.each do |transaction| %>
+      <section>
+        <%= transaction.amount %>,
+        <%= transaction.vendor_id %>,
+        <%= transaction.purchase_time.strftime("%m-%e-%y %H:%M") %>,
+        <%= transaction.product_id %>,
+        <%= transaction.created_at.strftime("%m-%e-%y %H:%M") %>,
+        <%= transaction.updated_at.strftime("%m-%e-%y %H:%M") %>
+      </section>
+      <% end %>
+    </section>
+
+    <section>
       <h3>Current Month Sales: $<%= @monthly_sales_total %></h3>
     </section>
 
