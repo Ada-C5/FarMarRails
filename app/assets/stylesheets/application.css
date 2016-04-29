@@ -16,3 +16,23 @@ body {
   padding: 7px;
   color: #000!important;
 }
+
+.market-card {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 20rem;
+  float: left;
+
+}
+
+.m-card {
+  display: block;
+}
+
+footer {
+  display: inline-block;
+  clear: both;
+}

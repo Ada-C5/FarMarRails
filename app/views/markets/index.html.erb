@@ -2,14 +2,14 @@
 
 <article>
   <% @markets.each do |market| %>
-    <section>
-      <%= link_to market.name, market_path(market.id) %>
-      <%= market.address %>
-      <%= market.city %>
-      <%= market.county %>
-      <%= market.state %>
-      <%= market.zip %>
-      <%= link_to "Edit", edit_market_path(market.id) %>
+    <section class="market-card">
+      <span class="m-card"><%= link_to market.name, market_path(market.id) %></span>
+      <span class="m-card"><%= market.address %></span>
+      <span class="m-card"><%= market.city %></span>
+      <span class="m-card"><%= market.county %></span>
+      <span class="m-card"><%= market.state %></span>
+      <span class="m-card"><%= market.zip %></span>
+      <span class="m-card"><%= link_to "Edit", edit_market_path(market.id) %></span>
     </section>
   <% end %>
 </article>
