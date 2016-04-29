@@ -15,7 +15,7 @@ class MarketsController < ApplicationController
   def create
     @market = Market.new(market_edit_params[:market])
     if @market.save
-      redirect_to root_path
+      redirect_to market_path(@market.id)
     else
       render :new
     end

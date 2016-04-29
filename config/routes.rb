@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "sales/new/:id" => "sales#new", as: "new_sale"
 
   get "vendors/new/:id" => "vendors#new", as: "new_vendor"
+
+  get "sales/:id/:name" => "sales#month_sale", as: "month_sale"
  # only generate the specified routes
  resources :markets
  resources :vendors

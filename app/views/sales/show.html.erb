@@ -1,3 +1,14 @@
+<% @month_num = { "01" => 'JAN', "02" => 'FEB', "03" => 'MAR',  "04" => 'APR',  "05" => 'MAY',  "06" => 'JUN', "07" => 'JUL',  "08" => 'AUG', "09" => 'SEP',  "10" => 'OCT',  "11" => 'NOV',  "12" => 'DEC'} %>
+<ul>
+  <% @group.each do |key, value| %>
+    <li>
+      <% v_id = params[:id] %>
+      <% used_month = @month_num[key] %>
+      <%= link_to used_month, "/sales/#{v_id}/#{used_month}", method: :get %>
+    </li>
+  <% end %>
+</ul>
+
 <% vendor = Vendor.find(params[:id]) %>
 
 <h2>Total Sale List For: <%= vendor.vendor_name %></h2>
@@ -18,6 +29,7 @@
     <tbody>
       <td><%= name %></td>
       <td><%= sal.amount %></td>
+      <td><%= sal.purchase_time %></td>
   <% end %>
 <p> Total sales are <%= @total %>. </p>
 </tbody>

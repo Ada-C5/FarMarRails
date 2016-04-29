@@ -1,8 +1,17 @@
+require 'date'
+
 class SalesController < ApplicationController
 
   def show
     @sale = Sale.where(vendor_id: params[:id]).order(purchase_time: :asc)
+    @group = Sale.group("strftime('%m', purchase_time)").count
     render :show
+  end
+
+  def month_sale
+    @group = Sale.group("strftime('%m', purchase_time)").count
+    @v_id = params[:id]
+    @month = params[:name]
   end
 
   def new
