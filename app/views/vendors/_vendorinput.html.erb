@@ -1,12 +1,17 @@
-<%= form_for ([@market, @vendor]) do |t| %>
+<section>
+  <%= form_for ([@market, @vendor]) do |t| %>
+  <article class="form">
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+  </article>
 
-  <%= t.label :name %>
-  <%= t.text_field :name %>
+  <article class="form">
+    <%= t.label :employee_num %>
+    <%= t.text_field :employee_num %>
 
-  <%= t.label :employee_num %>
-  <%= t.text_field :employee_num %>
+    <%= t.hidden_field :market_id %>
+  </article>
 
-  <%= t.hidden_field :market_id %>
-
-  <%= t.submit %>
-<% end %>
+    <%= t.submit %>
+  <% end %>
+</section>

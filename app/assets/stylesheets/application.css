@@ -28,6 +28,28 @@ body {
   float: left;
 }
 
+.vendor-card {
+  line-height: 4rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 30rem;
+}
+
+.big-card {
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 30rem;
+  height: 30rem;
+  float: left;
+}
+
 .m-card {
   display: block;
 }
@@ -52,4 +74,13 @@ a:visited {
 
 a {
   color: black;
+}
+
+.home {
+  line-height: 4rem;
+}
+
+.form {
+  line-height: 7rem;
+  font-size: 3rem;
 }
