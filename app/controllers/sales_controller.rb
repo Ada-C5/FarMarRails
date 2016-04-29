@@ -2,6 +2,7 @@ class SalesController < ApplicationController
 
   def index
     @sales = Sale.where(vendor_id: params[:vendor_id])
+    @sales_month = Sale.where(vendor_id: params[:vendor_id]).where(purchase_time: Time.now.beginning_of_month..Time.now.end_of_month)
     render :index
   end
 

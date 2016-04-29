@@ -28513,3 +28513,168 @@ Processing by MarketsController#edit as HTML
   Rendered markets/new.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
 >>>>>>> refs/remotes/origin/master
+
+
+Started GET "/" for ::1 at 2016-04-29 14:47:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mMarket Load (1.3ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 436ms (Views: 417.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/sales.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-29 14:47:47 -0700
+
+
+Started GET "/assets/sales.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-29 14:47:47 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 14:47:51 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.1ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 82ms (Views: 73.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-04-29 14:47:53 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `beggining_of_month' for 2016-04-29 14:47:53 -0700:Time
+Did you mean?  beginning_of_month
+               beginning_of_hour
+               beginning_of_minute):
+  app/controllers/sales_controller.rb:5:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.5ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-04-29 14:47:53 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `beggining_of_month' for 2016-04-29 14:47:53 -0700:Time
+Did you mean?  beginning_of_month
+               beginning_of_hour
+               beginning_of_minute):
+  app/controllers/sales_controller.rb:5:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-04-29 14:48:19 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (1.6ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 82ms (Views: 77.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-04-29 14:48:20 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')[0m  [["vendor_id", 1]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 1]]
+  Rendered sales/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 46ms (Views: 39.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vendors/2/sales" for ::1 at 2016-04-29 14:48:33 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"2"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')[0m  [["vendor_id", 2]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 2]]
+  Rendered sales/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/5/sales" for ::1 at 2016-04-29 14:48:36 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')[0m  [["vendor_id", 5]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 5]]
+  Rendered sales/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vendors/5/sales/new" for ::1 at 2016-04-29 14:48:38 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered sales/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 74ms (Views: 53.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/vendors/5/sales" for ::1 at 2016-04-29 14:48:52 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5qWQrIG/cxLCTUMXdM3/UxpTj5RV1U/23zz4w/cuEMI57TplR6ACJHY7TTdBKyWqqQz3P0+9lIVQYH3FHUJKQ==", "sale"=>{"amount"=>"3", "purchase_time"=>"2016/01/01", "product_id"=>"1"}, "commit"=>"Create Sale", "vendor_id"=>"5"}
+  [1m[35mVendor Load (0.3ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 5]]
+Unpermitted parameter: product_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sales" ("amount", "purchase_time", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["amount", 3], ["purchase_time", "2016-01-01 00:00:00.000000"], ["vendor_id", 5], ["created_at", "2016-04-29 21:48:52.480271"], ["updated_at", "2016-04-29 21:48:52.480271"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/vendors/5/sales
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/vendors/5/sales" for ::1 at 2016-04-29 14:48:52 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')  [["vendor_id", 5]]
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 5]]
+  Rendered sales/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vendors/5/sales/new" for ::1 at 2016-04-29 14:48:56 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered sales/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/vendors/5/sales" for ::1 at 2016-04-29 14:49:12 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oO/Us2G/m6pepeMCi3vYJaXgcZLkDk2VqI7zJe1u1OzbkvYYRqfmboR0OzoLrENOQy0McEhn7vhms4Ex9sdlhg==", "sale"=>{"amount"=>"222", "purchase_time"=>"2016/04/22", "product_id"=>"5"}, "commit"=>"Create Sale", "vendor_id"=>"5"}
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 5]]
+Unpermitted parameter: product_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sales" ("amount", "purchase_time", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["amount", 222], ["purchase_time", "2016-04-22 00:00:00.000000"], ["vendor_id", 5], ["created_at", "2016-04-29 21:49:12.441672"], ["updated_at", "2016-04-29 21:49:12.441672"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/vendors/5/sales
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/vendors/5/sales" for ::1 at 2016-04-29 14:49:12 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"5"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-04-01 07:00:00.000000' AND '2016-05-01 06:59:59.999999')[0m  [["vendor_id", 5]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 5]]
+  Rendered sales/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.5ms)
