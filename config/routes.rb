@@ -8,24 +8,21 @@ Rails.application.routes.draw do
 
   get  '/markets'      => 'markets#market_index', as: "market"
 
-  get  '/markets/new' => 'markets#new', as: "new"
+  get  '/markets/new' => 'markets#new', as: "new_market"
 
   post '/markets'     => 'markets#create',  as: "create_market"
 
-<<<<<<< HEAD
-  get '/markets/update'  => 'markets#update', as: "update"
+  get '/markets/update'  => 'markets#update', as: "edit_market"
 
-=======
->>>>>>> 992a80514a1e7cfd08404c45a2d2fbbcbfb3ee81
   get  '/vendors'      => 'vendors#index', as: "vendor"
 
   get  '/vendors/:id'  =>  'vendors#show', as: "vendor_info"
 
-  get  '/all_sales/:id'    => 'vendors#sales', as: "vendor_sales"
+  get  '/vendors/:id/all_sales'    => 'vendors#sales', as: "vendor_sales"
 
-  get  '/all_products/:id' => 'vendors#products', as: "vendor_products"
+  get  '/vendors/:id/all_products' => 'vendors#products', as: "vendor_products"
 
-
+  get  'vendors/:id/products/new'  =>  'products#new', as:  "new_product"
 
 
 

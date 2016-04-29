@@ -21,4 +21,9 @@ class VendorsController < ApplicationController
     @products = Product.where(vendor_number: @vendors.vendor_number)
     render :vendor_products
   end
+
+  def edit
+    @product = Product.find(params[:id])
+    render :edit
+  end
 end

@@ -5,10 +5,15 @@ class MarketsController < ApplicationController
   end
 
   def create        # this is for the post
-    @market = Market.new(params[:market])
-    @market.save
+    @market = Market.create(market_create_params[:market])
     redirect_to market_path
   end
+
+
+  def market_create_params
+   params.permit(market: [:market_number, :name, :address, :city, :county, :state, :zip])
+ end
+
 
   def update
   end
