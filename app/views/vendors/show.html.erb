@@ -1,0 +1,28 @@
+<% @vendor_sales = Sale.where(vendor_id: @vendor.id) %>
+<% revenue = 0.0 %>
+<% @vendor_sales.each do |sale| %>
+  <% amount = Float(sale.amount) %>
+  <% revenue += amount %>
+<% end %>
+
+
+<h1><%= @vendor.name %></h1>
+<ul>
+  <li>Number of Employees: <%= @vendor.no_employees %></li>
+  <li>Market Name: <%= @vendor.market.name %></li>
+  <li>Total Sales Revenue: $<%=revenue/100%>  </li>
+  <li>Total Sales Transactions: <%= @vendor_sales.length %></li>
+</ul>
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li><%= link_to "See Products", "/vendors/#{@vendor.id}/products" %></li>
+         <li><%= link_to "See Sales", "/vendors/#{@vendor.id}/sales" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>

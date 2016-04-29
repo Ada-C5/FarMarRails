@@ -1,0 +1,10 @@
+<h1>Choose the vendor from the list!</h1>
+
+
+<ul>
+  <% @vendors.each do |vendor| %>
+  <li>
+    <%= link_to vendor.name, vendor_path(vendor.id) %>
+  </li>
+  <% end %>
+</ul>

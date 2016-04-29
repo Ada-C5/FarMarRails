@@ -1,0 +1,26 @@
+<% if @vendor.errors.any? %>
+  <ul class="errors">
+    <% @vendor.errors.each do |column, message| %>
+      <li>
+        <strong><%= column.capitalize %></strong> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @vendor do |f| %>
+<%# use the instance to give form_for all the information they need to know about tasks! %>
+  <%= field_set_tag 'Vendor Information', :html => {:class => "form-control"}  do %>
+    <%= f.label :name,class: "sr-only" %>
+    <%= f.text_field :name, placeholder: "Name" %>
+
+    <%= f.label :no_employees, class: "sr-only",value: "Number of Employees" %>
+    <%= f.text_field :no_employees, placeholder: "Number of Employees" %>
+
+    <%# we don't want the user to have to remember what their market_ID is when adding/updating a vendor - even when adding a new vendor they will have navigated to that option from their specific market#show view and should ONLY be able to add a vendor to their market.  Pass a market_id field to the params hash when market_id is not available because the @vendor is from Vendor.new %>
+    <%= f.hidden_field :market_id, value: params[:market_id] || @vendor.market_id %>
+
+    <%= f.submit %>
+
+  <% end %>
+<% end %>

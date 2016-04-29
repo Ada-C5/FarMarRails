@@ -1,0 +1,58 @@
+<h1>Here are your sales!</h1>
+
+<%= link_to "All", action: "sales", month_display: nil %>
+<%= link_to "Current Month", action: "sales", month_display: DateTime.now %>
+
+<% if params[:month_display].nil? %>
+  <h2>All-time Sales</h2>
+  <% @sales = Sale.where(vendor_id: @vendor.id).order(product_id: :asc) %>
+<% else %>
+  <% @current_month = params[:month_display][0..6] %>
+  <% @sales = Sale.where(vendor_id: @vendor.id).where('purchase_time LIKE ?', "%#{@current_month}%").order(product_id: :asc) %>
+  <h2>Current Month Sales</h2>
+<% end %>
+
+<table class="table table-striped table-hover table-users">
+  <thead>
+    <tr>
+      <th class="hidden-phone">Product Name</th>
+      <th>Sale Amount</th>
+      <th>Purchase Time</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% total_sales = 0.00 %>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td class="hidden-phone">
+          <%= Product.find(sale.product_id).name %>
+        </td>
+        <td>
+          <%= "$ #{sprintf("%0.2f",sale.amount/100.00)}" %>
+        </td>
+        <td>
+          <%= sale.purchase_time %>
+        </td>
+      </tr>
+
+      <% total_sales += sale.amount %>
+
+      <% end %>
+    </tbody>
+</table>
+
+<p>
+  Your total sales are <%= "$ #{sprintf("%0.2f",total_sales/100.00)}" %>
+</p>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li><%= link_to " New Sale", new_sale_path(vendor_id: @vendor.id), class: "glyphicon glyphicon-shopping-cart" %></li>
+      </ul>
+    </div>
+  </div>
+</nav>

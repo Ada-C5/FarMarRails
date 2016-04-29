@@ -1,0 +1,27 @@
+<h1>FarMar Market! Rails!</h1>
+<ul>
+
+<% @markets.each do |market| %>
+
+  <li>
+    <%# makes sense to link markets by name %>
+    <%= link_to market.name, market_path(market.id) %>
+
+  </li>
+
+<% end %>
+
+</ul>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li> <%= link_to "ADD NEW MARKET", new_market_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

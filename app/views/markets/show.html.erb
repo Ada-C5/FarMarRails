@@ -1,0 +1,42 @@
+<h1><%= @market.name %></h1>
+<ul class="list-inline">
+
+  <li>
+    <%= @market.address %>,<br>
+    <%= @market.city %>, <%= @market.county %>, <%= @market.state %>, <%= @market.zip %>
+  </li>
+
+  <li>
+    <%= link_to "", edit_market_path, class:"glyphicon glyphicon-pencil", alt: "Edit Market"  %>
+  </li>
+
+</ul>
+
+<h2>All Vendors at this market!</h2>
+<ul class="dl-horizontal">
+
+<% @market.vendors.each do |vendor| %>
+
+  <li class="inline-list">
+    <%= link_to vendor.name, vendor_path(vendor.id) %>
+
+    <%= link_to "",  vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure you want to delete this vendor?"}, class:"glyphicon glyphicon-trash", alt: "Delete Vendor" %>
+
+    <%= link_to "", edit_vendor_path(vendor.id), class:"glyphicon glyphicon-pencil", alt: "Edit Vendor" %>
+  </li>
+
+<% end %>
+
+</ul>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li><%= link_to "ADD NEW VENDOR", new_vendor_path(market_id: @market.id) %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <%# could make a "secret formula" to encode the market_id when it is passed since it will show up in the URL exposed to the user :( not sure.  See comment on _vendorform.html.erb for why we pass the market_id into the params hash %>

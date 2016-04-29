@@ -1,0 +1,30 @@
+<h2>Insert a new sale</h2>
+
+<% if @sale.errors.any? %>
+  <ul class="errors">
+    <% @sale.errors.each do |column, message| %>
+      <li>
+        <strong><%= column.capitalize %></strong> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @sale do |f| %>
+<!-- use the instance to give form_for all the information they need to know about tasks! -->
+  <%= field_set_tag 'Sale Information', :html => {:class => "form-control"}  do %>
+
+
+      <%= f.label :product_id %>
+      <%= f.collection_select(:product_id, Product.all, :id,  :name, :prompt => "Select Product") %>
+      <%= f.label :amount, class: "sr-only" %>
+      <%= f.text_field :amount,  placeholder: "Sale Amount in Cents"%>
+
+      <%= f.hidden_field :purchase_time, value: Time.now %>
+
+      <%= f.hidden_field :vendor_id, value: params[:vendor_id] || @sale.vendor_id %>
+      <%= f.submit %>
+
+
+  <% end %>
+<% end %>

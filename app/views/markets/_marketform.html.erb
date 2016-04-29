@@ -1,0 +1,35 @@
+<% if @market.errors.any? %>
+  <ul class="errors">
+    <% @market.errors.each do |column, message| %>
+      <li>
+        <strong><%= column.capitalize %></strong> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @market do |f| %>
+<!-- use the instance to give form_for all the information they need to know about tasks! -->
+  <%= field_set_tag 'Market Information', :html => {:class => "form-control"}  do %>
+    <%= f.label :name,class: "sr-only" %>
+    <%= f.text_field :name, placeholder: "Name" %>
+
+    <%= f.label :address,class: "sr-only" %>
+    <%= f.text_field :address,placeholder: "Address" %>
+
+    <%= f.label :city,class: "sr-only" %>
+    <%= f.text_field :city,placeholder: "City" %>
+
+    <%= f.label :county,class: "sr-only" %>
+    <%= f.text_field :county,placeholder: "County" %>
+
+    <%= f.label :state,class: "sr-only" %>
+    <%= f.text_field :state,placeholder: "State" %>
+
+    <%= f.label :zip,class: "sr-only" %>
+    <%= f.text_field :zip,placeholder: "Zip" %>
+
+    <%= f.submit %>
+
+  <% end %>
+<% end %>
