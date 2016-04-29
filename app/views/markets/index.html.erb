@@ -1,0 +1,19 @@
+
+<h1> Welcome Market Partner!</h1>
+
+<%=link_to "Create a New Market", new_market_path%>
+
+
+<table>
+  <%@markets.each do |market|%>
+  <tr>
+    <td>
+      <%=market.name%>
+    </td>
+    <td>
+      <%=link_to "Edit", edit_market_path(market.id)%>
+    </td>
+  </tr>
+  <%end%>
+
+</table>
