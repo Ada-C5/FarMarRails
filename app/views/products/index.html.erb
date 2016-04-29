@@ -1,22 +1,26 @@
-<pre><%= params %></pre>
 <h1> <%= @vendor.name %> </h1>
+<br>
+<h2>Products</h2>
+
+<%= link_to "Add a New Product", new_vendor_product_path %>
+
 <table class="table table-striped" class="table table-hover">
     <tr>
-      <th class="headings" colspan=2>PRODUCTS </th>
+    <td><h3>Name</h3></td>
+    <td><h3>Edit</h3></td>
+    <td><h3>Delete</h3></td>
+
     </tr>
-    <tr class="header-row">
-    </tr>
-    <tr class="row">
-     <% @products.each do |product| %></tr>
+    <tr><% @products.each do |product| %></tr>
 	    <td><%= product.name %></td>
-      <td><%= link_to vendor_product_path(@vendor, product), confirm: 'Are you sure?', method: :delete do %>
-      <i class="fa fa-trash" aria-hidden="true"></i>
-        <% end %>
-      </td>
 
        <td class="edit">
         <%= link_to edit_vendor_product_path(@vendor, product) do %>
           <i class="fa fa-pencil" aria-hidden="true"></i>
+        <% end %>
+      </td>
+      <td><%= link_to vendor_product_path(@vendor, product), confirm: 'Are you sure?', method: :delete do %>
+      <i class="fa fa-trash" aria-hidden="true"></i>
         <% end %>
       </td>
 
