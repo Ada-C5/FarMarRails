@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.update(product_update_params[:product])
 
-    redirect_to edit_vendor_product_path
+    redirect_to vendor_path(params[:vendor_id])
   end
 
   def new
