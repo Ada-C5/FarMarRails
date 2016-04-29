@@ -15,9 +15,9 @@
 
 <h2>Vendors at <%= "#{@market.name.gsub(/[A-Za-z']+/,&:capitalize)}" %></h2>
 <ul>
-  <% @all_vendors.each do |vendor| %>
+  <% @vendors.each do |vendor| %>
     <% if vendor.market_id == @market.id %>
-    <p><%= link_to vendor.name, vendor_path(vendor.id) %> | 
+    <p><%= link_to vendor.name, vendor_path(vendor.id) %> |
       <%= link_to 'Edit', edit_vendor_path(vendor.id) %> |
       <%= link_to 'Delete', vendor_path(vendor.id), method: :delete, data:
       { confirm: "Are you sure you want to delete this vendor?"} %></p>
