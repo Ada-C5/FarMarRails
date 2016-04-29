@@ -54,13 +54,13 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-<<<<<<< HEAD
+
 resources :markets
-resources :vendors, only: [:index, :show]
-=======
+
+
   root 'home#index'
-  resources :markets, only: [:index, :show]
->>>>>>> cb9b297d4769ac785349fc2269afd682c9c10d9a
+
+
 
   resources :vendors do
     resources :products
