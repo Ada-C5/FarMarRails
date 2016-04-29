@@ -9,25 +9,25 @@
 
 <body>
   <header>
-    <ul>
-    <nav>
-      <li><%= link_to "Home", root_path%></li>
-      <li>
-        <%= form_tag(controller: "login", action: "create", method: "post") do%>
-        <%= label_tag(:id, "Enter market id:") %>
-        <%= text_field_tag(:id) %>
-        <%= submit_tag("Log in") %>
-        <% end %>
-      </li>
-      <li>
-        <%= form_tag(controller: "login", action: "vendorcreate", method: "post") do%>
-        <%= label_tag(:id, "Enter vendor id:") %>
-        <%= text_field_tag(:id) %>
-        <%= submit_tag("Log in") %>
-        <% end %>
-      </li>
+    <nav class="nav_bar">
+      <ul>
+        <li class = "button_link"><%= link_to "Home", root_path%></li>
+        <li class = "button_link">
+          <%= form_tag(controller: "login", action: "create", method: "post") do%>
+          <%= label_tag(:id, "Enter market id:") %>
+          <%= text_field_tag(:id) %>
+          <%= submit_tag("Log in") %>
+          <% end %>
+        </li>
+        <li class = "button_link">
+          <%= form_tag(controller: "login", action: "vendorcreate", method: "post") do%>
+          <%= label_tag(:id, "Enter vendor id:") %>
+          <%= text_field_tag(:id) %>
+          <%= submit_tag("Log in") %>
+          <% end %>
+        </li>
+      </ul>
     </nav>
-    </ul>
   </header>
 
 <%= yield %>
