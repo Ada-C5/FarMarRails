@@ -15,6 +15,7 @@ body {
   border: 15px groove #73AD21;
   padding: 7px;
   color: #000!important;
+  line-height: 20%;
 }
 
 .market-card {
@@ -23,9 +24,8 @@ body {
   padding: 7px;
   color: #000!important;
   width: 25rem;
-  height: 20rem;
+  height: 22rem;
   float: left;
-
 }
 
 .m-card {
@@ -35,4 +35,21 @@ body {
 footer {
   display: inline-block;
   clear: both;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h6 {
+  margin: 5rem 20rem;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
 }

@@ -1,6 +1,8 @@
-<%= link_to "Create", new_market_path %>
+<section>
+  <%= link_to "Create a New Market", new_market_path %>
+</section>
 
-<article>
+<article class="container">
   <% @markets.each do |market| %>
     <section class="market-card">
       <span class="m-card"><%= link_to market.name, market_path(market.id) %></span>
