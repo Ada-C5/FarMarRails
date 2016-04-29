@@ -1,5 +1,8 @@
-<%= link_to "Vendors", vendors_path %>
+<%= link_to "All Vendors", vendors_path %>
 
+<h1><%= @vendor.name %>'s sales</h1>
+
+<h2>All sales</h2>
 <div class="list_of_sales">
   <table>
     <thead>
@@ -11,23 +14,23 @@
     <% @vendor.sales.each do |sale| %>
       <tr>
         <td><%= sale.product.name %></td>
-        <td>$<%= sale.amount / 100.0 %></td>
+        <td>$<%= '%.2f' % (sale.amount / 100.0) %></td>
       </tr>
     <% end %>
   </table>
 </div>
 
 
-<p>Total sum of sales: $<%= '%.2f' % (@sum / 100.0) %></p>
+<p>Sum of all sales: $<%= '%.2f' % (@sum / 100.0) %></p>
 
 <% unless @sales_this_month.empty? %>
-  <p>All sales this month: </p>
+  <h2>Sales this month: </h2>
   <% @sales_this_month.each do |sale| %>
     <p><%= sale.product.name %></p>
     <p><%= sale.purchase_time %></p>
   <% end %>
 <% else %>
-  <p>No sales this month!</p>
+  <h2>No sales this month</h2>
 <% end %>
 
-<p>Total sum of sales this month: $<%= '%.2f' % (@sales_this_month.sum(:amount) / 100.0) %></p>
+<p>Sum of sales this month: $<%= '%.2f' % (@sales_this_month.sum(:amount) / 100.0) %></p>

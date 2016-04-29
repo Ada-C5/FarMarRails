@@ -1,7 +1,8 @@
 <!-- info about one market-->
   <%= link_to "Welcome Page", root_path %>
-  <%= link_to "Add a Market", new_market_path %>
+  <%= link_to "Back to all Markets", markets_path %>
   <%= link_to "Edit this Market", edit_market_path %>
+  <%= link_to "Add a Vendor", new_market_vendor_path(@market.id) %>
 <section class="marketlist_show">
   <div class="market__name">
     <h2>Name: <%= @market.name %> </h2>
@@ -22,8 +23,9 @@
     <h2>Zip: <%= @market.zip %> </h2>
   </div>
   <div class="market_vendors">
-    <% @market.vendors.each do |vendor| %>
-    <h2>Vendor: <%= vendor.name %></h2>
+    <h2>Vendors for this market:</h2>
+    <% @vendors.each do |vendor| %>
+    <p><%= link_to vendor.name, vendor_path %></p>
     <% end %>
   </div>
 </section>

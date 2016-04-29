@@ -9,7 +9,7 @@ class MarketsController < ApplicationController
     # set to an instance method
     # find is a class method so call on the class Market
     @market = Market.find(params[:id])
-
+    @vendors = @market.vendors
   end
 
 
