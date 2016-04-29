@@ -5,6 +5,7 @@ class SalesController < ApplicationController
   def show
     @sale = Sale.where(vendor_id: params[:id]).order(purchase_time: :asc)
     @group = Sale.group("strftime('%m', purchase_time)").count
+    @current = Time.now.strftime('%m')
     render :show
   end
 
@@ -15,6 +16,7 @@ class SalesController < ApplicationController
     @month_num = {'JAN' => "01", 'FEB' => "02", 'MAR' => "03", 'APR' => "04", 'MAY' => "05", 'JUN' => "06",'JUL' => "07", 'AUG' => "08",'SEP' => "09", 'OCT' => "10", 'NOV' => "11", 'DEC' => "12"}
     @num = @month_num[@month]
     @sale = Sale.where("cast(strftime('%m', purchase_time) as int) = ?", @num).where("vendor_id = ?", @v_id)
+    @current = Time.now.strftime('%m')
   end
 
   def new
