@@ -1,0 +1,16 @@
+<h2>Add a New Sale for a Product</h2>
+
+<%= form_for [@vendor, @product] do |f| %>
+	<%= f.label :'Enter sale amount:' %>
+	<br>
+	<%= f.text_field :name, class: 'field' %>
+	<%= f.hidden_field(:vendor_id, :value => @vendor.id) %>
+	<br>
+<div class="form-actions", class="dropdown", class="btn btn-primary dropdown-toggle">
+      <%= f.label "Choose a Product"%>
+      <%= f.select (:product_id) do %>
+      <%= options_from_collection_for_select(Product.all, :id, :name) %>
+      <% end %>
+    </div>
+	<%= f.submit %>
+<% end %>
