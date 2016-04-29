@@ -7,7 +7,7 @@ root 'home#index'
 
 #*** VENDOR
 resources :vendors do
-  resources :sales, only: [:index, :show, :create]
+  resources :sales, only: [:index, :show, :new]
   resources :products
 end
 

@@ -1,6 +1,10 @@
 <pre><%= params %></pre>
 <h1> <%= @vendor.name %> </h1>
 
+<%= link_to new_vendor_sale_path(@vendor.id), class: 'btn btn-success' do %>
+  New Sale
+<% end %>
+
 <table class="table table-striped" class="table table-hover">
     <thead>
     <tr>
