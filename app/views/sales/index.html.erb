@@ -31,10 +31,20 @@
 
 
 <% unless @sales_this_month.empty? %>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Sale Amount</th>
+      <th>Purchase Date</th>
+    </tr>
   <% @sales_this_month.each do |sale| %>
-    <p><%= sale.product.name %></p>
-    <p><%= sale.purchase_time %></p>
+    <tr>
+      <td><%= sale.product.name %></td>
+      <td>$<%= to_money(sale.amount) %></td>
+      <td><%= sale.purchase_time %></td>
+    </tr>
   <% end %>
+  </table>
 <% else %>
   <h2>No sales this month</h2>
   <p>Sum of sales this month: $<%= to_money(@sales_this_month.sum(:amount)) %></p>
