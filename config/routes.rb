@@ -7,11 +7,11 @@ root 'home#index'
 
 #*** VENDOR
 resources :vendors do
-  resources :sales, only: [:index, :show]
+  resources :sales, only: [:index, :show, :create]
   resources :products
 end
 
-get '/vendors/:vendor_id/sales' => 'sales#index', as: 'vendor_sale' # go to slash ablums should execute index method
+# get '/vendors/:vendor_id/sales' => 'sales#index', as: 'vendor_sale' # go to slash ablums should execute index method
 
 # get
 # GET    /parents/:parent_id/children/:id(.:format)      children#show
@@ -25,7 +25,7 @@ get '/vendors/:vendor_id/sales' => 'sales#index', as: 'vendor_sale' # go to slas
 
 
 #*** SALES
-  resources :sales, only:[:index, :show, :create]
+  # resources :sales, only:[:index, :show, :create]
 
 
 

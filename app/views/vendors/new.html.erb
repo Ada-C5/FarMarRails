@@ -19,7 +19,7 @@
 
     <br>
     <div class="form-actions", class="dropdown", class="btn btn-primary dropdown-toggle">
-      <%=f.label "Market"%>
+      <%= f.label "Market"%>
       <%= f.select (:market_id) do %>
       <%= options_from_collection_for_select(Market.all, :id, :name, @current_market) %>
       <% end %>
