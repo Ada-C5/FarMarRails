@@ -1,0 +1,74 @@
+get       /                                       (root)
+
+get       /markets                                (markets#index)
+get       /markets/:id                            (markets#show)
+get       /markets/:id/edit                       (markets#edit), (markets#update)
+get       /markets/new                            (markets#new), (markets#create)
+
+  get       /markets/:id/vendors/new              (vendors#new)
+  post      /markets/:id/vendors/create           (vendors#create)
+  get       /markets/:id/vendors/:id/edit         (vendors#edit)
+  patch     /markets/:id/vendors/:id              (vendors#update)
+  destroy   /markets/:id/vendors/:id              (vendors#destroy)
+
+get       /vendors   #full list of vendors        (vendors#index)
+get       /vendors/:id #one particular vendor     (vendors#show)
+  get       /vendors/:id/products/new             (products#new)
+  post      /vendors/:id/products/create          (products#create)
+  get       /vendors/:id/products/:id/edit        (products#edit)
+  patch     /vendors/:id/products/:id             (products#update)
+  destroy   /vendors/:id/products/:id             (products#destroy)
+
+  get       /vendors/:id/sales                    (sales#index)
+  #the 4 above would all be included in this route
+
+
+
+As a user, when I visit "/", I can choose whether I want to act as a Market or a Vendor
+  get       /                 (root)
+As a user, I can view all Markets
+  get       /markets          (markets#index)
+  get       /vendors          #full list of vendors
+As a user, I can view a specific Market, I should see its attributes as well as a list of its vendors
+  get       /markets/:id (markets#show)
+
+As a market, I can create or edit a Market
+  get       /markets/:id/edit  (markets#edit), (markets#update)
+  get       /markets/new       (markets#new), (markets#create)
+As a market, I can create, edit, or delete any Vendor
+  get       /markets/:id/vendors/new
+  post      /markets/:id/vendors/create
+  get       /markets/:id/vendors/:id/edit
+  patch     /markets/:id/vendors/:id
+  destroy   /markets/:id/vendors/:id
+
+As a vendor, I can create, edit, or delete my Products
+  get       /vendors/:id #one particular vendor show
+  get       /vendors/:id/products/new
+  post      /vendors/:id/products/create
+  get       /vendors/:id/products/:id/edit
+  patch     /vendors/:id/products/:id (update)
+  destroy   /vendors/:id/products/:id (destroy)
+
+As a vendor, I can see a list of my Sales
+As a vendor, I can see a total of all of my Sales
+As a vendor, I can see a list of my Sales for the current month
+As a vendor, I can see a total of my Sales for the current month
+  get       /vendors/:id/sales  #the 4 above would all be included in this route
+
+
+
+
+  As a vendor, I can create a Sale for one of my Products
+
+
+
+
+
+
+
+
+
+
+
+#

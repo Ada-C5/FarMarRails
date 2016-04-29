@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FarMarRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= image_tag("farmar.jpeg", alt: "Pretty Fruits and Vegetables", class: "bar-image") %>
+
+  <h1>Welcome to FarMar!</h1>
+  <%= link_to "HOME", root_path, class: "home" %>
+
+<%= yield %>
+
+  <footer>
+    <h6>Adriana Cannon and Anna Wilson 2016</h6>
+  </footer>
+
+</body>
+</html>

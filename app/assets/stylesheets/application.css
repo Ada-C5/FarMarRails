@@ -1,0 +1,140 @@
+body {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.bar-image {
+  width: 56%;
+  height: 16rem;
+}
+
+.home-submit {
+  margin-top: 4rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  line-height: 20%;
+}
+
+.market-card {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 22rem;
+  float: left;
+}
+
+.vend-show {
+  line-height: 4rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 30rem;
+}
+
+.vend {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 22rem;
+  float: left;
+}
+
+.prod-show {
+  line-height: 1rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 27rem;
+  float: left;
+  display: inline-block;
+}
+
+.vendor-card {
+  line-height: 4rem;
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 30rem;
+}
+
+.vend-card {
+  margin: 1rem;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 25rem;
+  height: 15rem;
+  float: left;
+}
+
+.big-card {
+  font-size: 3rem;
+  margin: 2% 33%;
+  border: 15px groove #73AD21;
+  padding: 7px;
+  color: #000!important;
+  width: 30rem;
+  height: 30rem;
+  float: left;
+}
+
+.m-card {
+  display: block;
+}
+
+footer {
+  display: inline-block;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h6 {
+  margin: 5rem 20rem;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.home {
+  line-height: 4rem;
+}
+
+.form {
+  line-height: 7rem;
+  font-size: 3rem;
+}
+
+.form-add {
+  line-height: 7rem;
+  font-size: 3rem;
+  margin: 3% 33%;
+}
+
+.field {
+  font-size: 3rem;
+}

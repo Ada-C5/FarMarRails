@@ -1,0 +1,73 @@
+<article>
+  <h3>Vendor Information</h3>
+    <section class="vend-show">
+      <p>
+        <%= @vendor.name %>
+      </p>
+      <p>
+        <%= @vendor.employee_num %> Employee(s)
+      </p>
+      <p>
+        Market ID <%= @vendor.market_id %>
+      </p>
+    </section>
+    <section class="prod">
+      Vendor Products:
+      <% @vendor.products.each do |product| %>
+        <section class="prod-show">
+          <p>
+            <%= product.name %></p>
+          <p>
+            <%= product.vendor_id %></p>
+          <p>
+            <%= product.created_at.strftime("%m-%e-%y %H:%M") %></p>
+          <p>
+            <%= product.updated_at.strftime("%m-%e-%y %H:%M") %></p>
+          <p>
+            <%= button_to "Edit", vendor_product_path(@vendor.id, product.id)+"/edit", :method => :get %>
+          <p>
+            <%= form_tag(vendor_product_path(@vendor.id, product.id), method: "delete", data: {confirm: "Are you sure?"}) do %>
+            <%= submit_tag "Delete" %>
+          <% end %>
+        </section>
+      <% end %>
+      <%= button_to "New Product", vendor_products_path(@vendor.id)+"/new", :method => :get %>
+    </section>
+    <section>
+      <h3>Vendor Sales:</h3>
+      <% @vendor.sales.each do |sale| %>
+        <section class="vend-show">
+          <%= sale.amount %>,
+          <%= sale.vendor_id %>,
+          <%= sale.purchase_time.strftime("%m-%e-%y %H:%M") %>,
+          <%= sale.product_id %>,
+          <%= sale.created_at.strftime("%m-%e-%y %H:%M") %>,
+          <%= sale.updated_at.strftime("%m-%e-%y %H:%M") %>
+        </section>
+      <% end %>
+      <h3>Total sales : $<%= @vendor_sales %></h3>
+    </section>
+
+    <section>
+      <h3>Current Month Transactions: </h3>
+      <% @monthly_sales.each do |transaction| %>
+      <section class="vend-show">
+        <%= transaction.amount %>,
+        <%= transaction.vendor_id %>,
+        <%= transaction.purchase_time.strftime("%m-%e-%y %H:%M") %>,
+        <%= transaction.product_id %>,
+        <%= transaction.created_at.strftime("%m-%e-%y %H:%M") %>,
+        <%= transaction.updated_at.strftime("%m-%e-%y %H:%M") %>
+      </section>
+      <% end %>
+    </section>
+
+    <section>
+      <h3>Current Month Sales: $<%= @monthly_sales_total %></h3>
+    </section>
+
+    <section>
+      <%= button_to "New Sale", vendor_sales_path(@vendor.id)+"/new", :method => :get %>
+    </section>
+    <!-- Sales.where(month=4).sum(amount) Use something like this for a month? -->
+</article>

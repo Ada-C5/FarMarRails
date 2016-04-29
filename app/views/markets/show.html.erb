@@ -1,0 +1,11 @@
+<article>
+    <section class="big-card">
+      <span class="m-card"><%= @market.name %></span>
+      <span class="m-card"><%= @market.address %></span>
+      <span class="m-card"><%= @market.city %></span>
+      <span class="m-card"><%= @market.county %></span>
+      <span class="m-card"><%= @market.state %></span>
+      <span class="m-card"><%= @market.zip %></span>
+      <span class="m-card"><%= link_to "View All Vendors", market_vendors_path(@market.id) %></span>
+    </section>
+</article>
