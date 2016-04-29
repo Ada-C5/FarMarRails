@@ -4,4 +4,5 @@
   <% @markets = Market.all %>
   <% @markets.each do |market| %>
       <%= link_to market.name, market_path(market.id) %><br>
+      <%= button_to "Edit market info", edit_market_path(market.id), method: :get %>
   <% end %>
