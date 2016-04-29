@@ -1,4 +1,3 @@
-<pre><%= params %></pre>
 <h1> <%= @vendor.name %> </h1>
 <br>
 <h2>Products</h2>
@@ -6,14 +5,13 @@
 <%= link_to "Add a New Product", new_vendor_product_path %>
 
 <table class="table table-striped" class="table table-hover">
-    <tr class="header-row">
+    <tr>
     <td><h3>Name</h3></td>
     <td><h3>Edit</h3></td>
     <td><h3>Delete</h3></td>
 
     </tr>
-    <tr class="row">
-     <% @products.each do |product| %></tr>
+    <tr><% @products.each do |product| %></tr>
 	    <td><%= product.name %></td>
 
        <td class="edit">
