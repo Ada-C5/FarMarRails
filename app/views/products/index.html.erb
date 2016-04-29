@@ -1,7 +1,7 @@
 <% vendor = Vendor.find(params[:id]) %>
-
-<h2>Product List For: <%= vendor.vendor_name %></h2>
-
+<h1><%= vendor.vendor_name %></h1>
+<h2><%= link_to "#{Market.find(vendor.market_id).market_name}", market_path(vendor.market_id) %></h2>
+<h3>Product List  </h3>
 
 <table>
   <thead>
@@ -20,6 +20,5 @@
 </table>
 
 <%= link_to "See All Sales", sale_path(vendor.id) %>
-<%= link_to "See All Sales For The Current Month", sale_path(vendor.id) %> 
-<%= link_to "Would you like to view your market info again, #{vendor.vendor_name}?", vendor_path(vendor.id) %>
-<%= link_to "Would you like to create a new product?", new_product_path(params[:id]) %>
+
+<%= link_to "Add Product", new_product_path(params[:id]) %>

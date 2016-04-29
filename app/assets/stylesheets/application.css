@@ -23,10 +23,10 @@ a{
   /*color: rgb(0, 224, 224);*/
 }
 
-h1{
+.header{
   /*background-color: green;*/
   text-align: center;
-  font-size: 3vw;
+  font-size: 5vw;
   /*color: white;*/
 }
 
@@ -53,6 +53,8 @@ form {
 }
 header nav ul{
   text-align: center;
+  margin: 0;
+  padding: 0;
 
 }
 header nav ul li{

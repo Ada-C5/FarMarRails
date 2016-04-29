@@ -1,11 +1,18 @@
 class MarketsController < ApplicationController
   def index
     @markets = Market.order(market_name: :asc)
+    @all_markets = Market.order(market_name: :asc)
   end
 
   def show
     @market = Market.find(params[:id])
     @vendors = Vendor.where(market_id: params[:id])
+    render :show
+  end
+
+  def lettermarket
+    @markets = Market.where("market_name LIKE :prefix", prefix: "#{params[:letter]}%")
+    @all_markets = Market.order(market_name: :asc)
   end
 
   def new
