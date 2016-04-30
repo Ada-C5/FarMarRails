@@ -15,6 +15,10 @@ html {
   margin-right: 323px;
 }
 
+h1 {
+  padding-left: 5%;
+}
+
 .market_button .btn-success {
   color: #fff;
   background-color: #5cb85c;
