@@ -1,0 +1,41 @@
+<h1>Edit a Market</h1>
+
+<%= form_for :market, url: market_path(@market), method: :patch do |f| %>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <%= f.label :county %><br>
+    <%= f.text_field :county %>
+  </p>
+
+  <p>
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </p>
+
+  <p>
+    <%= f.label :zip %><br>
+    <%= f.text_field :zip %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back', market_path %>
