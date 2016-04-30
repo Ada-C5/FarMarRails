@@ -36,9 +36,6 @@ CSV.foreach(VENDOR_PATH) do |row|
     employee_count: row[2].to_i,
     market_id: row[3].to_i
   }
-
-	# markets = Market.find(row[3])
-  # markets.vendors << Vendor.create(row_hash)
    Vendor.create(row_hash)
 
 end
