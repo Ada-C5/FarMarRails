@@ -28,7 +28,14 @@ Rails.application.routes.draw do
 
   post 'vendors/:id/all_products'  => 'products#create', as: "create_product"
 
+  get    '/products/:id/edit' => 'products#edit', as: "edit_product"
+
+  patch  'products/:id' => 'products#update', as: "update_product"
+
   delete 'vendors/:id/all_products/products/:p_id'  => 'products#destroy', as: "destroy_product"
+
+
+  resources :sales
 
 
 

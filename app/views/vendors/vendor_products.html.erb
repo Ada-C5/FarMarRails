@@ -9,6 +9,7 @@
       <li>Product Number: <%= product.product_number %> </li>
 
       <%= button_to "delete", destroy_product_path(@vendors.id, product.id), { method: :delete, data: {confirm: 'Are you sure you want to delete?'}} %>
+      <%= button_to "edit", edit_product_path(@vendors.id, product.id), { method: :get} %>
     <% end %>
 
   </ul>

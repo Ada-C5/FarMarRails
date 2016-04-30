@@ -1,5 +1,6 @@
 class Sale < ActiveRecord::Base
 
   belongs_to :product
-  #??? :vendor????
+
+  belongs_to :vendor
 end

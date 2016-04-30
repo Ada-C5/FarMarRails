@@ -19,7 +19,17 @@ class ProductsController < ApplicationController
   def destroy
   Product.find(params[:p_id]).destroy
   redirect_to vendor_products_path #redirect does not remember instance variables
-end
+  end
+
+  def edit
+    @product = Product.find(params[:format])
+  end
+
+  def update
+    product = Product.find(params[:id])
+    product.update_attributes(product_create_params[:product])
+    redirect_to vendor_products_path(product.vendor_number)
+  end
 
   private
 

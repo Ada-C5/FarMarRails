@@ -1,9 +1,0 @@
-<%= form_for [@vendor, @product] do |f| %>
-<%= f.label :product_number %>
-<%= f.text_field :product_number %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.hidden_field(:vendor_number, :value => @vendor.id) %>
-<!-- <%= collection_select(:product, :vendor_number, Vendor.all, :id, :name) %> -->
-<%= f.submit %>
-<% end %>
