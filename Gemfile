@@ -25,7 +25,7 @@ group :development do
   gem 'pry-rails'
   gem 'spring'
 end
-
+group :production do
   gem 'pg'
   gem 'rails_12factor'
-
+end
