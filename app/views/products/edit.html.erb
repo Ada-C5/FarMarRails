@@ -1,0 +1,10 @@
+<%= @product.name %>
+<%= params %>
+
+<%= form_for @product, url: update_product_path(@product.id) do |f| %>
+<%= f.label :product_number %>
+<%= f.text_field :product_number %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit %>
+<% end %>

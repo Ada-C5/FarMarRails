@@ -1,0 +1,11 @@
+<header>
+  <h1>  Welcome to <%= @vendor.name %> Market!</h1>
+</header>
+
+<h2>
+<%= link_to "Sales", vendor_sales_path(@vendor.id) %>
+<h2>
+
+  <h2>
+  <%= link_to "Products", vendor_products_path(@vendor.id) %>
+  <h2>

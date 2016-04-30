@@ -1,0 +1,40 @@
+<h1>
+  <% market = @market %>
+
+  <%= market.name %>
+</h1>
+
+  <p>
+    Address:
+    <%= market.address %>
+  </p>
+  <p>
+    City:
+    <%= market.city %>
+  </p>
+  <p>
+    County:
+    <%= market.county %>
+  </p>
+  <p>
+    State:
+    <%= market.state %>
+  </p>
+  <p>
+    Zip:
+    <%= market.zip %>
+  </p>
+
+
+<h2>
+  Vendors:
+</h2>
+  <ul>
+    <% @vendors.each do  |vendor| %>
+      <li> <%= vendor.name %> </li>
+    <% end %>
+  </ul>
+
+</li> <%= link_to "Edit Market", edit_market_path %> </li>
+
+  <!-- <%= params %> -->

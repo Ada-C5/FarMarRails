@@ -1,0 +1,28 @@
+<header>
+  <h1> All Markets </h1>
+</header>
+
+ <%= puts @all_markets %>
+
+<table border = "1">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>County</th>
+    <th>State</th>
+    <th>Zip</th>
+  </tr>
+
+
+  <% @all_markets.each do |market| %>
+    <tr>
+      <td><%= link_to market.name, single_market_path(market.id) %></td>
+      <td><%= market.address %></td>
+      <td><%= market.city %></td>
+      <td><%= market.county %></td>
+      <td><%= market.state %></td>
+      <td><%= market.zip %></td>
+    </tr>
+  <% end %>
+</table>
