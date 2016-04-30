@@ -11,13 +11,10 @@ html {
   margin-top: 10px;
   height: 400px;
   width: 400px;
-  margin-left: 345px;
+  margin-left: 445px;
   margin-right: 323px;
 }
 
-h1 {
-  padding-left: 5%;
-}
 
 .market_button .btn-success {
   color: #fff;
