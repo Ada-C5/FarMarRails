@@ -1,18 +1,20 @@
 class MarketsController < ApplicationController
-  
+
   def index
-    @markets = Market.all 
+    @markets = Market.all
+    @main_page = true
   end
 
   def show
     @market = Market.find(params[:id])
     render :show
-    
+    @page_title = @market.name
+
   end
 
-  def new 
-    @market = Market.new 
-  end 
+  def new
+    @market = Market.new
+  end
 
   def create
     @market = Market.new(new_params[:market])
@@ -21,12 +23,12 @@ class MarketsController < ApplicationController
       redirect_to markets_path
     else
       render :new
-    end 
+    end
   end
-  
-  def edit 
+
+  def edit
     @market = Market.find(params[:id])
-  end 
+  end
 
   def update
     @market = Market.find(params[:id])
@@ -37,10 +39,10 @@ class MarketsController < ApplicationController
 
   def destroy
     Market.destroy(params[:id])
-    if params[:id] = true 
-      # message stating that the market has been deleted? 
+    if params[:id] = true
+      # message stating that the market has been deleted?
       redirect_to markets_path
-    end 
+    end
   end
 
   private

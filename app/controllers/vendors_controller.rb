@@ -4,11 +4,13 @@ class VendorsController < ApplicationController
 
   def index
     @vendors = Vendor.all
+    @main_page = true
   end
 
   def show
     @vendor = Vendor.find(params[:id])
     @vendor ||= Vendor.find(params[:vendor_id])
+    @page_title = @vendor.name
     @all_sales = @vendor.sales
     thirty_days = Time.now - ONE_MONTH
     @month_sales = @vendor.sales.where(purchase_time: thirty_days..Time.now)

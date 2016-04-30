@@ -8,6 +8,7 @@
     <div class='list-item'>
         <li>
           <%= link_to market.name, market_path(market.id) %>
+          |
           <span class="list-info">
             <%= market.address %>
             <%= market.city %>
@@ -19,14 +20,21 @@
     </ul>
   </div>
 <% else %>
-  <ul>
-    <% @markets.each do |market| %>
-      <li>
-        <%= link_to market.name, market_path(market.id,:user => "guest") %>
-        <%= market.address %>
-        <%= market.city %>
-        <%= market.state %>
-      </li>
-    <% end %>
-  </ul>
+  <div class='list'>
+    <ul>
+      <% @markets.each do |market| %>
+        <div class="list-item">
+          <li>
+            <%= link_to market.name, market_path(market.id, :user => "guest") %>
+            |
+            <span class="list-info">
+              <%= market.address %>
+              <%= market.city %>
+              <%= market.state %>
+            </span>
+          </li>
+        </div>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
