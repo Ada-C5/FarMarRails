@@ -41,7 +41,7 @@
   <aside>
 
     <p>
-      <%= button_to "Edit This Market", edit_market_path, method: :patch %>
+      <%= button_to "Edit This Market", edit_market_path, method: :get %>
     </p>
     <p>
       <%= button_to "Delete This Market", @market, :method => :delete, :data => {:confirm => "Are You Sure?"}, class: "delete-button" %>
