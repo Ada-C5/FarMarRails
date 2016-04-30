@@ -3,6 +3,64 @@ html {
   position: relative;
 }
 
+.welcome {
+  background-image: url("farmer_market sign.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 10px;
+  height: 400px;
+  width: 400px;
+  margin-left: 345px;
+  margin-right: 323px;
+}
+
+.market_button .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.market_form{
+  margin-left: 5px;
+}
+
+.sales_link .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    margin-left: 5px;
+    border-color: #4cae4c;
+    margin-top: 5px;
+}
+
+.new_sales .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    margin-left: 5px;
+    border-color: #4cae4c;
+    margin-top: 5px;
+}
+
+.product_button .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    margin-left: 5px;
+    border-color: #4cae4c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.vendor_links .btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 body {
   margin: 0 0 100px;
 }

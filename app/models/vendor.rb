@@ -11,6 +11,10 @@ class Vendor < ActiveRecord::Base
 		self.sales.where(purchase_time: start_date..end_date)
 	end
 
+	def monthly_sales_total
+		amount = self.current_month_sales.pluck(:amount).reduce(0,:+)/100
+		format("$%.2f",amount)
+	end
 
 	def current_month_sales
 		self.sales.where(purchase_time: 30.day.ago..Time.now)

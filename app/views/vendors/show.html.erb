@@ -1,10 +1,12 @@
 <%= render '/shared/vendor_list' %>
 
-<%= link_to vendor_products_path(@vendors.first.id), class: 'btn btn-success' do %>
-  Products
-<% end %>
+<div class="vendor_links">
+  <%= link_to vendor_products_path(@vendors.first.id), class: 'btn btn-success' do %>
+    Products
+  <% end %>
 
 
-<%= link_to vendor_sales_path(@vendors.first.id), class: 'btn btn-success' do %>
-  Sales
-<% end %>
+  <%= link_to vendor_sales_path(@vendors.first.id), class: 'btn btn-success' do %>
+    Sales
+  <% end %>
+</div>

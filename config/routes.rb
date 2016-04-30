@@ -9,8 +9,6 @@ root 'home#index'
 resources :vendors do
   resources :sales, only: [:index, :show, :new, :create]
 
-  resources :sales, only: [:index, :show, :new]
-
   resources :products
 end
 

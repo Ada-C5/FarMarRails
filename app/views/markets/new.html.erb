@@ -1,6 +1,6 @@
 <h2 class="forms">Create a New Market</h2>
-
-<%= form_for @market do |f| %>
+<div class="market_form">
+<%= form_for @market, :html => { :class => "form-horizontal" } do |f| %>
 	<%= f.label :'Market Name:' %>
 	<br>
 	<%= f.text_field :name, class: 'field' %>
@@ -25,6 +25,8 @@
 	<br>
 	<%= f.text_field :zip, class: 'field' %>
 	<br>
-
 	<%= f.submit %>
 	<% end %>
+</div>
+<br>
+<br
