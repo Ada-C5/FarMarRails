@@ -1,0 +1,11 @@
+<div class="list">
+  <ul>
+    <% sales.each do |sale| %>
+      <div class="list-item">
+        <li>
+          $<%= number_with_precision(sale.amount, precision: 2) %>, <%= sale.purchase_time %>
+        </li>
+      </div>
+    <% end %>
+  </ul>
+</div>

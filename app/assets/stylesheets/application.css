@@ -1,0 +1,276 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*Reset CSS!*/
+
+ /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+   display: block;
+ }
+ body {
+   line-height: 1;
+ }
+ ol, ul {
+   list-style: none;
+ }
+ blockquote, q {
+   quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none;
+ }
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+/** General **/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Arimo';
+}
+
+body {
+  background-color: #FAF9F9;
+  margin: 0;
+  padding: 0;
+}
+
+article.container {
+  padding: 1rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #C66767;
+  margin: .5rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #C66767;
+  margin: 2.8rem 0 0 0;
+}
+
+p {
+  color: #7A3333;
+}
+
+a {
+  text-decoration: none;
+  color: #C66767;
+}
+
+a:hover {
+  color: #7A3333;
+}
+
+/** Long Lists **/
+
+.page-title {
+  width: 100%;
+  padding: .5rem;
+  background-color: #F9F7F1; /** cream **/
+  border-bottom: 1rem solid #FCA19A; /** salmon **/
+  box-shadow: 0 .2rem #C66767; /** toasted-bagel **/
+  overflow: auto;
+}
+
+.page-title img {
+  display: block;
+  width: 55%;
+  margin: .5rem auto;
+  padding-right: 4rem;
+}
+
+.create-button {
+  width: 12rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #F9F7F1;
+  border: .2rem solid #FBD6D3;
+  border-radius: .2rem;
+  text-align: center;
+}
+
+.create-button:hover {
+  background-color: #FBD6D3;
+  border: .2rem solid #FCA19A;
+}
+
+div.list {
+  width: 90%;
+  max-height: 34rem;
+  margin: 3rem auto;
+  background-color: #FBD6D3;
+  border-radius: .35rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  padding: 4%;
+}
+
+div.list ul {
+  width: 100%;
+}
+
+div.list-item {
+  font-color: #FCA19A;
+  display: block;
+  margin: 0;
+  padding: 1rem;
+  border-radius: .2rem;
+  width: 100%;
+}
+
+.list-item:nth-child(2n+1) {
+  background-color: #F9F7F1;
+}
+
+.list-info {
+  color: #7A3333; /** burnt-bagel **/
+  font-size: .8rem;
+}
+
+.fa-home {
+  margin-left: .6rem;
+  /*position: absolute;*/
+  /*top: 4.5rem;*/
+  float: left;
+  font-size: 3rem;
+}
+
+/** HOME **/
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+  color: #FCA19A;
+}
+
+.far-mar-index {
+  margin: 60px auto 40px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.far-mar-index div {
+  display: inline-block;
+  margin: .5%;
+}
+
+.far-mar-index img {
+  border-radius: .25rem;
+  border: .1rem solid;
+  border-color:#FCA19A;
+  height: 9rem;
+}
+
+/** VENDORS **/
+.total {
+  width: 12rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #F9F7F1;
+  border: .2rem solid #FBD6D3;
+  border-radius: .2rem;
+  text-align: center;
+}
+
+
+/** FORMS **/
+
+input[type=submit] {
+ background-color: #C66767;
+ border: none;
+ padding: .5rem;
+ border-radius: .25rem;
+ color: #F9F7F1;
+ cursor: pointer;
+ font-size: 1rem;
+ margin-top: 1rem;
+}
+
+input[type=submit]:hover {
+  background-color: #FCA19A;
+}
+
+.vendor-products input[type=submit] {
+  padding: .2rem;
+  font-size: .8rem;
+}
+
+.vendor-products form {
+  display: inline-block;
+  padding: .2rem;
+}
+
+
+input[type=text] {
+ border-radius: 5px;
+ color: #7A3333;
+ cursor:pointer;
+ display: inline-block;
+ font-size: 16px;
+ margin-top: 5px;
+ margin-left: 10px;
+ padding:5px 15px;
+ width: 500px;
+}
+
+label {
+  color: #7A3333;
+}
+
+select {
+  width: 10rem;
+  height: 2rem;
+  background-color: #EDEDED;
+  font-size: 1rem;
+}

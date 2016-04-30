@@ -1,0 +1,24 @@
+<% if @market.errors.any? %>
+  <ul>
+    <% @market.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_for @market do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :address %>
+  <%= f.text_field :address %><br/>
+  <%= f.label :city %>
+  <%= f.text_field :city %><br/>
+  <%= f.label :county %>
+  <%= f.text_field :county %><br/>
+  <%= f.label :state %>
+  <%= f.text_field :state %><br/>
+  <%= f.label :zip %>
+  <%= f.text_field :zip %><br/>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,13 @@
+<ul>
+  <% vendors.each do |ven| %>
+      <div class="list-item">
+        <li>
+          <%= link_to ven.name, vendor_path(ven.id) %>
+           |
+          <span class="list-info">
+            <%= ven.number_of_employees %> Employees.
+          </span>
+        </li>
+      </div>
+  <% end %>
+</ul>

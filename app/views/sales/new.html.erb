@@ -1,0 +1,15 @@
+<h1>Create New Sale</h1>
+<%= form_for [@vendor, @sale] do |f| %>
+
+  <%= f.label :product_id do %>
+    Product:
+    <%= collection_select(:sale, :product_id, @vendor.products, :id, :name, {include_blank: "Choose Product"}) %>
+  <% end %>
+
+  <%= f.label :amount do %>
+    Amount:
+    <%= f.text_field :amount, placeholder: "500.00" %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>

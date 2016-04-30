@@ -1,0 +1,55 @@
+<% if params[:user] == 'guest' || params[:user] == 'vendor'%>
+  <%= render "marketinfo" %>
+  <h2>List of Vendors</h2>
+  <div class='list'>
+    <% @market.vendors.each do |vendor| %>
+      <div class="list-item">
+        <%= vendor.name %>
+      </div>
+    <% end %>
+  </div>
+  <aside>
+    <%= link_to markets_path(:user => 'guest') do %>
+      <div class="create-button">
+        Back to Markets
+      </div>
+    <% end %>
+  </aside>
+<% else %>
+  <%= render "marketinfo" %>
+
+  <%= link_to new_market_vendor_path(@market.id) do %>
+  <div class="create-button">
+    Add a Vendor
+  </div>
+  <% end %>
+  <h2>List of Vendors</h2>
+    <div class='list'>
+      <% @market.vendors.each do |vendor| %>
+        <div class="list-item">
+          <%= link_to vendor.name, market_vendor_path(@market.id,vendor.id,:user => "market") %>
+          |
+          <span class="list-info">
+            <%= link_to "Edit This Vendor", edit_market_vendor_path(@market.id,vendor.id)  %>
+            |
+            <%= link_to "Delete This Vendor", vendor, :method => :delete, :data => {:confirm => "Are You Sure?"} %>
+        </span>
+       </div>
+      <% end %>
+    </div>
+  </h2>
+  <aside>
+
+    <p>
+      <%= button_to "Edit This Market", edit_market_path, method: :get %>
+    </p>
+    <p>
+      <%= button_to "Delete This Market", @market, :method => :delete, :data => {:confirm => "Are You Sure?"}, class: "delete-button" %>
+    </p>
+    <%= link_to markets_path(:user => 'market') do %>
+      <div class="create-button">
+        Back to Markets
+      </div>
+    <% end %>
+  </aside>
+<% end %>

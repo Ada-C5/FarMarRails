@@ -1,0 +1,40 @@
+<% if params[:user] == 'market' %>
+  <%= link_to new_market_path do %>
+    <div class="create-button">Add A New Market</div>
+  <% end %>
+  <div class='list'>
+    <ul>
+      <% @markets.each do |market| %>
+    <div class='list-item'>
+        <li>
+          <%= link_to market.name, market_path(market.id) %>
+          |
+          <span class="list-info">
+            <%= market.address %>
+            <%= market.city %>
+            <%= market.state %>
+          </span>
+        </li>
+    </div>
+      <% end %>
+    </ul>
+  </div>
+<% else %>
+  <div class='list'>
+    <ul>
+      <% @markets.each do |market| %>
+        <div class="list-item">
+          <li>
+            <%= link_to market.name, market_path(market.id, :user => "guest") %>
+            |
+            <span class="list-info">
+              <%= market.address %>
+              <%= market.city %>
+              <%= market.state %>
+            </span>
+          </li>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
