@@ -36,9 +36,6 @@ CSV.foreach(VENDOR_PATH) do |row|
     employee_count: row[2].to_i,
     market_id: row[3].to_i
   }
-
-	# markets = Market.find(row[3])
-  # markets.vendors << Vendor.create(row_hash)
    Vendor.create(row_hash)
 
 end
@@ -50,8 +47,6 @@ CSV.foreach(PRODUCT_PATH) do |row|
     vendor_id: row[2].to_i
   }
 
-	# vendor = Vendor.find(row[2])
-  # vendor.products << Product.create(row_hash)
   Product.create(row_hash)
 
 end
@@ -66,12 +61,7 @@ CSV.foreach(SALE_PATH) do |row|
     product_id: row[4].to_i
 
   }
-  puts "row: #{row}"
-	# vendor = Vendor.find(row[3])
-  # vendor.sales << Sale.create(row_hash)
-  #
-  # product = Product.find(row[4])
-  # product.sales << Sale.create(row_hash)
+
   Sale.create(row_hash)
 
 end
