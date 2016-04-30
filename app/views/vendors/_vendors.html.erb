@@ -3,10 +3,9 @@
       <div class="list-item">
         <li>
           <%= link_to ven.name, vendor_path(ven.id) %>
-           | 
+           |
           <span class="list-info">
             <%= ven.number_of_employees %> Employees.
-            <%= link_to ven.market.name, market_path(ven.market.id, :user => 'vendor') %></p>
           </span>
         </li>
       </div>
