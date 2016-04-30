@@ -9,7 +9,6 @@ class MarketsController < ApplicationController
     @market = Market.find(params[:id])
     render :show
     @page_title = @market.name
-
   end
 
   def new
