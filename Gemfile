@@ -47,6 +47,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', '0.17.1' #or version of pg you want
+  gem 'rails_12factor', '0.0.2' #Heroku static assets for image and css
 end
