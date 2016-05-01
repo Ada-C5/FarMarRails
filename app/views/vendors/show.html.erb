@@ -1,0 +1,56 @@
+<h1> Welcome, <%=@vendor.name%>! </h1>
+
+
+<h2>Sales: </h2> <br>
+<%= button_to "Add a sale", new_sale_path(@vendor.id), method: :get %>
+  <% total_sales = 0 %>
+  <% @vendor.sales.each do |sale| %>
+    <ul>
+
+      <li> Amount: $ <%= number_with_precision (sale.amount/100.0), precision: 2 %> </li>
+      <li> Product: <%= Product.find(sale.product_id).name %> </li>
+      <li> Purchase time:
+      <% if !sale.purchase_time.nil? %>
+         <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+        <% end %>
+      <%= button_to "Delete sale", sale_path(sale.id), method: :delete, data: {confirm: "Are you sure?"} %>
+    </ul>
+  <% total_sales += sale.amount %>
+  <% end %>
+
+<h2>Total sales: </h2> <br>
+<% tsales = total_sales/100.0 %>
+<p> $ <%=  number_with_precision tsales , precision: 2 %> </p>
+
+<h2>Sales this month:</h2>
+<% month_sales = 0 %>
+<% @all_sales.each do |sale| %>
+  <ul>
+    <li> Amount: $ <%= sale.amount/100.0 %> </li>
+    <li> Product: <%= Product.find(sale.product_id).name %> </li>
+    <% if !sale.purchase_time.nil? %>
+      <li> Purchase time: <%= sale.purchase_time.strftime("%m/%d/%Y at %I:%M%p") %> </li>
+    <% end %>
+  </ul>
+<% month_sales += sale.amount %>
+<% end %>
+<% msales = month_sales/100.0 %>
+<p>Revenue this month: $ <%= number_with_precision msales , precision: 2  %></p>
+
+<h2>Products: </h2> <br>
+
+<%= button_to "Add a product", new_product_path(@vendor.id), method: :get %>
+
+  <% @vendor.products.each do |product| %>
+    <ul>
+      <li> <%= product.name %> </li>
+      <%= button_to "Edit product", edit_product_path(product.id), method: :get%>
+      <%= button_to "Delete product", product_path(product.id), method: :delete, data: {confirm: "Are you sure?"} %>
+    </ul>
+  <% end %>
+
+<h2>Total products: </h2> <br>
+<p><%= @vendor.products.count %></p>
+
+<h2>Employees: </h2>
+<p><%=@vendor.no_of_employees%></p>

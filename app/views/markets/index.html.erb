@@ -1,0 +1,11 @@
+<!-- <% render partial: 'index' %> -->
+<h1> MARKETS </h1>
+<div class ="new_market_button">
+  <%= button_to "Create a new market", new_market_path, method: :get %>
+</div>
+
+  <% @markets = Market.all.order(:name) %>
+  <% @markets.each do |market| %>
+      <%= link_to market.name, market_path(market.id) %><br>
+      <%= button_to "Edit market info", edit_market_path(market.id), method: :get %>
+  <% end %>

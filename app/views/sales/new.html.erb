@@ -1,0 +1,21 @@
+<h1> Welcome, <%=@vendor.name%>! Create a new sale: </h1>
+
+<% if @sale.errors.any? %>
+  <ul>
+    <% @sale.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    </ul>
+    <% end %>
+<% end %>
+
+<%= form_for @sale do |f| %>
+  <%= f.label :amount %>
+  <%= f.text_field :amount %>
+  <%= f.label :purchase_time %>
+  <%= f.text_field :purchase_time %>
+  <%= f.hidden_field :vendor_id, :value => @vendor.id %>
+  <%= f.select "product_id", options_from_collection_for_select( @products, "id", "name"), :include_blank => true %><br>
+  <%= f.submit %>
+<% end %>

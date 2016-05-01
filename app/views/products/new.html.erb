@@ -1,0 +1,19 @@
+<h1> Create a new product: </h1>
+
+<% if @product.errors.any? %>
+  <ul>
+    <% @product.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    </ul>
+    <% end %>
+<% end %>
+
+
+<%= form_for @product do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.hidden_field :vendor_id, :value => @vendor.id %> <br>
+  <%= f.submit %>
+<% end %>

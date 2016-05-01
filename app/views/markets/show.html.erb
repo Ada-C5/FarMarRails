@@ -1,0 +1,22 @@
+<h1> Welcome, <%=@market.name%>! </h1>
+
+<p>
+  Address: <%= @market.address %><br>
+  City: <%= @market.city %><br>
+  County: <%= @market.county %><br>
+  State: <%= @market.state %><br>
+  Zip: <%= @market.zip %><br>
+</p>
+
+<%= button_to "Add a new vendor", new_vendor_path(@market.id), method: :get %>
+
+<div class="display_blocks">
+  <h2>Vendors: </h2><br>
+    <% @market.vendors.each do |vendor| %>
+      <ul>
+        <li> <%= link_to vendor.name, vendor_path(vendor.id) %> </li>
+        <%= button_to "Edit vendor info", edit_vendor_path(vendor.id), method: :get%>
+        <%= button_to "Delete vendor", vendor_path(vendor.id), method: :delete, data: {confirm: "Are you sure?"} %>
+      </ul>
+    <% end %>
+</div>

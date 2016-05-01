@@ -1,0 +1,13 @@
+<h1> Welcome, <%=@market.name%>! Create a new vendor: </h1>
+
+<% if @vendor.errors.any? %>
+  <ul>
+    <% @vendor.errors.each do |column, message| %>
+      <li>
+        <%= column.capitalize %> <%= message %>
+      </li>
+    </ul>
+    <% end %>
+<% end %>
+
+<%=render partial: 'form'%>
