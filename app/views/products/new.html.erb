@@ -1,9 +1,7 @@
-<h1>New!</h1>
-
-<section class= "form">
+<h1>Add New Product:</h1>
+<section class = "form-container">
   <span><%=form_for ([@vendor, @product]) do |f| %></span><br>
   <span>Title:<%=f.text_field :name %></span><br>
   <span><%=f.submit%></span>
   <% end %>
-
 </section>

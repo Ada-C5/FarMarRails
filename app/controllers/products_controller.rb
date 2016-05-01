@@ -11,16 +11,14 @@ class ProductsController < ApplicationController
 
   def edit
     @vendor = Vendor.find(params[:vendor_id])
-    @product = @vendor.products.find(params[:vendor_id])
+    @product = @vendor.products.find(params[:id])
     render :new
   end
 
-
-
   def update
     @vendor = Vendor.find(params[:vendor_id])
-    @products = @vendor.products.find(params[:vendor_id])
-    @products.update(product_update_params)
+    @product = @vendor.products.find(params[:id])
+    @product.update(product_update_params)
     redirect_to vendor_products_path
   end
 

@@ -1,8 +1,9 @@
 
 <h1> Welcome Market Partner!</h1>
 
-<%=link_to "Create a New Market", new_market_path%>
-
+<div class = "create">
+  <%=link_to "Create a New Market", new_market_path%>
+</div>
 
 <table>
   <%@markets.each do |market|%>

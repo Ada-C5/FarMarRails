@@ -1,15 +1,80 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+.home_class {
+  background-image: url("./market_pic.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.container {
+  background-color: #ffffff;
+  margin: 3em;
+  padding: 2em;}
+
+.main_nav {
+  background: #065af8;
+  margin: 2em;
+}
+
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  overflow: auto;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.float-left {
+  float:left;
+  margin-left: 3em;
+}
+
+.float-right {
+  float:right;
+  margin-right: 3em;
+}
+
+.create {
+  margin: 2em;
+  text-align: center;
+}
+
+/***** FORM STYLING *****/
+
+.form-container {
+  width: 50%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #065af8;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

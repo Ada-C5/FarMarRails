@@ -12,14 +12,18 @@
   </li>
 </ul>
 
-<h2> Vendor List </h2>
-<%=link_to "Create New Vendor", new_vendor_path(:market_id => @market.id)%>
+<h1> Vendor List </h1>
+<div class = "create">
+  <%=link_to "Create New Vendor", new_vendor_path(:market_id => @market.id)%>
+</div>
+
 <table>
-  <tr>
     <% @vendors.each do |vendor| %>
-      <td><%=vendor.name%></td>
-      <td><%=link_to "Edit", edit_vendor_path(id: vendor.id, :market_id => @market.id)%></td>
-      <td><%=link_to "Delete", vendor_path(id: vendor.id), method: :delete%></td>
+      <tr>
+        <td><%=vendor.name%></td>
+        <td><%=link_to "Edit", edit_vendor_path(id: vendor.id, :market_id => @market.id)%></td>
+        <td><%=link_to "Delete", vendor_path(id: vendor.id), method: :delete%></td>
+      </tr>
     <%end%>
-  </tr>
+
 </table>

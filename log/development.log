@@ -29364,3 +29364,2366 @@ Processing by VendorsController#index as HTML
   [1m[35mVendor Load (2.0ms)[0m  SELECT "vendors".* FROM "vendors"
   Rendered vendors/index.html.erb within layouts/application (63.1ms)
 Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:05:14 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (131.2ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (686.7ms)
+Completed 200 OK in 901ms (Views: 735.3ms | ActiveRecord: 131.2ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:05:16 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:05:57 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (19.7ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (309.5ms)
+Completed 200 OK in 753ms (Views: 727.8ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/assets/home.self-5ca3cb3ded2f240bfbda5963e57bf114544612ce3fe11950fa3c3c4b43361521.css?body=1" for ::1 at 2016-05-01 10:05:58 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:05:58 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:06:04 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (4.0ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (138.9ms)
+Completed 200 OK in 244ms (Views: 239.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home.self-6c18b02e219c00751fd154f2cad71ce0777d6d0320085674c483ee45988bcbc5.css?body=1" for ::1 at 2016-05-01 10:06:05 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:06:05 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:06:11 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (2.5ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:06:51 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (5.6ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (89.9ms)
+Completed 200 OK in 156ms (Views: 149.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/home.self-edb163555fae0669dc7a12a28e0d1fd9f44de716b7c1b78f3ec4ebb346327d2e.css?body=1" for ::1 at 2016-05-01 10:06:51 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:06:52 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:07:22 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.2ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (76.5ms)
+Completed 200 OK in 134ms (Views: 130.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/home.self-ab738c53177593712a235c761b80f5d96a62e4e6f561c68e03321fd824fd4f4a.css?body=1" for ::1 at 2016-05-01 10:07:23 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:07:23 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:07:29 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.5ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 139ms (Views: 136.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/home.self-39dce6c61c429d70432f4e047d238a4e2f9587ec025096fe3e32365aa2cd3f93.css?body=1" for ::1 at 2016-05-01 10:07:29 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:07:30 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:08:00 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.6ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (79.7ms)
+Completed 200 OK in 134ms (Views: 129.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/home.self-50dde30a43e6e04dda122e4f30cef5126d3b50b18eaec6e541cf7358f757d7a7.css?body=1" for ::1 at 2016-05-01 10:08:00 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:08:01 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:08:21 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (1.7ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (101.3ms)
+Completed 200 OK in 154ms (Views: 151.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:08:21 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:08:27 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.6ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (60.7ms)
+Completed 200 OK in 119ms (Views: 116.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/home.self-fd67dbcda8419853bdeedb1439ae39ecbbb29e7ab82c22f71ff60d85e2ce4da7.css?body=1" for ::1 at 2016-05-01 10:08:27 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:08:27 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:09:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-c0585b03d7adefad49caf3bb58747cda5007c94367b9d1f3b32708042ca815be.css?body=1" for ::1 at 2016-05-01 10:09:50 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:09:50 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:13:15 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.6ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 106ms (Views: 98.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:13:16 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (7.2ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (198.1ms)
+Completed 200 OK in 234ms (Views: 225.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:13:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:14:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8e3d36f26144f655b2f576df9eb30dcf2363aef192c6795f2428681897e07d70.css?body=1" for ::1 at 2016-05-01 10:14:23 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:14:23 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:14:24 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:15:24 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (2.1ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (109.2ms)
+Completed 200 OK in 142ms (Views: 139.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:15:25 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:15:49 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.0ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-adc38302275f3ea47b2d40238acf1b0d2da7d9239185f27b73f57d13140d45ac.css?body=1" for ::1 at 2016-05-01 10:15:49 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:15:49 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:15:56 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.8ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-5885f9bf2d87f70467b945c47e323cda6e496cb0fffab61c34ddc34aad7e1156.css?body=1" for ::1 at 2016-05-01 10:15:57 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:15:57 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:16:06 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-dd0edca9df703ee2f0aeb4dda4afc528eac9a939bfb9bf8fede8d78348a0a623.css?body=1" for ::1 at 2016-05-01 10:16:07 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:16:07 -0700
+
+
+Started GET "/markets/21" for ::1 at 2016-05-01 10:16:11 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mMarket Load (0.2ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1  [["id", 21]]
+  [1m[36mVendor Load (1.0ms)[0m  [1mSELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?[0m  [["market_id", 21]]
+  Rendered markets/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 50ms (Views: 31.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:16:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:16:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:16:57 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:19:05 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:19:05 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:20:11 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (3.9ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (84.6ms)
+Completed 200 OK in 109ms (Views: 104.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:20:14 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.6ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:20:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:21:28 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-27712d892b0d02736e8897281d14ec051fd6109261523754876853da9f0a9838.css?body=1" for ::1 at 2016-05-01 10:21:28 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:21:28 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:22:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6bb58708952b6173f3e554e7674df30ee7c30decf8c6f8235bb2735a5e1d970c.css?body=1" for ::1 at 2016-05-01 10:22:30 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:22:30 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:22:47 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-deefa8011cc0f42361c08c32d46dee464ff6593d98821af78c6d66ac624303af.css?body=1" for ::1 at 2016-05-01 10:22:48 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:22:48 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:23:00 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-04dbad7ad8ee618e5778dee002a89debf7647b3628b46f8214f8954ccdc83ad8.css?body=1" for ::1 at 2016-05-01 10:23:00 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:23:00 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:24:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-08ffda90f8cf2249a2cecbab91b4aaa89d9f652f4f645c45d2a5d9e2d23450f8.css?body=1" for ::1 at 2016-05-01 10:24:16 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:24:17 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:24:22 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (7.0ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 103ms (Views: 94.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:24:29 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:24:34 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:30:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:30:25 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (6.3ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 117ms (Views: 110.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:30:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:30:27 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.9ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:30:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:31:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/aniamac/C5/projects/FarMarRails/app/views/home/index.html.erb:4: syntax error, unexpected '='
+... Vendor", vendors_path, class = "float-left" );@output_buffe...
+...                               ^
+/Users/aniamac/C5/projects/FarMarRails/app/views/home/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...s a Market", markets_path class = "float-right");@output_buf...
+...                               ^):
+  app/views/home/index.html.erb:4: syntax error, unexpected '='
+  app/views/home/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:33:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3020e8a8ae3afe503ef303326d4dea0d177c3a5ca98a866d77969caada2f73dc.css?body=1" for ::1 at 2016-05-01 10:33:02 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:33:02 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:33:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-43a95511093c74c580a10d24a113147ce29d96b7c56f5104afde3df8f30e0099.css?body=1" for ::1 at 2016-05-01 10:33:15 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:33:15 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:34:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0e0ffd9428bb0d5fc58ced4063a71953e3ff25f4657823f113a14b65dfc958d6.css?body=1" for ::1 at 2016-05-01 10:34:24 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:34:24 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:35:09 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 87ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ba6349f39fdd89132480e69210cbac342d1565808e6e151a04ba11cf27568df3.css?body=1" for ::1 at 2016-05-01 10:35:09 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:35:09 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:35:10 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (8.5ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (148.4ms)
+Completed 200 OK in 191ms (Views: 181.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:35:12 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.8ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:35:14 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:35:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f21dc1ff254f1735fed86b7bd74c5bdbe18bcc735a3119d837041b528153a319.css?body=1" for ::1 at 2016-05-01 10:35:33 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:35:33 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:36:14 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8c5734de037e053634fb4f0c88647d4068ab2a75ec6b9c007f54a70fbb082345.css?body=1" for ::1 at 2016-05-01 10:36:14 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:36:14 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:36:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4449611917c1749b1588d41f0476ea95b3b4a62a9fc2141009fe43fe9500ff5e.css?body=1" for ::1 at 2016-05-01 10:36:45 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:36:45 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:37:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d4f1a6847f4e555c1893ac00fb9b2eef509fccfa4d9f395d113818b986866fc.css?body=1" for ::1 at 2016-05-01 10:37:33 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:37:34 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:37:37 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (5.0ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 118ms (Views: 111.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:37:39 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:37:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 143ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:38:09 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 74ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c7679d829e47608529b036e6a7e589e567331855d1c7a4983ed012e60155f55d.css?body=1" for ::1 at 2016-05-01 10:38:09 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:38:09 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:38:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3ece1309d26fea961478a8071b97a1351cbfaec430affe77693974ab537bd3dc.css?body=1" for ::1 at 2016-05-01 10:38:33 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:38:33 -0700
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:39:07 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (12.9ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 157ms (Views: 143.8ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:39:10 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.9ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:39:11 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (1.8ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 86ms (Views: 83.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:39:14 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.6ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:39:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:39:18 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.5ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:39:19 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.7ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:39:32 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (1.3ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:39:34 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:39:34 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:40:18 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (2.3ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 160ms (Views: 156.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self-9a3cc537452a53d82643c2a39c9e45e8b69420500530f008ced1de061b45479c.css?body=1" for ::1 at 2016-05-01 10:40:19 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:40:19 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:40:39 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (4.0ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.self-9496ccdba503079084041a09a6ff4559145acdef1b1b921fea9f3f164e8ec915.css?body=1" for ::1 at 2016-05-01 10:40:39 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:40:39 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:41:30 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (1.1ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:42:55 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.1ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (75.4ms)
+Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:42:58 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.4ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:43:02 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.1ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.2ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:43:50 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.3ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.1ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:44:41 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.3ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.2ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/markets/1/edit" for ::1 at 2016-05-01 10:44:52 -0700
+Processing by MarketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.5ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered markets/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:44:55 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (1.5ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/markets/50" for ::1 at 2016-05-01 10:44:57 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mMarket Load (0.2ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mVendor Load (0.2ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 50]]
+  Rendered markets/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:45:01 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:46:34 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (15.5ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (147.1ms)
+Completed 200 OK in 221ms (Views: 193.8ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:46:34 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (2.1ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 234ms (Views: 231.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-370dc3714818b75842a01f175620835a7665ff0498527b1307c6da5f80440258.css?body=1" for ::1 at 2016-05-01 10:46:35 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:46:35 -0700
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:46:38 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.9ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/markets/new" for ::1 at 2016-05-01 10:46:39 -0700
+Processing by MarketsController#new as HTML
+  Rendered markets/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets/new" for ::1 at 2016-05-01 10:47:43 -0700
+Processing by MarketsController#new as HTML
+  Rendered markets/new.html.erb within layouts/application (81.9ms)
+Completed 200 OK in 360ms (Views: 306.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3eff906f33e60f27f2a8ab5fc36a5f84e1a8a8b24e0f27f8abb6cb7ef7390e9.css?body=1" for ::1 at 2016-05-01 10:47:44 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:47:45 -0700
+
+
+Started GET "/markets/new" for ::1 at 2016-05-01 10:48:11 -0700
+Processing by MarketsController#new as HTML
+  Rendered markets/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4ea1c9a1ce9b4a8f2490d652e47cc88bc820fe46891f85c9cfe9e3cf5ffff991.css?body=1" for ::1 at 2016-05-01 10:48:11 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:48:11 -0700
+
+
+Started GET "/markets/new" for ::1 at 2016-05-01 10:48:44 -0700
+Processing by MarketsController#new as HTML
+  Rendered markets/new.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 229ms (Views: 205.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:48:45 -0700
+
+
+Started POST "/markets" for ::1 at 2016-05-01 10:49:19 -0700
+Processing by MarketsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WRIPKmDW6NNyZhHVG2uUdPrZjNe9X/MLRxz5rD7Zn9giby2BR86VF6i3ye2bvA8fHBTxNRE2UGaJIYu4JXAusg==", "market"=>{"name"=>"Ania's Market", "address"=>"23 seneca", "city"=>"Sammamish", "county"=>"King", "state"=>"WA", "zip"=>"98074"}, "commit"=>"Create Market"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "markets" ("name", "address", "city", "county", "state", "zip", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ania's Market"], ["address", "23 seneca"], ["city", "Sammamish"], ["county", "King"], ["state", "WA"], ["zip", "98074"], ["created_at", "2016-05-01 17:49:19.628778"], ["updated_at", "2016-05-01 17:49:19.628778"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/markets
+Completed 302 Found in 25ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:49:19 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.8ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 94ms (Views: 90.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:49:20 -0700
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:49:54 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMarket Load (0.2ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?[0m  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/markets/1/edit" for ::1 at 2016-05-01 10:50:06 -0700
+Processing by MarketsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMarket Load (0.2ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered markets/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:50:09 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:50:10 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.0ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:50:15 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMarket Load (0.2ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mVendor Load (0.3ms)[0m  [1mSELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?[0m  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 208ms (Views: 203.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:50:25 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (5.4ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (227.1ms)
+Completed 200 OK in 270ms (Views: 264.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:50:32 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:50:33 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.2ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:50:34 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (1.2ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 119ms (Views: 117.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 10:50:36 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/1/products/new" for ::1 at 2016-05-01 10:50:40 -0700
+Processing by ProductsController#new as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 50ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:51:44 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.0ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (128.6ms)
+Completed 200 OK in 175ms (Views: 169.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-05-01 10:51:46 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mSale Load (1.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 1]]
+  [1m[36mSale Load (0.4ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 1], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  Rendered sales/index.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 157ms (Views: 145.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/vendors/1/sales/new" for ::1 at 2016-05-01 10:51:52 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered sales/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-05-01 10:52:24 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mSale Load (0.6ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 1]]
+  [1m[36mSale Load (0.5ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 1], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "1"], ["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "1"], ["id", 1]]
+  Rendered sales/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors/1/sales/new" for ::1 at 2016-05-01 10:52:26 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered sales/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 10:52:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:52:46 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (3.4ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (137.2ms)
+Completed 200 OK in 184ms (Views: 179.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:52:50 -0700
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.3ms)[0m  [1mSELECT "markets".* FROM "markets"[0m
+  Rendered markets/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:52:53 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMarket Load (0.1ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?[0m  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/new?market_id=1" for ::1 at 2016-05-01 10:52:56 -0700
+Processing by VendorsController#new as HTML
+  Parameters: {"market_id"=>"1"}
+  Rendered vendors/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors/new?market_id=1" for ::1 at 2016-05-01 10:54:11 -0700
+Processing by VendorsController#new as HTML
+  Parameters: {"market_id"=>"1"}
+  Rendered vendors/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 179ms (Views: 167.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7e158ed8dc170fc7de365f09f75237f71a244a350333dc4a27bad98db7bfec86.css?body=1" for ::1 at 2016-05-01 10:54:12 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:54:12 -0700
+
+
+Started GET "/vendors/new?market_id=1" for ::1 at 2016-05-01 10:54:31 -0700
+Processing by VendorsController#new as HTML
+  Parameters: {"market_id"=>"1"}
+  Rendered vendors/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 166ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-490072e46f2039b5a13d4dd4d919d11b706614bc16153cb1b5546242f42a1066.css?body=1" for ::1 at 2016-05-01 10:54:32 -0700
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:54:32 -0700
+
+
+Started POST "/vendors" for ::1 at 2016-05-01 10:54:35 -0700
+Processing by VendorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nql9c8SZ0dM9DjrDlxWsk1bdqbX2m+A3WKafrsHkWPdN1F/Y44GsF+ff4vsXwjf4sBDUV1ryQ1qWm+262k3pnQ==", "vendor"=>{"name"=>"", "no_of_employees"=>"", "market_id"=>"1"}, "commit"=>"Create Vendor"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "vendors" ("name", "no_of_employees", "market_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["no_of_employees", ""], ["market_id", 1], ["created_at", "2016-05-01 17:54:35.649965"], ["updated_at", "2016-05-01 17:54:35.649965"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/markets/1
+Completed 302 Found in 16ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:54:35 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.1ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.1ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:54:36 -0700
+
+
+Started DELETE "/vendors/470" for ::1 at 2016-05-01 10:54:42 -0700
+Processing by VendorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IfKm2IaGoo3k8z6+NKL0z6pegA4cJfwK10ndH3aKfnJaj4RzoZ7fST4i5oa0dW+kTJP97LBMX2cZdK8LbSPPGA==", "id"=>"470"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 470]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "vendors" WHERE "vendors"."id" = ?[0m  [["id", 470]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/markets/1
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 10:54:42 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.1ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.2ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:54:43 -0700
+
+
+Started GET "/" for ::1 at 2016-05-01 10:54:48 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:54:57 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (17.8ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (373.0ms)
+Completed 200 OK in 494ms (Views: 475.1ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 10:55:03 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (1.1ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:55:07 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (2.9ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (131.7ms)
+Completed 200 OK in 166ms (Views: 162.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:55:59 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (6.0ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (95.2ms)
+Completed 200 OK in 134ms (Views: 124.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:56:00 -0700
+
+
+Started GET "/vendors/10/products" for ::1 at 2016-05-01 10:56:06 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"10"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 10]]
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/10/products/23/edit" for ::1 at 2016-05-01 10:56:10 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"23"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 10]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=10 [WHERE "products"."vendor_id" = ?]):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.5ms)
+
+
+Started GET "/vendors/10/products/23/edit" for ::1 at 2016-05-01 10:56:10 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"23"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 10]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=10 [WHERE "products"."vendor_id" = ?]):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.4ms)
+
+
+Started GET "/vendors/10/products/27/edit" for ::1 at 2016-05-01 10:56:20 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"27"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 10]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=10 [WHERE "products"."vendor_id" = ?]):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.0ms)
+
+
+Started GET "/vendors/10/products/27/edit" for ::1 at 2016-05-01 10:56:21 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"27"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 10]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=10 [WHERE "products"."vendor_id" = ?]):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.9ms)
+
+
+Started GET "/vendors/10/products" for ::1 at 2016-05-01 10:57:40 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"10"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 10]]
+  Rendered products/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 241ms (Views: 229.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:57:41 -0700
+
+
+Started GET "/vendors/10/products/23/edit" for ::1 at 2016-05-01 10:57:44 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"23"}
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 404 Not Found in 19ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.2ms)
+
+
+Started GET "/vendors/10/products/23/edit" for ::1 at 2016-05-01 10:57:44 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"23"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:14:in `edit'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.5ms)
+
+
+Started GET "/vendors/10/products" for ::1 at 2016-05-01 10:58:31 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"10"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 10]]
+  Rendered products/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:58:32 -0700
+
+
+Started GET "/vendors/10/products/24/edit" for ::1 at 2016-05-01 10:58:34 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"10", "id"=>"24"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 24]]
+  Rendered products/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 48.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vendors/10/products/24" for ::1 at 2016-05-01 10:58:42 -0700
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p9tdcmkx6GcdHLJvixrQa8H9mW/+KAPTgVqJlOW2qvzcpn/ZTimVo8fNalcLzUsAJzDkjVJBoL5PZ/uA/h8blg==", "product"=>{"name"=>"Fierce and Ferocious Beef"}, "commit"=>"Update Product", "vendor_id"=>"10", "id"=>"24"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 10], ["id", 10]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=10 [WHERE "products"."vendor_id" = ?]):
+  app/controllers/products_controller.rb:22:in `update'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.3ms)
+
+
+Started GET "/vendors/10/products" for ::1 at 2016-05-01 10:59:33 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"10"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 10]]
+  Rendered products/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 10:59:34 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.3ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (132.9ms)
+Completed 200 OK in 203ms (Views: 193.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 10:59:37 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vendors/1/products/1/edit" for ::1 at 2016-05-01 10:59:39 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"1", "id"=>"1"}
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 1], ["id", 1]]
+  Rendered products/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vendors/1/products/1" for ::1 at 2016-05-01 10:59:44 -0700
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QAa3TXE0wkccb+6FQtd7VIt6RBqJl26Zv7u3wMxX+5Y7e5XmViy/g8a+Nr3CAOA/bbc5+CX+zfRxhsXU1/5K/A==", "product"=>{"name"=>"Dry and Cold Beets"}, "commit"=>"Update Product", "vendor_id"=>"1", "id"=>"1"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 1], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "products" SET "name" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["name", "Dry and Cold Beets"], ["updated_at", "2016-05-01 17:59:44.656768"], ["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/vendors/1/products
+Completed 302 Found in 20ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 10:59:44 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 10:59:45 -0700
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 11:00:08 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/market_pic.jpg" for ::1 at 2016-05-01 11:00:08 -0700
+
+
+Started GET "/vendors/1/products/1/edit" for ::1 at 2016-05-01 11:00:11 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"1", "id"=>"1"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 1], ["id", 1]]
+  Rendered products/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vendors/1/products/1" for ::1 at 2016-05-01 11:00:17 -0700
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0irh6aFtXEhmHlh9qtZcu1ounfA3BmUb/3IZbW/utBKpV8NChnUhjLzPgEUqAcfQvOPgEptvxnYxT2t5dEcFeA==", "product"=>{"name"=>"Dry Cold Beets"}, "commit"=>"Update Product", "vendor_id"=>"1", "id"=>"1"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 1], ["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "name" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "Dry Cold Beets"], ["updated_at", "2016-05-01 18:00:17.309503"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/vendors/1/products
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 11:00:17 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 11:01:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:01:19 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (7.7ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 136ms (Views: 126.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:01:23 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[36mSale Load (0.3ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 7]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 7]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (121.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.6ms)
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:01:24 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 7]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 7]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.3ms)
+
+
+Started GET "/vendors/15/sales" for ::1 at 2016-05-01 11:01:43 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"15"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 15]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 15]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 15], ["id", 41]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "15"], ["id", 41]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 15], ["id", 44]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "15"], ["id", 44]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 15], ["id", 1184]]
+  Rendered sales/index.html.erb within layouts/application (99.4ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=1184 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.6ms)
+
+
+Started GET "/vendors/15/sales" for ::1 at 2016-05-01 11:01:44 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"15"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 15]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 15]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 15], ["id", 41]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "15"], ["id", 41]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 15], ["id", 44]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "15"], ["id", 41]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "15"], ["id", 44]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 15], ["id", 1184]]
+  Rendered sales/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=1184 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.9ms)
+
+
+Started GET "/vendors/2/products" for ::1 at 2016-05-01 11:03:01 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 2]]
+  Rendered products/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:03:11 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 7]]
+  [1m[36mSale Load (0.3ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 7]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258371074260'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.9ms)
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:03:11 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 7]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 7]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (29.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258331910020'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (6.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.5ms)
+
+
+Started PUT "/__web_console/repl_sessions/12473059b32632c25eba7ad1e4b60f72" for ::1 at 2016-05-01 11:04:32 -0700
+  [1m[35mProduct Load (0.7ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 488]]
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:07:30 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[36mSale Load (0.3ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 7]]
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 7]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (32.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 3.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258302077620'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258302077620'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.7ms)
+
+
+Started GET "/vendors/7/sales" for ::1 at 2016-05-01 11:08:30 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"7"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 7]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 7]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 7], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", "7"], ["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", "7"], ["id", 14]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 7], ["id", 488]]
+  Rendered sales/index.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=488 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started PUT "/__web_console/repl_sessions/90024236befce34e6bc086a7ebda7445" for ::1 at 2016-05-01 11:10:09 -0700
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 7]]
+
+
+Started PUT "/__web_console/repl_sessions/90024236befce34e6bc086a7ebda7445" for ::1 at 2016-05-01 11:10:20 -0700
+  [1m[35mProduct Load (1.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 7]]
+
+
+Started PUT "/__web_console/repl_sessions/90024236befce34e6bc086a7ebda7445" for ::1 at 2016-05-01 11:11:05 -0700
+  [1m[36mSale Load (0.4ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 7]]
+
+
+Started GET "/vendors/18/products" for ::1 at 2016-05-01 11:13:13 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 18]]
+  Rendered products/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 64ms (Views: 56.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:13:17 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 18]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 18]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 18], ["id", 52]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 18], ["id", 51]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 18], ["id", 813]]
+  Rendered sales/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=813 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258368376580'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258368376580'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.1ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:13:17 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 18]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 18], ["id", 52]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 18], ["id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 18], ["id", 813]]
+  Rendered sales/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=813 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/27b5096e4dd202479e838ac38e033e8d" for ::1 at 2016-05-01 11:13:51 -0700
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 813]]
+
+
+Started GET "/vendors/18/products" for ::1 at 2016-05-01 11:13:59 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 18]]
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vendors/18/products/53/edit" for ::1 at 2016-05-01 11:14:02 -0700
+Processing by ProductsController#edit as HTML
+  Parameters: {"vendor_id"=>"18", "id"=>"53"}
+  [1m[36mVendor Load (0.3ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 18], ["id", 53]]
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vendors/62/products" for ::1 at 2016-05-01 11:14:13 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"62"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 62]]
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/vendors/62/sales" for ::1 at 2016-05-01 11:14:16 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"62"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 62]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 62]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1  [["vendor_id", 62], ["id", 202]]
+  Rendered sales/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=202 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258368376580'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258368376580'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.0ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.9ms)
+
+
+Started GET "/vendors/62/sales" for ::1 at 2016-05-01 11:14:16 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"62"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 62]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 62]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."vendor_id" = ? AND "products"."id" = ? LIMIT 1[0m  [["vendor_id", 62], ["id", 202]]
+  Rendered sales/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=202 [WHERE "products"."vendor_id" = ?]):
+  app/views/sales/index.html.erb:47:in `block in _app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/views/sales/index.html.erb:37:in `_app_views_sales_index_html_erb__3798592319395504201_70258309686420'
+  app/controllers/sales_controller.rb:7:in `index'
+
+
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.2ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.1ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/aniamac/.rvm/gems/ruby-2.3.0@FarMarRails/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.7ms)
+
+
+Started GET "/vendors/62/sales" for ::1 at 2016-05-01 11:18:49 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"62"}
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 62]]
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 62]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 202]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 199]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 202]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 199]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 202]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 203]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 200]]
+  Rendered sales/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 71ms (Views: 55.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:18:56 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.4ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (105.2ms)
+Completed 200 OK in 140ms (Views: 130.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/vendors/15/products" for ::1 at 2016-05-01 11:18:58 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"15"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 15]]
+  Rendered products/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 11:19:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:19:03 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (4.5ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 188ms (Views: 182.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/vendors/70/sales" for ::1 at 2016-05-01 11:19:08 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"70"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 70]]
+  [1m[36mSale Load (0.6ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 70]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 224]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 223]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 225]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 224]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 225]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 224]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 222]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1030]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 625]]
+  Rendered sales/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/vendors/70/sales/new" for ::1 at 2016-05-01 11:19:16 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"70"}
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 70]]
+  Rendered sales/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 52ms (Views: 21.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/vendors/70/sales" for ::1 at 2016-05-01 11:19:30 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYZ3PjIPoU4Qu65shjF7V/vZ7LoHq4kCHFNjrzJhba8K+1WVFRfcispqdlQG5uA8HRSRWKvCKm/SbhG7KcjcxQ==", "sale"=>{"amount"=>"3", "purchase_time"=>"4:30", "product_id"=>"212"}, "commit"=>"Create Sale", "vendor_id"=>"70"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["amount", 3], ["purchase_time", "2016-05-01 04:30:00.000000"], ["product_id", 212], ["vendor_id", 70], ["created_at", "2016-05-01 18:19:30.135963"], ["updated_at", "2016-05-01 18:19:30.135963"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/vendors/70/sales
+Completed 302 Found in 19ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors/70/sales" for ::1 at 2016-05-01 11:19:30 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"70"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 70]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 70]]
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 224]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 223]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 225]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 224]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 225]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 224]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 222]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1030]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 625]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 212]]
+  Rendered sales/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/vendors/70/sales/new" for ::1 at 2016-05-01 11:23:09 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"70"}
+  [1m[36mVendor Load (0.8ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 70]]
+  Rendered sales/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 101ms (Views: 66.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/vendors/70/sales" for ::1 at 2016-05-01 11:23:27 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GWZIveJz6h9mYveD9bWdCCnfjNumd5OM/CO47s97VJ5iG2oWxWuX27yzL7t1YgZjzxLxOQoeMOEyHsr61NLl9A==", "sale"=>{"amount"=>"1", "purchase_time"=>"2016/04/22", "product_id"=>"212"}, "commit"=>"Create Sale", "vendor_id"=>"70"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["amount", 1], ["purchase_time", "2016-04-22 00:00:00.000000"], ["product_id", 212], ["vendor_id", 70], ["created_at", "2016-05-01 18:23:27.357878"], ["updated_at", "2016-05-01 18:23:27.357878"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/vendors/70/sales
+Completed 302 Found in 36ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/vendors/70/sales" for ::1 at 2016-05-01 11:23:27 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"70"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 70]]
+  [1m[35mSale Load (0.3ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 70]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 224]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 223]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 225]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 224]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 225]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 224]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 222]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1030]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 625]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 212]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 212]]
+  Rendered sales/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 73ms (Views: 68.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:23:46 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (8.1ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (214.3ms)
+Completed 200 OK in 243ms (Views: 232.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-05-01 11:23:48 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 1]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sales/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:23:50 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.8ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (99.0ms)
+Completed 200 OK in 122ms (Views: 117.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/vendors/2/sales" for ::1 at 2016-05-01 11:23:51 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"2"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 2]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 2]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered sales/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:23:56 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (1.9ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 90ms (Views: 87.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/vendors/6/sales" for ::1 at 2016-05-01 11:23:57 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"6"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 6]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 6]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered sales/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:23:59 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mVendor Load (3.2ms)[0m  [1mSELECT "vendors".* FROM "vendors"[0m
+  Rendered vendors/index.html.erb within layouts/application (67.3ms)
+Completed 200 OK in 90ms (Views: 85.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/vendors/18/products" for ::1 at 2016-05-01 11:24:02 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 18]]
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:24:06 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 18]]
+  [1m[35mSale Load (0.3ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 18]]
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 52]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 813]]
+  Rendered sales/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/vendors/18/sales/new" for ::1 at 2016-05-01 11:24:55 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  Rendered sales/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 52ms (Views: 26.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/vendors/18/sales" for ::1 at 2016-05-01 11:25:03 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q3EU62SH/jmaUfXB3X6Um9xQxXBhFiMvcqtP2da6Urg4DDZAQ5+D/UCALfldqQ/wOp24ks1/gEK8lj3NzRPj0g==", "sale"=>{"amount"=>"7", "purchase_time"=>"2:20", "product_id"=>"51"}, "commit"=>"Create Sale", "vendor_id"=>"18"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["amount", 7], ["purchase_time", "2016-05-01 02:20:00.000000"], ["product_id", 51], ["vendor_id", 18], ["created_at", "2016-05-01 18:25:03.813165"], ["updated_at", "2016-05-01 18:25:03.813165"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/vendors/18/sales
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:25:03 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mSale Load (0.6ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 18]]
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 813]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  Rendered sales/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.2ms)
+  [1m[36mSale Load (0.3ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 18]]
+  [1m[35mSale Load (0.6ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 18]]
+
+
+Started GET "/vendors/18/sales/new" for ::1 at 2016-05-01 11:31:05 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  Rendered sales/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 68ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/vendors/18/sales" for ::1 at 2016-05-01 11:31:16 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rG6INBKyMnTv0OuvhtXy7dlMuxUaSn/6kmAycXUIX1XXE6qfNapPsDUBM5cGAmmGP4HG97Yj3JdcXUBlbqHuPw==", "sale"=>{"amount"=>"1", "purchase_time"=>"1:00", "product_id"=>"52"}, "commit"=>"Create Sale", "vendor_id"=>"18"}
+  [1m[35mVendor Load (1.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["amount", 1], ["purchase_time", "2016-05-01 01:00:00.000000"], ["product_id", 52], ["vendor_id", 18], ["created_at", "2016-05-01 18:31:16.633748"], ["updated_at", "2016-05-01 18:31:16.633748"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/vendors/18/sales
+Completed 302 Found in 9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:31:16 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[35mSale Load (0.2ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 18]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 813]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 52]]
+  Rendered sales/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.6ms)
+  [1m[36mSale Load (0.4ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 18]]
+
+
+Started GET "/vendors/18/sales/new" for ::1 at 2016-05-01 11:31:55 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?  [["vendor_id", 18]]
+  Rendered sales/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 332ms (Views: 328.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vendors/18/sales" for ::1 at 2016-05-01 11:32:06 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"03T9GdJTBxPvthEYw1tMFHrKKxoW6cH3xq7q7Ch1P+SoCd+y9Ut61zVnySBDjNd/nAdW+LqAYpoIk5j4M9yOjg==", "sale"=>{"amount"=>"3", "purchase_time"=>"9:00", "product_id"=>"51"}, "commit"=>"Create Sale", "vendor_id"=>"18"}
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["amount", 3], ["purchase_time", "2016-05-01 09:00:00.000000"], ["product_id", 51], ["vendor_id", 18], ["created_at", "2016-05-01 18:32:06.680967"], ["updated_at", "2016-05-01 18:32:06.680967"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/vendors/18/sales
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/vendors/18/sales" for ::1 at 2016-05-01 11:32:06 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"18"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')[0m  [["vendor_id", 18]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 18]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 813]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 51]]
+  Rendered sales/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vendors" for ::1 at 2016-05-01 11:32:23 -0700
+Processing by VendorsController#index as HTML
+  [1m[35mVendor Load (9.6ms)[0m  SELECT "vendors".* FROM "vendors"
+  Rendered vendors/index.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 116ms (Views: 105.4ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/vendors/1/products" for ::1 at 2016-05-01 11:32:27 -0700
+Processing by ProductsController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered products/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-05-01 11:32:31 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mSale Load (0.3ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 1]]
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sales/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vendors/1/sales/new" for ::1 at 2016-05-01 11:32:32 -0700
+Processing by SalesController#new as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."vendor_id" = ?[0m  [["vendor_id", 1]]
+  Rendered sales/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vendors/1/sales" for ::1 at 2016-05-01 11:32:42 -0700
+Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KWY4VNnEFEKYfkLb533Fu7gBhuRcIOjHQx0eL7161WVSGxr//txphkKvmuNnql7QXsz7BvBJS6qNIGw7ptNkDw==", "sale"=>{"amount"=>"3", "purchase_time"=>"2016/05/12", "product_id"=>"1"}, "commit"=>"Create Sale", "vendor_id"=>"1"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sales" ("amount", "purchase_time", "product_id", "vendor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["amount", 3], ["purchase_time", "2016-05-12 00:00:00.000000"], ["product_id", 1], ["vendor_id", 1], ["created_at", "2016-05-01 18:32:42.451182"], ["updated_at", "2016-05-01 18:32:42.451182"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/vendors/1/sales
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/vendors/1/sales" for ::1 at 2016-05-01 11:32:42 -0700
+Processing by SalesController#index as HTML
+  Parameters: {"vendor_id"=>"1"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ? AND ("sales"."purchase_time" BETWEEN '2016-05-01 07:00:00.000000' AND '2016-06-01 06:59:59.999999')  [["vendor_id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."vendor_id" = ?  [["vendor_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sales/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 11:32:45 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/markets" for ::1 at 2016-05-01 11:32:46 -0700
+Processing by MarketsController#index as HTML
+  [1m[35mMarket Load (0.7ms)[0m  SELECT "markets".* FROM "markets"
+  Rendered markets/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 11:32:49 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMarket Load (0.5ms)[0m  [1mSELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mVendor Load (0.2ms)[0m  SELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vendors/3/edit?market_id=1" for ::1 at 2016-05-01 11:32:56 -0700
+Processing by VendorsController#edit as HTML
+  Parameters: {"market_id"=>"1", "id"=>"3"}
+  [1m[36mVendor Load (0.1ms)[0m  [1mSELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered vendors/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/vendors/3" for ::1 at 2016-05-01 11:32:58 -0700
+Processing by VendorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cgg+/BAzeI/ZQT6uMYukIxHHKvRpldtg9RbXY00VAqQJdRxXNysFSwOQ5paxXD9I9wpXFsX8eA07K6V3Vryzzg==", "vendor"=>{"name"=>"Breitenberg Inc.", "no_of_employees"=>"5", "market_id"=>"1"}, "commit"=>"Update Vendor", "id"=>"3"}
+  [1m[35mVendor Load (0.1ms)[0m  SELECT  "vendors".* FROM "vendors" WHERE "vendors"."id" = ? LIMIT 1  [["id", 3]]
+Unpermitted parameters: utf8, _method, authenticity_token, commit, id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "vendors" SET "name" = ?, "updated_at" = ? WHERE "vendors"."id" = ?  [["name", "Breitenberg Inc."], ["updated_at", "2016-05-01 18:32:58.937639"], ["id", 3]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/markets/1
+Completed 302 Found in 40ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/markets/1" for ::1 at 2016-05-01 11:32:59 -0700
+Processing by MarketsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMarket Load (0.2ms)[0m  SELECT  "markets".* FROM "markets" WHERE "markets"."id" = ?  ORDER BY "markets"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mVendor Load (0.2ms)[0m  [1mSELECT "vendors".* FROM "vendors" WHERE "vendors"."market_id" = ?[0m  [["market_id", 1]]
+  Rendered markets/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 11:33:03 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
