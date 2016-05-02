@@ -1,0 +1,12 @@
+<h1>Vendors</h1>
+
+
+<table>
+  <%@vendors.each do |vendor|%>
+    <tr>
+      <td><%=vendor.name%></td>
+      <td><%= link_to "Products", vendor_products_path(vendor)%></td>
+      <td><%=link_to "Sales", vendor_sales_path(vendor)%></td>
+    </tr>
+  <%end%>
+<table>

@@ -1,0 +1,12 @@
+
+<h1>Add New Vendor!</h1>
+
+<section class = "form-container">
+  <span><%=form_for @vendor do |f| %></span><br>
+  <span>Name:<%=f.text_field :name %></span><br>
+  <span>Num. Employee:<%=f.text_field :no_of_employees %></span><br>
+  <%= f.hidden_field :market_id, :value => (params[:market_id]) %>
+  <span><%=f.submit%></span>
+  <% end %>
+
+</section>

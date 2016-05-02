@@ -1,0 +1,52 @@
+<h1>Sales</h1>
+
+<div class = "create">
+  <%=link_to "Add a New Sale" , new_vendor_sale_path%>
+</div>
+<%sum = 0%>
+
+<h2> Sales for Current Month</h2>
+<table>
+  <%@sales_month.each do |sale|%>
+    <%sum = sum + sale.amount%>
+    <tr>
+      <td><span>Vendor: <%=sale.vendor_id%></span></td>
+      <td><span>Product:
+        <%if sale.product_id.nil? %>
+          unknown
+        <%else%>
+          <%= @products.find(sale.product_id).name%></span>
+        <%end%>
+      </td>
+      <td><span>Sale Amount: <%=sale.amount%></span></td>
+      <td><span>Purchase Time <%=sale.purchase_time%></span></td>
+    </tr>
+  <%end%>
+</table>
+<span>Total Sales:</span> <%=sum%>
+
+
+
+
+<h2> All Sales</h2>
+<table>
+<%@sales.each do |sale|%>
+<%sum = sum + sale.amount%>
+
+<tr>
+
+  <td><span>Vendor: <%=sale.vendor_id%></span></td>
+  <td><span>Product:
+    <%if sale.product_id.nil? %>
+      unknown
+    <%else%>
+      <%= @products.find(sale.product_id).name%></span>
+    <%end%>
+  </td>
+  <td><span>Sale Amount: <%=sale.amount%></span></td>
+  <td><span>Purchase Time <%=sale.purchase_time%></span></td>
+</tr>
+<%end%>
+</table>
+
+<span>Total Sales:</span> <%=sum%>
