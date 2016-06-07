@@ -1,0 +1,31 @@
+
+
+<h1>Markets</h1>
+
+
+<div class="market_button">
+	<%= link_to new_market_path, class: 'btn btn-success' do %>
+	  Add a New Market
+	<% end %>
+</div>
+<br>
+<br>
+
+<table class="table table-striped" class="table table-hover">
+<tr>
+<th>Name</th>
+<th>Edit</th>
+</tr>
+<tr class="row"><% @markets.each do |market| %></tr>
+	<td><%= link_to market.name, market_path(market.id) %></td>
+
+	<td class="edit">
+    <%= link_to edit_market_path(market.id) do %>
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+    <% end %>
+    </td>
+
+
+	<% end %>
+
+</table>

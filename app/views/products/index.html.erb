@@ -1,0 +1,28 @@
+<h1> <%= @vendor.name %> </h1>
+<br>
+<h2>Products</h2>
+<div class="product_button">
+<%= link_to "Add a New Product", new_vendor_product_path, class: 'btn btn-success' %>
+</div>
+<table class="table table-striped" class="table table-hover">
+    <tr>
+    <td>Name</td>
+    <td>Edit</td>
+    <td>Delete</td>
+
+    </tr>
+    <tr><% @products.each do |product| %></tr>
+	    <td><%= product.name %></td>
+
+       <td class="edit">
+        <%= link_to edit_vendor_product_path(@vendor, product) do %>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        <% end %>
+      </td>
+      <td><%= link_to vendor_product_path(@vendor, product), confirm: 'Are you sure?', method: :delete do %>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+        <% end %>
+      </td>
+
+    <% end %>
+</table>

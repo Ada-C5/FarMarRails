@@ -1,0 +1,16 @@
+
+<h1>Vendors</h1>
+<table class="table table-striped" class="table table-hover">
+  <tr class="header-row">
+    <th>Name</th>
+    <th>No. of Employees</th>
+    <th>Market</th>
+  </tr>
+  <tr class="row">
+    <% @vendors.each do |vendor| %></tr>
+  	 <td><%= link_to vendor.name, vendor_path(vendor.id) %></td>
+  	  <td><%= vendor.employee_count %></td>
+      <td><%= link_to vendor.market.name, market_path(vendor.market_id) %></td>
+    <% end %>
+  </tr>
+</table>

@@ -1,0 +1,59 @@
+<h1> <%= @vendor.name %> </h1>
+
+
+<div class="sales_link">
+  <%= link_to new_vendor_sale_path(@vendor.id), class: 'btn btn-success' do %>
+    New Sale
+  <% end %>
+</div>
+
+
+<table class="table table-striped" class="table table-hover">
+    <thead>
+    <tr>
+      <th class="headings" colspan=2>Current Month Sales </th>
+    </tr>
+    <tr class="header-row">
+	   <td>Amount</td>
+     <td>Purchase Time</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row">
+      <% @vendor.current_month_sales.each do |sale| %>  </tr>
+	    <td><%= sale.dollar_format %></td>
+      <td><%= sale.purchase_time.strftime("%B %d, %Y") %></td>
+    <% end %>
+    <tr class = "row"></tr>
+      <td>TOTAL</td>
+      <td><%= @vendor.monthly_sales_total %></td>
+  </tbody>
+</table>
+
+
+<table class="table table-striped" class="table table-hover">
+    <thead>
+    <tr>
+      <th class="headings" colspan=2>SALES </th>
+    </tr>
+    <tr class="header-row">
+	   <td>Amount</td>
+     <td>Purchase Time</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row">
+      <% @sales.each do |sale| %>  </tr>
+	    <td><%= sale.dollar_format %></td>
+      <td><%= sale.purchase_time.strftime("%B %d, %Y") %></td>
+    <% end %>
+    <tr class = "row"></tr>
+      <td>TOTAL</td>
+      <td><%= @vendor.total_sales %></td>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
